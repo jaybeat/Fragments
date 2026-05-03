@@ -7,6 +7,26 @@
   "speakerAvatar": "/avatars/jobs.svg",
   "startTime": 22,
   "duration": 915,
+  "chapters": [
+    {
+      "start": 22,
+      "end": 551,
+      "title": "Connecting the Dots",
+      "description": "Dropping out of college, following curiosity, and trusting that experiences connect in hindsight"
+    },
+    {
+      "start": 551,
+      "end": 823,
+      "title": "Love and Loss",
+      "description": "Starting Apple, getting fired, and rediscovering passion through NeXT and Pixar"
+    },
+    {
+      "start": 823,
+      "end": 915,
+      "title": "Death",
+      "description": "Facing mortality and the courage to follow your heart and intuition"
+    }
+  ],
   "turns": [
     { "who": "Steve Jobs", "start": 0, "text": "Thank you." },
     { "who": "Steve Jobs", "start": 4, "text": "I am honored to be with you today at your commencement from one of the finest universities in the world." },

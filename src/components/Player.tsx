@@ -1,8 +1,9 @@
-import { useRef, useCallback } from 'react';
+import { useRef, useCallback, useState } from 'react';
 import { usePlayer } from '../PlayerContext';
 import { useControls } from '../PlayerContext';
 import { mmss } from '../lib/time';
 import { getEpisodeById } from '../data/episodes';
+import type { Chapter } from '../types';
 
 export default function Player() {
   const { state } = usePlayer();
@@ -10,6 +11,7 @@ export default function Player() {
   const lineRef = useRef<HTMLDivElement>(null);
   const episode = getEpisodeById(state.episodeId)!;
   const duration = state.duration || episode.duration;
+  const [hoveredChapter, setHoveredChapter] = useState<Chapter | null>(null);
 
   const progress = duration > 0 ? Math.min(1, state.currentTime / duration) : 0;
 
@@ -25,11 +27,47 @@ export default function Player() {
     seekTo(p * duration);
   }, [duration, seekTo]);
 
+  const handleChapterClick = useCallback((start: number) => {
+    seekTo(start);
+  }, [seekTo]);
+
+  const tooltipCenter = hoveredChapter && duration > 0
+    ? ((hoveredChapter.start + hoveredChapter.end) / 2 / duration) * 100
+    : 0;
+
   return (
     <div className="player">
       <div className="player-time">{mmss(state.currentTime)}</div>
-      <div className="player-line" ref={lineRef} onPointerDown={handleLineClick}>
-        <div className="player-fill" style={{ width: `${progress * 100}%` }} />
+      <div className="player-line-wrap">
+        <div className="player-line" ref={lineRef} onPointerDown={handleLineClick}>
+          <div className="player-fill" style={{ width: `${progress * 100}%` }} />
+        </div>
+        {episode.chapters && episode.chapters.length > 0 && (
+          <div className="player-chapters-row">
+            {episode.chapters.map((ch, i) => {
+              const left = duration > 0 ? (ch.start / duration) * 100 : 0;
+              const width = duration > 0 ? ((ch.end - ch.start) / duration) * 100 : 0;
+              return (
+                <div
+                  key={i}
+                  className="player-chapter-label"
+                  style={{ left: `${left}%`, width: `${width}%` }}
+                  onClick={() => handleChapterClick(ch.start)}
+                  onMouseEnter={() => setHoveredChapter(ch)}
+                  onMouseLeave={() => setHoveredChapter(null)}
+                >
+                  <span className="player-chapter-text">{ch.title}</span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        {hoveredChapter && (
+          <div className="player-tooltip" style={{ left: `${tooltipCenter}%` }}>
+            <div className="player-tooltip-title">{hoveredChapter.title}</div>
+            <div className="player-tooltip-desc">{hoveredChapter.description}</div>
+          </div>
+        )}
       </div>
       <button className="play-btn" aria-label={state.isPlaying ? 'Pause' : 'Play'} onClick={togglePlay}>
         {state.isPlaying ? (

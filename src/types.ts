@@ -4,6 +4,13 @@ export interface Turn {
   text: string;
 }
 
+export interface Chapter {
+  start: number;
+  end: number;
+  title: string;
+  description: string;
+}
+
 export interface Episode {
   id: string;
   videoId: string;
@@ -15,6 +22,7 @@ export interface Episode {
   endTime?: number;
   duration: number;
   turns: Turn[];
+  chapters?: Chapter[];
 }
 
 export interface Tweaks {

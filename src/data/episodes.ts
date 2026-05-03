@@ -7,6 +7,11 @@ function normalizeEpisode(ep: Episode): Episode {
   return {
     ...ep,
     turns: ep.turns.map((t) => ({ ...t, start: t.start + offset })),
+    chapters: ep.chapters?.map((c) => ({
+      ...c,
+      start: c.start + offset,
+      end: c.end + offset,
+    })),
   };
 }
 
