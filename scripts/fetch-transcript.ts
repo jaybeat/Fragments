@@ -381,7 +381,7 @@ async function main(): Promise<void> {
       process.exit(1);
     }
 
-    let finalSpeaker = (args.speaker ?? meta.author) || 'Speaker';
+    let finalSpeaker = args.speaker ?? '';
     let turns = mergeIntoTurns(segments, {
       speaker: finalSpeaker,
       maxDurSec: args.maxDurSec,
