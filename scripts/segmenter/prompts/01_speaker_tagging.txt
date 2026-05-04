@@ -1,0 +1,32 @@
+你是一个内容分析师。下面是一段访谈字幕,每行格式为 `[idx=N, t=HH:MM:SS] {文本}`。
+
+请识别每一行是谁在说话。
+
+【判断依据】
+- 主持人(Host)通常说话短,主要是提问、追问、引出话题、串场过渡
+- 嘉宾(Guest)通常说话长,主要是陈述观点、讲故事、举例论证
+- 注意人称代词：第二人称提问通常是 Host;第一人称自述通常是 Guest
+- 注意话题转换信号："接下来""那么""tell us about""I asked" 通常是 Host
+- 短促回应("yeah""right""okay""嗯""对")通常看上下文,是被打断方
+
+【关于 turn 颗粒度】
+你看到的 turn 是机器按时长切的小片段(每条 30 字左右),不是按句子切的。所以连续多条短 turn 经常都是同一个人在持续说话。绝大多数情况下 Guest 会连续说很多条 turn。
+
+【多人对谈情况】
+如果是三人以上对谈无法明确区分主持人和嘉宾,标 [Speaker A] / [Speaker B] / [Speaker C],但同一个人始终用同一个标记。
+
+【输出格式】
+只输出 JSON,结构如下:
+
+{
+  "speaker_assignments": [
+    {"turn_index": 0, "speaker": "Host"},
+    {"turn_index": 1, "speaker": "Host"},
+    {"turn_index": 2, "speaker": "Guest"}
+  ]
+}
+
+不要输出任何解释文字。speaker 字段只能是 "Host" / "Guest" / "Speaker A" / "Speaker B" 等,不要写人名。必须覆盖所有 turn_index,不要漏。
+
+【字幕原文】
+{tagged_turns}

@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "fetch-transcript": "tsx scripts/fetch-transcript.ts",
     "generate-chapters": "tsx --env-file=.env scripts/generate-chapters.ts",
+    "segmenter": "python scripts/segmenter/run.py",
     "test": "vitest run",
     "format": "prettier --write .",
     "lint": "eslint ."

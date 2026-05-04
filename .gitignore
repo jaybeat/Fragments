@@ -26,8 +26,18 @@ pnpm-debug.log*
 # Scripts cache
 scripts/cache
 
+# Segmenter intermediate (regeneratable debug artifacts)
+scripts/segmenter/intermediate/
+
 # Environment
 .env
 
 # TypeScript
 *.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude Code local
+.claude/

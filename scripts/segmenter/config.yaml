@@ -1,0 +1,42 @@
+api:
+  key_env: GEMINI_API_KEY
+
+models:
+  step1: gemini-2.5-flash
+  step2: gemini-2.5-flash
+  step3: gemini-2.5-flash
+
+paths:
+  episodes_dir: src/data/episodes
+  intermediate_dir: scripts/segmenter/intermediate
+  prompts_dir: scripts/segmenter/prompts
+
+domain_taxonomy:
+  - 招聘与识人
+  - 团队与协作
+  - 给反馈与冲突
+  - 产品与打磨
+  - 营销与定位
+  - 战略与竞争
+  - 组织与公司演化
+  - 决策与判断
+  - 学习与思维方法
+  - 个人成长与状态
+  - 行业判断与未来
+  - 创业与起步
+
+speaker_name_map:
+  jobs-lost-interview: Steve Jobs
+  # 后续添加其他音频时在这里维护
+
+quality_thresholds:
+  p_coverage_min: 0.20
+  p_coverage_max: 0.70
+  p_duration_min_sec: 20
+  p_duration_max_sec: 300
+  domain_other_max_ratio: 0.05
+  question_similarity_max: 0.95
+
+batch_processing:
+  step1_max_turns_per_batch: 300
+  step1_overlap_turns: 20
