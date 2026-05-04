@@ -1,5 +1,6 @@
 import type { Episode } from '../types';
 import jobs from './episodes/jobs-stanford.json';
+import lostInterview from './episodes/jobs-lost-interview.json';
 
 function normalizeEpisode(ep: Episode): Episode {
   const offset = ep.startTime ?? 0;
@@ -15,7 +16,7 @@ function normalizeEpisode(ep: Episode): Episode {
   };
 }
 
-export const EPISODES: Episode[] = [jobs].map(normalizeEpisode) as Episode[];
+export const EPISODES: Episode[] = [jobs, lostInterview].map(normalizeEpisode) as Episode[];
 
 export function getEpisodeById(id: string): Episode | undefined {
   return EPISODES.find((e) => e.id === id);
