@@ -26,5 +26,8 @@ pnpm-debug.log*
 # Scripts cache
 scripts/cache
 
+# Environment
+.env
+
 # TypeScript
 *.tsbuildinfo

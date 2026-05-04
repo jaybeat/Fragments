@@ -645,9 +645,8 @@ body {
   white-space: nowrap;
 }
 .player-tooltip {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  transform: translateX(-50%);
+  position: fixed;
+  transform: translateX(-50%) translateY(-100%);
   background: rgba(20, 20, 22, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -657,10 +656,11 @@ body {
   font-size: 12px;
   line-height: 1.4;
   pointer-events: none;
-  z-index: 10;
+  z-index: 100;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  max-width: 220px;
+  max-width: 280px;
+  word-break: break-word;
 }
 .player-tooltip-title {
   font-weight: 600;

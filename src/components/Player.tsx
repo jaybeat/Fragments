@@ -12,6 +12,7 @@ export default function Player() {
   const episode = getEpisodeById(state.episodeId)!;
   const duration = state.duration || episode.duration;
   const [hoveredChapter, setHoveredChapter] = useState<Chapter | null>(null);
+  const [tooltipPos, setTooltipPos] = useState<{ left: number; top: number } | null>(null);
 
   const progress = duration > 0 ? Math.min(1, state.currentTime / duration) : 0;
 
@@ -37,10 +38,24 @@ export default function Player() {
     [seekTo]
   );
 
-  const tooltipCenter =
-    hoveredChapter && duration > 0
-      ? ((hoveredChapter.start + hoveredChapter.end) / 2 / duration) * 100
-      : 0;
+  const handleChapterMouseEnter = useCallback(
+    (e: React.MouseEvent, ch: Chapter) => {
+      setHoveredChapter(ch);
+      const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+      const halfWidth = 140; // half of max-width 280px, safe margin
+      const left = Math.max(
+        halfWidth,
+        Math.min(window.innerWidth - halfWidth, rect.left + rect.width / 2)
+      );
+      setTooltipPos({ left, top: rect.top });
+    },
+    []
+  );
+
+  const handleChapterMouseLeave = useCallback(() => {
+    setHoveredChapter(null);
+    setTooltipPos(null);
+  }, []);
 
   return (
     <div className="player">
@@ -60,8 +75,8 @@ export default function Player() {
                   className="player-chapter-label"
                   style={{ left: `${left}%`, width: `${width}%` }}
                   onClick={() => handleChapterClick(ch.start)}
-                  onMouseEnter={() => setHoveredChapter(ch)}
-                  onMouseLeave={() => setHoveredChapter(null)}
+                  onMouseEnter={(e) => handleChapterMouseEnter(e, ch)}
+                  onMouseLeave={handleChapterMouseLeave}
                 >
                   <span className="player-chapter-text">{ch.title}</span>
                 </div>
@@ -69,8 +84,11 @@ export default function Player() {
             })}
           </div>
         )}
-        {hoveredChapter && (
-          <div className="player-tooltip" style={{ left: `${tooltipCenter}%` }}>
+        {hoveredChapter && tooltipPos && (
+          <div
+            className="player-tooltip"
+            style={{ left: tooltipPos.left, top: tooltipPos.top - 8 }}
+          >
             <div className="player-tooltip-title">{hoveredChapter.title}</div>
             <div className="player-tooltip-desc">{hoveredChapter.description}</div>
           </div>

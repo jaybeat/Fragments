@@ -2,7 +2,7 @@
   "id": "jobs-stanford",
   "videoId": "UF8uR6Z6KLc",
   "title": "Steve Jobs' 2005 Stanford Commencement Address",
-  "subtitle": "TBD",
+  "subtitle": "追随内心，连接人生点滴，活出精彩",
   "speakerName": "Stanford",
   "speakerAvatar": "/avatars/jobs-stanford.jpg",
   "startTime": 22,
@@ -652,6 +652,50 @@
       "who": "Stanford",
       "start": 879,
       "text": "Please visit us at stanford.edu"
+    }
+  ],
+  "chapters": [
+    {
+      "start": 0,
+      "end": 152,
+      "title": "退学与人生起点",
+      "description": "乔布斯分享自己未毕业的经历，讲述了被收养的背景以及因学费昂贵和迷茫而选择从大学退学的决定。"
+    },
+    {
+      "start": 152,
+      "end": 317,
+      "title": "兴趣与点滴相连",
+      "description": "退学后，乔布斯旁听了书法课，这些看似无用的知识在十年后启发了Macintosh的字体设计，他强调要相信点滴终将连接。"
+    },
+    {
+      "start": 317,
+      "end": 476,
+      "title": "苹果被解雇与重生",
+      "description": "乔布斯讲述了被自己创立的苹果公司解雇的经历，这虽然痛苦，却让他得以重新开始，创立NeXT和Pixar，最终重返苹果。"
+    },
+    {
+      "start": 476,
+      "end": 523,
+      "title": "追寻所爱，永不妥协",
+      "description": "乔布斯强调，只有热爱自己的工作才能获得真正的满足，并鼓励毕业生们不断寻找所爱，永不妥协。"
+    },
+    {
+      "start": 523,
+      "end": 685,
+      "title": "死亡的生命视角",
+      "description": "乔布斯分享了死亡意识如何帮助他做出重要人生选择，并讲述了自己被诊断出胰腺癌后又奇迹般治愈的经历。"
+    },
+    {
+      "start": 685,
+      "end": 768,
+      "title": "死亡与活出自我",
+      "description": "他认为死亡是生命最伟大的发明，鼓励人们不要浪费时间活在别人的期望中，要勇敢追随自己的内心和直觉。"
+    },
+    {
+      "start": 768,
+      "end": 909,
+      "title": "保持饥饿，保持愚蠢",
+      "description": "乔布斯引用《全球目录》的告别语“求知若饥，虚心若愚”，以此作为对毕业生的期许和祝福。"
     }
   ]
 }
