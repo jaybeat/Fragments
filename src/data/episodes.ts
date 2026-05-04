@@ -1,6 +1,6 @@
 import type { Episode } from '../types';
 import jobs from './episodes/jobs-stanford.json';
-import lostInterview from './episodes/jobs-lost-interview.json';
+import lostInterview from './episodes/jobs-lost-interview.analyzed.json';
 
 function normalizeEpisode(ep: Episode): Episode {
   const offset = ep.startTime ?? 0;
@@ -12,6 +12,16 @@ function normalizeEpisode(ep: Episode): Episode {
       ...c,
       start: c.start + offset,
       end: c.end + offset,
+    })),
+    t_segments: ep.t_segments?.map((s) => ({
+      ...s,
+      start_sec: s.start_sec + offset,
+      end_sec: s.end_sec + offset,
+    })),
+    p_segments: ep.p_segments?.map((s) => ({
+      ...s,
+      start_sec: s.start_sec + offset,
+      end_sec: s.end_sec + offset,
     })),
   };
 }

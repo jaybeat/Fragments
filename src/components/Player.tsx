@@ -1,4 +1,4 @@
-import { useRef, useCallback, useState } from 'react';
+import { useRef, useCallback, useState, useMemo } from 'react';
 import { usePlayer } from '../PlayerContext';
 import { useControls } from '../PlayerContext';
 import { mmss } from '../lib/time';
@@ -13,6 +13,19 @@ export default function Player() {
   const duration = state.duration || episode.duration;
   const [hoveredChapter, setHoveredChapter] = useState<Chapter | null>(null);
   const [tooltipPos, setTooltipPos] = useState<{ left: number; top: number } | null>(null);
+
+  const displayChapters = useMemo<Chapter[]>(() => {
+    if (episode.chapters && episode.chapters.length > 0) return episode.chapters;
+    if (episode.t_segments && episode.t_segments.length > 0) {
+      return episode.t_segments.map((s) => ({
+        start: s.start_sec,
+        end: s.end_sec,
+        title: s.topic,
+        description: s.summary,
+      }));
+    }
+    return [];
+  }, [episode]);
 
   const progress = duration > 0 ? Math.min(1, state.currentTime / duration) : 0;
 
@@ -64,9 +77,9 @@ export default function Player() {
         <div className="player-line" ref={lineRef} onPointerDown={handleLineClick}>
           <div className="player-fill" style={{ width: `${progress * 100}%` }} />
         </div>
-        {episode.chapters && episode.chapters.length > 0 && (
+        {displayChapters.length > 0 && (
           <div className="player-chapters-row">
-            {episode.chapters.map((ch, i) => {
+            {displayChapters.map((ch, i) => {
               const left = duration > 0 ? (ch.start / duration) * 100 : 0;
               const width = duration > 0 ? ((ch.end - ch.start) / duration) * 100 : 0;
               return (

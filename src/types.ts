@@ -11,6 +11,27 @@ export interface Chapter {
   description: string;
 }
 
+export interface TSegment {
+  id: string;
+  start_sec: number;
+  end_sec: number;
+  topic: string;
+  summary: string;
+}
+
+export interface PSegment {
+  id: string;
+  parent_t_id: string;
+  start_sec: number;
+  end_sec: number;
+  duration_sec: number;
+  question: string;
+  insight: string;
+  domain: string[];
+  fine_tags: string[];
+  transcript: string;
+}
+
 export interface Episode {
   id: string;
   videoId: string;
@@ -23,6 +44,8 @@ export interface Episode {
   duration: number;
   turns: Turn[];
   chapters?: Chapter[];
+  t_segments?: TSegment[];
+  p_segments?: PSegment[];
 }
 
 export interface Tweaks {
