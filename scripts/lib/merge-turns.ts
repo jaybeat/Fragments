@@ -10,16 +10,17 @@ export interface MergeOptions {
   speaker: string;
   maxDurSec?: number;
   startTime?: number;
+  endTime?: number;
 }
 
 const SENTENCE_END = /[.!?;][)"'”’\]]?\s*$/;
 
 export function mergeIntoTurns(segments: RawSegment[], opts: MergeOptions): Turn[] {
-  const { speaker, maxDurSec = 15, startTime = 0 } = opts;
+  const { speaker, maxDurSec = 15, startTime = 0, endTime } = opts;
 
   const shifted = segments
     .map((s) => ({ ...s, offset: s.offset - startTime }))
-    .filter((s) => s.offset + s.duration > 0);
+    .filter((s) => s.offset + s.duration > 0 && (endTime === undefined || s.offset < endTime));
 
   const turns: Turn[] = [];
   let buf: string[] = [];

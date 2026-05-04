@@ -3,7 +3,6 @@ import * as path from 'node:path';
 import { ProxyAgent, type Dispatcher } from 'undici';
 import {
   getPlayerData,
-  getChannelAvatar,
   downloadImage,
   pickTrack,
   fetchTrackXml,
@@ -14,14 +13,15 @@ import {
   NoCaptionTracksError,
   LanguageNotAvailableError,
   type CaptionTrack,
+  type VideoMeta,
 } from './lib/youtube-api.ts';
 import { mergeIntoTurns, type Turn } from './lib/merge-turns.ts';
-import { cleanSubtitle } from './lib/clean-subtitle.ts';
 
 interface Args {
   videoId: string;
   output?: string;
   startTime: number;
+  endTime: number | undefined;
   speaker: string | undefined;
   lang: string;
   preferAuto: boolean;
@@ -30,6 +30,7 @@ interface Args {
   dryRun: boolean;
   maxDurSec: number;
   listTracks: boolean;
+  noCache: boolean;
 }
 
 interface EpisodeSkeleton {
@@ -54,6 +55,7 @@ Required:
 Options:
   --output <path>          Write merged turns into this JSON file
   --start-time <seconds>   Trim leading caption offsets (e.g. 22 = drop intro applause)  [default: 0]
+  --end-time <seconds>     Trim trailing content after this timestamp (seconds)            [default: none]
   --speaker <name>         Value to write into turn.who                                    [default: video author from YouTube]
   --lang <code>            Caption language preference                                     [default: "en"]
   --prefer-auto            Prefer YouTube auto-generated captions over manual              [default: false]
@@ -61,6 +63,7 @@ Options:
   --preserve-meta          When --output already exists, only replace the turns field     [default: false]
   --overwrite              Allow replacing an existing --output file (without --preserve-meta) [default: false]
   --dry-run                Print summary + sample turns; do not write any file             [default: false]
+  --no-cache               Skip reading cached API responses                               [default: false]
   --list-tracks            List all caption tracks for the video and exit                  [default: false]
   -h, --help               Show this help
 
@@ -74,6 +77,7 @@ function parseArgs(argv: string[]): Args {
   let videoId: string | undefined;
   let output: string | undefined;
   let startTime = 0;
+  let endTime: number | undefined;
   let speaker: string | undefined;
   let lang = 'en';
   let preferAuto = false;
@@ -82,6 +86,7 @@ function parseArgs(argv: string[]): Args {
   let dryRun = false;
   let maxDurSec = 15;
   let listTracks = false;
+  let noCache = false;
 
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -95,6 +100,9 @@ function parseArgs(argv: string[]): Args {
         break;
       case '--start-time':
         startTime = Number(argv[++i]);
+        break;
+      case '--end-time':
+        endTime = Number(argv[++i]);
         break;
       case '--speaker':
         speaker = argv[++i];
@@ -117,6 +125,9 @@ function parseArgs(argv: string[]): Args {
       case '--dry-run':
         dryRun = true;
         break;
+      case '--no-cache':
+        noCache = true;
+        break;
       case '--list-tracks':
         listTracks = true;
         break;
@@ -135,6 +146,11 @@ function parseArgs(argv: string[]): Args {
   if (Number.isNaN(startTime) || startTime < 0) {
     throw new Error(`--start-time must be a non-negative number, got: ${startTime}`);
   }
+  if (endTime !== undefined && (Number.isNaN(endTime) || endTime <= startTime)) {
+    throw new Error(
+      `--end-time must be a number greater than --start-time (${startTime}), got: ${endTime}`
+    );
+  }
   if (Number.isNaN(maxDurSec) || maxDurSec <= 0) {
     throw new Error(`--max-dur must be a positive number, got: ${maxDurSec}`);
   }
@@ -142,6 +158,7 @@ function parseArgs(argv: string[]): Args {
     videoId,
     output,
     startTime,
+    endTime,
     speaker,
     lang,
     preferAuto,
@@ -150,12 +167,14 @@ function parseArgs(argv: string[]): Args {
     dryRun,
     maxDurSec,
     listTracks,
+    noCache,
   };
 }
 
 function extractVideoId(input: string): string {
   if (/^[A-Za-z0-9_-]{11}$/.test(input)) return input;
-  const m = input.match(/[?&]v=([A-Za-z0-9_-]{11})/) || input.match(/youtu\.be\/([A-Za-z0-9_-]{11})/);
+  const m =
+    input.match(/[?&]v=([A-Za-z0-9_-]{11})/) || input.match(/youtu\.be\/([A-Za-z0-9_-]{11})/);
   if (m) return m[1];
   throw new Error(`Could not extract a YouTube video ID from: ${input}`);
 }
@@ -188,6 +207,93 @@ function describeTrack(t: CaptionTrack): string {
   return `  - ${t.languageCode.padEnd(6)} [${kind}] ${name}`;
 }
 
+const CACHE_DIR = path.resolve(process.cwd(), 'scripts', 'cache');
+const CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
+
+function isCacheStale(p: string): boolean {
+  try {
+    const stat = fs.statSync(p);
+    return Date.now() - stat.mtimeMs > CACHE_TTL_MS;
+  } catch {
+    return true;
+  }
+}
+
+function getCachedPlayer(videoId: string): { tracks: CaptionTrack[]; meta: VideoMeta } | undefined {
+  const p = path.join(CACHE_DIR, `${videoId}.json`);
+  if (!fs.existsSync(p) || isCacheStale(p)) return undefined;
+  try {
+    return JSON.parse(fs.readFileSync(p, 'utf-8')) as { tracks: CaptionTrack[]; meta: VideoMeta };
+  } catch {
+    return undefined;
+  }
+}
+
+function setCachedPlayer(videoId: string, data: { tracks: CaptionTrack[]; meta: VideoMeta }): void {
+  fs.mkdirSync(CACHE_DIR, { recursive: true });
+  fs.writeFileSync(path.join(CACHE_DIR, `${videoId}.json`), JSON.stringify(data, null, 2) + '\n');
+}
+
+function getCachedTrack(key: string): string | undefined {
+  const p = path.join(CACHE_DIR, `${key}.xml`);
+  if (!fs.existsSync(p) || isCacheStale(p)) return undefined;
+  try {
+    return fs.readFileSync(p, 'utf-8');
+  } catch {
+    return undefined;
+  }
+}
+
+function setCachedTrack(key: string, xml: string): void {
+  fs.mkdirSync(CACHE_DIR, { recursive: true });
+  fs.writeFileSync(path.join(CACHE_DIR, `${key}.xml`), xml);
+}
+
+function cleanupCache(): void {
+  if (!fs.existsSync(CACHE_DIR)) return;
+  const now = Date.now();
+  for (const entry of fs.readdirSync(CACHE_DIR)) {
+    const p = path.join(CACHE_DIR, entry);
+    try {
+      const stat = fs.statSync(p);
+      if (now - stat.mtimeMs > CACHE_TTL_MS) {
+        fs.unlinkSync(p);
+        process.stdout.write(`[fetch-transcript] cleaned stale cache: ${entry}\n`);
+      }
+    } catch {
+      // ignore
+    }
+  }
+}
+
+function validateSkeleton(s: EpisodeSkeleton): void {
+  const errors: string[] = [];
+  if (!s.id || typeof s.id !== 'string') errors.push('id must be a non-empty string');
+  if (!s.videoId || typeof s.videoId !== 'string' || !/^[A-Za-z0-9_-]{11}$/.test(s.videoId))
+    errors.push('videoId must be an 11-character YouTube ID');
+  if (!s.title || typeof s.title !== 'string') errors.push('title must be a non-empty string');
+  if (!s.speakerName || typeof s.speakerName !== 'string')
+    errors.push('speakerName must be a non-empty string');
+  if (typeof s.duration !== 'number' || s.duration <= 0)
+    errors.push('duration must be a positive number');
+  if (typeof s.startTime !== 'number' || s.startTime < 0)
+    errors.push('startTime must be a non-negative number');
+  if (!Array.isArray(s.turns) || s.turns.length === 0)
+    errors.push('turns must be a non-empty array');
+  else {
+    for (let i = 0; i < s.turns.length; i++) {
+      const t = s.turns[i];
+      if (!t || typeof t.who !== 'string') errors.push(`turns[${i}].who must be a string`);
+      if (typeof t?.start !== 'number') errors.push(`turns[${i}].start must be a number`);
+      if (!t?.text || typeof t.text !== 'string')
+        errors.push(`turns[${i}].text must be a non-empty string`);
+    }
+  }
+  if (errors.length > 0) {
+    throw new Error(`Episode validation failed:\n  - ${errors.join('\n  - ')}`);
+  }
+}
+
 function reportError(err: unknown): never {
   if (err instanceof VideoUnavailableError) {
     process.stderr.write(`[fetch-transcript] ${err.message}\n`);
@@ -212,7 +318,10 @@ async function main(): Promise<void> {
   const videoId = extractVideoId(args.videoId);
 
   const proxy =
-    process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.https_proxy || process.env.http_proxy;
+    process.env.HTTPS_PROXY ||
+    process.env.HTTP_PROXY ||
+    process.env.https_proxy ||
+    process.env.http_proxy;
   let dispatcher: Dispatcher | undefined;
   if (proxy) {
     process.stdout.write(`[fetch-transcript] using proxy: ${proxy}\n`);
@@ -223,8 +332,23 @@ async function main(): Promise<void> {
   const timer = setTimeout(() => ctrl.abort(), 60_000);
 
   try {
+    cleanupCache();
     process.stdout.write(`[fetch-transcript] videoId=${videoId} lang=${args.lang}\n`);
-    const { tracks, meta } = await getPlayerData(videoId, dispatcher, ctrl.signal);
+    let tracks: CaptionTrack[];
+    let meta: VideoMeta;
+    const cachedPlayer = args.noCache ? undefined : getCachedPlayer(videoId);
+    if (cachedPlayer) {
+      tracks = cachedPlayer.tracks;
+      meta = cachedPlayer.meta;
+      process.stdout.write('[fetch-transcript] using cached player data\n');
+    } else {
+      const data = await getPlayerData(videoId, dispatcher, ctrl.signal);
+      tracks = data.tracks;
+      meta = data.meta;
+      if (!args.dryRun) {
+        setCachedPlayer(videoId, data);
+      }
+    }
 
     if (args.listTracks) {
       process.stdout.write(`[fetch-transcript] ${tracks.length} caption track(s):\n`);
@@ -236,10 +360,19 @@ async function main(): Promise<void> {
     process.stdout.write(
       `[fetch-transcript] picked track: ${track.languageCode} ` +
         `[${track.kind === 'asr' ? 'auto' : 'manual'}] ` +
-        `${track.displayName ? `"${track.displayName}"` : ''}\n`,
+        `${track.displayName ? `"${track.displayName}"` : ''}\n`
     );
 
-    const xml = await fetchTrackXml(track.baseUrl, dispatcher, ctrl.signal);
+    const trackCacheKey = `${videoId}-${track.languageCode}-${track.kind ?? 'manual'}`;
+    let xml = args.noCache ? undefined : getCachedTrack(trackCacheKey);
+    if (xml) {
+      process.stdout.write('[fetch-transcript] using cached caption XML\n');
+    } else {
+      xml = await fetchTrackXml(track.baseUrl, dispatcher, ctrl.signal);
+      if (!args.dryRun) {
+        setCachedTrack(trackCacheKey, xml);
+      }
+    }
     const segments = parseTrackXml(xml);
     process.stdout.write(`[fetch-transcript] parsed ${segments.length} caption segments\n`);
 
@@ -253,6 +386,7 @@ async function main(): Promise<void> {
       speaker: finalSpeaker,
       maxDurSec: args.maxDurSec,
       startTime: args.startTime,
+      endTime: args.endTime,
     });
 
     process.stdout.write(`[fetch-transcript] merged into ${turns.length} turns\n`);
@@ -260,7 +394,7 @@ async function main(): Promise<void> {
 
     if (args.dryRun) {
       process.stdout.write(
-        `[fetch-transcript] meta: title="${meta.title}" author="${meta.author}" channelId=${meta.channelId} publishDate=${meta.publishDate ?? 'n/a'}\n`,
+        `[fetch-transcript] meta: title="${meta.title}" author="${meta.author}" thumbnail=${meta.thumbnail} publishDate=${meta.publishDate ?? 'n/a'}\n`
       );
       process.stdout.write('[fetch-transcript] --dry-run: not writing any file\n');
       return;
@@ -275,20 +409,30 @@ async function main(): Promise<void> {
 
     if (exists && args.preserveMeta) {
       const original = JSON.parse(fs.readFileSync(outPath, 'utf-8')) as Record<string, unknown>;
-      const preservedSpeaker = typeof original.speakerName === 'string' ? original.speakerName : undefined;
+      const preservedSpeaker =
+        typeof original.speakerName === 'string' ? original.speakerName : undefined;
       if (preservedSpeaker && preservedSpeaker !== finalSpeaker) {
         finalSpeaker = preservedSpeaker;
         turns = mergeIntoTurns(segments, {
           speaker: finalSpeaker,
           maxDurSec: args.maxDurSec,
           startTime: args.startTime,
+          endTime: args.endTime,
         });
-        process.stdout.write(`[fetch-transcript] remerged turns with preserved speaker: ${finalSpeaker}\n`);
+        process.stdout.write(
+          `[fetch-transcript] remerged turns with preserved speaker: ${finalSpeaker}\n`
+        );
       }
+      const newDuration = args.endTime
+        ? Math.ceil(args.endTime - args.startTime)
+        : meta.lengthSeconds
+          ? Math.ceil(meta.lengthSeconds - args.startTime)
+          : (original.duration as number);
+      original.duration = newDuration;
       original.turns = turns;
       fs.writeFileSync(outPath, JSON.stringify(original, null, 2) + '\n', 'utf-8');
       process.stdout.write(
-        `[fetch-transcript] wrote ${outPath} (turns replaced; ${Object.keys(original).length - 1} other fields preserved)\n`,
+        `[fetch-transcript] wrote ${outPath} (turns + duration replaced; ${Object.keys(original).length - 2} other fields preserved)\n`
       );
       return;
     }
@@ -297,13 +441,34 @@ async function main(): Promise<void> {
       process.stderr.write(
         `[fetch-transcript] ${outPath} already exists.\n` +
           `  Use --preserve-meta to keep existing chapters/title/etc and only replace turns,\n` +
-          `  or --overwrite to fully replace the file.\n`,
+          `  or --overwrite to fully replace the file.\n`
       );
       process.exit(1);
     }
 
     const id = path.basename(outPath, '.json');
-    const subtitle = cleanSubtitle(meta.description, meta.title);
+    const subtitle = 'TBD';
+
+    let speakerAvatar = '';
+    if (meta.thumbnail) {
+      try {
+        const ext = path.extname(new URL(meta.thumbnail).pathname) || '.jpg';
+        const thumbAbs = path.resolve(process.cwd(), 'public', 'avatars', `${id}${ext}`);
+        await downloadImage(meta.thumbnail, thumbAbs, dispatcher, ctrl.signal);
+        speakerAvatar = `/avatars/${id}${ext}`;
+        process.stdout.write(`[fetch-transcript] thumbnail saved: ${thumbAbs}\n`);
+      } catch (e) {
+        process.stdout.write(
+          `[fetch-transcript] warn: thumbnail download failed: ${(e as Error).message}\n`
+        );
+      }
+    }
+
+    const duration = args.endTime
+      ? Math.ceil(args.endTime - args.startTime)
+      : meta.lengthSeconds
+        ? Math.ceil(meta.lengthSeconds - args.startTime)
+        : Math.ceil((turns[turns.length - 1]?.start ?? 0) + 30);
 
     const skeleton: EpisodeSkeleton = {
       id,
@@ -311,26 +476,13 @@ async function main(): Promise<void> {
       title: meta.title || 'TBD',
       subtitle,
       speakerName: finalSpeaker,
-      speakerAvatar: `/avatars/${id}.jpg`,
+      speakerAvatar,
       startTime: args.startTime,
-      duration: Math.ceil((turns[turns.length - 1]?.start ?? 0) + 30),
+      duration,
       turns,
     };
 
-    if (meta.channelId) {
-      try {
-        const avatarUrl = await getChannelAvatar(meta.channelId, dispatcher, ctrl.signal);
-        if (avatarUrl) {
-          const avatarAbs = path.resolve(process.cwd(), 'public', 'avatars', `${id}.jpg`);
-          await downloadImage(avatarUrl, avatarAbs, dispatcher, ctrl.signal);
-          process.stdout.write(`[fetch-transcript] avatar saved: ${avatarAbs}\n`);
-        } else {
-          process.stdout.write(`[fetch-transcript] warn: no avatar found for channel ${meta.channelId}\n`);
-        }
-      } catch (e) {
-        process.stdout.write(`[fetch-transcript] warn: avatar download failed: ${(e as Error).message}\n`);
-      }
-    }
+    validateSkeleton(skeleton);
 
     fs.mkdirSync(path.dirname(outPath), { recursive: true });
     fs.writeFileSync(outPath, JSON.stringify(skeleton, null, 2) + '\n', 'utf-8');

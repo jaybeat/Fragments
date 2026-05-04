@@ -27,16 +27,16 @@ export class VideoUnavailableError extends CaptionError {}
 export class CaptionsDisabledError extends CaptionError {}
 export class NoCaptionTracksError extends CaptionError {}
 export class LanguageNotAvailableError extends CaptionError {
-  constructor(public lang: string, public available: string[]) {
+  constructor(
+    public lang: string,
+    public available: string[]
+  ) {
     super(`Caption language "${lang}" is not available. Available: ${available.join(', ')}`);
   }
 }
 
 const INNERTUBE_URL = 'https://www.youtube.com/youtubei/v1/player?prettyPrint=false';
-const BROWSE_URL = 'https://www.youtube.com/youtubei/v1/browse?prettyPrint=false';
 const ANDROID_USER_AGENT = 'com.google.android.youtube/20.10.38 (Linux; U; Android 14)';
-const WEB_USER_AGENT =
-  'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
 const ENTITY_REPLACEMENTS: Record<string, string> = {
   '&amp;': '&',
@@ -71,7 +71,6 @@ interface InnerTubePlayerResponse {
     videoId?: string;
     title?: string;
     lengthSeconds?: string;
-    shortDescription?: string;
     author?: string;
     channelId?: string;
     thumbnail?: { thumbnails?: Array<{ url: string; width: number; height: number }> };
@@ -89,15 +88,15 @@ export interface VideoMeta {
   title: string;
   author: string;
   channelId: string;
-  description: string;
   publishDate?: string;
   lengthSeconds: number;
+  thumbnail: string;
 }
 
 async function fetchPlayer(
   videoId: string,
   dispatcher: Dispatcher | undefined,
-  signal: AbortSignal,
+  signal: AbortSignal
 ): Promise<InnerTubePlayerResponse> {
   const body = {
     context: {
@@ -122,14 +121,17 @@ async function fetchPlayer(
 
   const status = json.playabilityStatus?.status;
   if (status && status !== 'OK') {
-    throw new VideoUnavailableError(`Video unavailable (${status}): ${json.playabilityStatus?.reason ?? 'unknown'}`);
+    throw new VideoUnavailableError(
+      `Video unavailable (${status}): ${json.playabilityStatus?.reason ?? 'unknown'}`
+    );
   }
   return json;
 }
 
 function extractTracks(json: InnerTubePlayerResponse, videoId: string): CaptionTrack[] {
   const renderer = json.captions?.playerCaptionsTracklistRenderer;
-  if (!renderer) throw new CaptionsDisabledError(`Captions are disabled or unavailable for ${videoId}`);
+  if (!renderer)
+    throw new CaptionsDisabledError(`Captions are disabled or unavailable for ${videoId}`);
 
   const tracks = renderer.captionTracks ?? [];
   if (tracks.length === 0) throw new NoCaptionTracksError(`No caption tracks for ${videoId}`);
@@ -150,16 +152,16 @@ function extractMeta(json: InnerTubePlayerResponse): VideoMeta {
     title: vd.title ?? '',
     author: vd.author ?? mf.ownerChannelName ?? '',
     channelId: vd.channelId ?? mf.externalChannelId ?? '',
-    description: vd.shortDescription ?? '',
     publishDate: mf.publishDate,
     lengthSeconds: parseInt(vd.lengthSeconds ?? '', 10) || 0,
+    thumbnail: pickLargestThumbnail(vd.thumbnail?.thumbnails) ?? '',
   };
 }
 
 export async function getCaptionTracks(
   videoId: string,
   dispatcher: Dispatcher | undefined,
-  signal: AbortSignal,
+  signal: AbortSignal
 ): Promise<CaptionTrack[]> {
   const json = await fetchPlayer(videoId, dispatcher, signal);
   return extractTracks(json, videoId);
@@ -168,7 +170,7 @@ export async function getCaptionTracks(
 export async function getPlayerData(
   videoId: string,
   dispatcher: Dispatcher | undefined,
-  signal: AbortSignal,
+  signal: AbortSignal
 ): Promise<{ tracks: CaptionTrack[]; meta: VideoMeta }> {
   const json = await fetchPlayer(videoId, dispatcher, signal);
   const tracks = extractTracks(json, videoId);
@@ -179,7 +181,10 @@ export async function getPlayerData(
 export function pickTrack(tracks: CaptionTrack[], lang: string, preferManual = true): CaptionTrack {
   const matching = tracks.filter((t) => t.languageCode === lang);
   if (matching.length === 0) {
-    throw new LanguageNotAvailableError(lang, tracks.map((t) => t.languageCode));
+    throw new LanguageNotAvailableError(
+      lang,
+      tracks.map((t) => t.languageCode)
+    );
   }
   if (preferManual) {
     const manual = matching.find((t) => !t.kind);
@@ -194,7 +199,7 @@ export function pickTrack(tracks: CaptionTrack[], lang: string, preferManual = t
 export async function fetchTrackXml(
   baseUrl: string,
   dispatcher: Dispatcher | undefined,
-  signal: AbortSignal,
+  signal: AbortSignal
 ): Promise<string> {
   const url = baseUrl.includes('fmt=') ? baseUrl : `${baseUrl}&fmt=srv3`;
   const res = await undiciFetch(url, { dispatcher, signal });
@@ -266,75 +271,11 @@ function pickLargestThumbnail(items: ThumbnailItem[] | undefined): string | unde
   return items.reduce((best, cur) => ((cur.width ?? 0) > (best.width ?? 0) ? cur : best)).url;
 }
 
-export async function getChannelAvatar(
-  channelId: string,
-  dispatcher: Dispatcher | undefined,
-  signal: AbortSignal,
-): Promise<string | undefined> {
-  if (!channelId) return undefined;
-
-  const body = {
-    context: {
-      client: {
-        clientName: 'WEB',
-        clientVersion: '2.20240801.00.00',
-        hl: 'en',
-        gl: 'US',
-      },
-    },
-    browseId: channelId,
-  };
-
-  let json: unknown;
-  try {
-    const res = await undiciFetch(BROWSE_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'User-Agent': WEB_USER_AGENT },
-      body: JSON.stringify(body),
-      dispatcher,
-      signal,
-    });
-    if (!res.ok) return undefined;
-    json = await res.json();
-  } catch {
-    return undefined;
-  }
-
-  const header = (json as { header?: Record<string, unknown> } | undefined)?.header;
-  if (!header) return undefined;
-
-  const c4 = (header as { c4TabbedHeaderRenderer?: { avatar?: { thumbnails?: ThumbnailItem[] } } })
-    .c4TabbedHeaderRenderer;
-  const c4Url = pickLargestThumbnail(c4?.avatar?.thumbnails);
-  if (c4Url) return c4Url;
-
-  const ph = (
-    header as {
-      pageHeaderRenderer?: {
-        content?: {
-          pageHeaderViewModel?: {
-            image?: {
-              decoratedAvatarViewModel?: {
-                avatar?: {
-                  avatarViewModel?: { image?: { sources?: ThumbnailItem[] } };
-                };
-              };
-            };
-          };
-        };
-      };
-    }
-  ).pageHeaderRenderer;
-  const phSources =
-    ph?.content?.pageHeaderViewModel?.image?.decoratedAvatarViewModel?.avatar?.avatarViewModel?.image?.sources;
-  return pickLargestThumbnail(phSources);
-}
-
 export async function downloadImage(
   url: string,
   destPath: string,
   dispatcher: Dispatcher | undefined,
-  signal: AbortSignal,
+  signal: AbortSignal
 ): Promise<void> {
   const res = await undiciFetch(url, { dispatcher, signal });
   if (!res.ok) throw new CaptionError(`Image download failed: ${res.status} ${res.statusText}`);
