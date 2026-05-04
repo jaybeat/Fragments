@@ -25,6 +25,7 @@ There is no test runner, linter, or formatter configured.
 `src/App.tsx` is the orchestrator. It holds a `useReducer` state (`PlayerState`) and a hidden YouTube iframe via `useYouTubePlayer`. A `useRAF` loop polls `getCurrentTime()` from the iframe and dispatches `TICK` actions.
 
 State is split across two contexts in `src/PlayerContext.tsx`:
+
 - **`PlayerContext`** — read-only state (`currentTime`, `duration`, `isPlaying`, `episodeId`, `tweaks`) and `dispatch`
 - **`ControlsContext`** — imperative playback controls (`play`, `pause`, `seekTo`) backed by the YouTube player
 
@@ -33,6 +34,7 @@ Components consume state from `PlayerContext` and actions from `ControlsContext`
 ### YouTube Integration
 
 `src/hooks/useYouTubePlayer.ts` dynamically injects the YouTube IFrame API script once, mounts a hidden `320×200` iframe (`opacity: 0.01`, off-screen), and exposes:
+
 - `play()`, `pause()`, `seekTo(seconds)`
 - `getCurrentTime()`, `getDuration()`
 - `isReady`, `isPlaying`
@@ -70,9 +72,7 @@ A single global stylesheet (`src/styles.css`) ports the reference site's CSS nea
      "speakerAvatar": "/avatars/<name>.svg",
      "startTime": 0,
      "duration": 900,
-     "turns": [
-       { "who": "Speaker", "start": 0, "text": "First line." }
-     ]
+     "turns": [{ "who": "Speaker", "start": 0, "text": "First line." }]
    }
    ```
 2. Import it in `src/data/episodes.ts` and add to the `EPISODES` array.

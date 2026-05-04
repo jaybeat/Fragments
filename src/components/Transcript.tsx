@@ -20,7 +20,9 @@ export default function Transcript() {
     if (bucket === lastScrollBucket.current) return;
     lastScrollBucket.current = bucket;
 
-    const activeIdx = turns.findIndex(({ start, end }) => displayTime >= start && displayTime < end);
+    const activeIdx = turns.findIndex(
+      ({ start, end }) => displayTime >= start && displayTime < end
+    );
     if (activeIdx === -1) return;
     const activeTurnEl = scrollRef.current?.children[activeIdx];
     if (!activeTurnEl || !scrollRef.current) return;
@@ -53,7 +55,11 @@ export default function Transcript() {
                   if (displayTime >= (w.end ?? 0)) cls += 'said';
                   else if (displayTime >= (w.start ?? 0)) cls += 'current';
                   else cls += isPast ? 'said' : 'future';
-                  return <span key={wi} className={cls}>{w.text}</span>;
+                  return (
+                    <span key={wi} className={cls}>
+                      {w.text}
+                    </span>
+                  );
                 })}
               </div>
             </div>

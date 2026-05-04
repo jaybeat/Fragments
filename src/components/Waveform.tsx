@@ -13,7 +13,8 @@ export default function Waveform() {
     if (!ctx) return;
 
     const dpr = window.devicePixelRatio || 1;
-    let cw = 0, ch = 0;
+    let cw = 0,
+      ch = 0;
     let phase = 0;
     let raf = 0;
 
@@ -22,7 +23,8 @@ export default function Waveform() {
       const cx = ctx;
       if (!c || !cx) return;
       const rect = c.getBoundingClientRect();
-      cw = rect.width; ch = rect.height;
+      cw = rect.width;
+      ch = rect.height;
       c.width = cw * dpr;
       c.height = ch * dpr;
       cx.setTransform(1, 0, 0, 1, 0, 0);
@@ -38,7 +40,8 @@ export default function Waveform() {
       const cx = ctx;
       if (!cx) return;
       cx.clearRect(0, 0, cw, ch);
-      const barGap = 2, barWidth = 2;
+      const barGap = 2,
+        barWidth = 2;
       const step = barGap + barWidth;
       const count = Math.floor(cw / step);
       phase += isPlaying ? 0.06 * tweaks.waveSpeed : 0.004;
@@ -52,7 +55,7 @@ export default function Waveform() {
         const n2 = Math.sin(i * 0.42 + phase * 1.1 + rand(i) * 6) * 0.5 + 0.5;
         const n3 = Math.sin(i * 0.08 + phase * 0.8) * 0.5 + 0.5;
         const noise = rand(i + Math.floor(phase * 3)) * 0.3;
-        const amp = (n1 * 0.55 + n2 * 0.35 + n3 * 0.10);
+        const amp = n1 * 0.55 + n2 * 0.35 + n3 * 0.1;
 
         let h = amp * env * ch * 1.25 * tweaks.waveIntensity;
         h += noise * (isPlaying ? 6 : 12);

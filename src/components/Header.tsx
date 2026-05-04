@@ -9,7 +9,12 @@ export default function Header() {
   const episode = getEpisodeById(state.episodeId)!;
 
   return (
-    <div className="header" style={{ background: `linear-gradient(180deg, ${state.tweaks.accentHeader} 0%, #16161a 100%)` }}>
+    <div
+      className="header"
+      style={{
+        background: `linear-gradient(180deg, ${state.tweaks.accentHeader} 0%, #16161a 100%)`,
+      }}
+    >
       <div className="header-top">
         <div>
           <div className="header-name">
