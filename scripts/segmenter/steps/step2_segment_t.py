@@ -80,6 +80,12 @@ def run(
             f"Capping last T segment end_turn_index from {last_end} to {n_turns - 1}"
         )
         t_segments[-1]["end_turn_index"] = n_turns - 1
+    elif last_end < n_turns - 1:
+        # LLM sometimes omits trailing turns (e.g. credits); extend last segment to cover them
+        logger.warning(
+            f"Extending last T segment end_turn_index from {last_end} to {n_turns - 1}"
+        )
+        t_segments[-1]["end_turn_index"] = n_turns - 1
     elif last_end != n_turns - 1:
         raise ValueError(
             f"Last T segment must end at turn {n_turns - 1}, got {last_end}"

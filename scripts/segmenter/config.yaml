@@ -27,6 +27,7 @@ domain_taxonomy:
 
 speaker_name_map:
   jobs-lost-interview: Steve Jobs
+  jobs-stanford: Steve Jobs
   # 后续添加其他音频时在这里维护
 
 quality_thresholds:

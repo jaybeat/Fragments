@@ -15,7 +15,6 @@ export default function Player() {
   const [tooltipPos, setTooltipPos] = useState<{ left: number; top: number } | null>(null);
 
   const displayChapters = useMemo<Chapter[]>(() => {
-    if (episode.chapters && episode.chapters.length > 0) return episode.chapters;
     if (episode.t_segments && episode.t_segments.length > 0) {
       return episode.t_segments.map((s) => ({
         start: s.start_sec,
@@ -24,6 +23,7 @@ export default function Player() {
         description: s.summary,
       }));
     }
+    if (episode.chapters && episode.chapters.length > 0) return episode.chapters;
     return [];
   }, [episode]);
 

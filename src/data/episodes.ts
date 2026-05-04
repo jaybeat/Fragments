@@ -1,5 +1,5 @@
 import type { Episode } from '../types';
-import jobs from './episodes/jobs-stanford.json';
+import jobs from './episodes/jobs-stanford.analyzed.json';
 import lostInterview from './episodes/jobs-lost-interview.analyzed.json';
 
 function normalizeEpisode(ep: Episode): Episode {
