@@ -29,6 +29,7 @@ speaker_name_map:
   jobs-lost-interview: Steve Jobs
   jobs-stanford: Steve Jobs
   jobs-interview-1990: Steve Jobs
+  buffett-florida-1998: Warren Buffett
   # 后续添加其他音频时在这里维护
 
 quality_thresholds:

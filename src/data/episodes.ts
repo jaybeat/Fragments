@@ -2,6 +2,7 @@ import type { Episode } from '../types';
 import jobs from './episodes/jobs-stanford.analyzed.json';
 import lostInterview from './episodes/jobs-lost-interview.analyzed.json';
 import jobsInterview1990 from './episodes/jobs-interview-1990.analyzed.json';
+import buffettFlorida1998 from './episodes/buffett-florida-1998.analyzed.json';
 
 function normalizeEpisode(ep: Episode): Episode {
   const offset = ep.startTime ?? 0;
@@ -27,7 +28,7 @@ function normalizeEpisode(ep: Episode): Episode {
   };
 }
 
-export const EPISODES: Episode[] = [jobs, lostInterview, jobsInterview1990].map(
+export const EPISODES: Episode[] = [jobs, lostInterview, jobsInterview1990, buffettFlorida1998].map(
   normalizeEpisode
 ) as Episode[];
 

@@ -64,7 +64,8 @@ def run(episode: dict, config: dict, client: LLMClient, prompts_dir: str) -> tup
     if missing:
         raise ValueError(f"Step 1 missing turn indices: {sorted(missing)}")
     if extra:
-        raise ValueError(f"Step 1 extra turn indices: {sorted(extra)}")
+        logger.warning(f"Step 1 extra turn indices, filtering: {sorted(extra)}")
+        speaker_assignments = [a for a in speaker_assignments if a["turn_index"] in expected_indices]
 
     # Sort by turn_index
     speaker_assignments.sort(key=lambda x: x["turn_index"])
