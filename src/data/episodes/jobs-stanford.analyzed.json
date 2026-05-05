@@ -1,8 +1,8 @@
 {
   "id": "jobs-stanford",
   "videoId": "UF8uR6Z6KLc",
-  "title": "Steve Jobs' 2005 Stanford Commencement Address",
-  "subtitle": "追随内心，连接人生点滴，活出精彩",
+  "title": "史蒂夫·乔布斯斯坦福大学毕业演讲",
+  "subtitle": "乔布斯分享人生三段经历：点滴相连、爱与失去、死亡，鼓励毕业生追随内心，活出自我。",
   "speakerName": "",
   "speakerAvatar": "/avatars/jobs-stanford.jpg",
   "startTime": 22,
@@ -703,22 +703,22 @@
       "id": "T1",
       "start_sec": 0,
       "end_sec": 317,
-      "topic": "人生点滴的连接：辍学、书法与Macintosh",
-      "summary": "乔布斯从自己被收养、大学辍学、旁听书法课的经历讲起，阐述了看似无关的经历如何在未来连接起来，最终影响了Macintosh的字体设计，强调要相信点滴的连接，追随内心。"
+      "topic": "人生点滴相连：相信直觉，回头看才能串联线索",
+      "summary": "乔布斯讲述自己的出生和大学辍学经历，以及旁听书法课如何影响Macintosh的字体设计。他强调人生中的点滴只有在回顾时才能串联起来，因此要相信直觉，追随内心。"
     },
     {
       "id": "T2",
       "start_sec": 317,
       "end_sec": 523,
-      "topic": "热爱与失去：从苹果被解雇到事业新生",
-      "summary": "讲述了与沃兹尼亚克创立苹果、被公司解雇的痛苦，以及如何因此获得自由，创立NeXT和Pixar，最终重返苹果。他强调了找到并坚持自己所热爱的事业，即使面对挫折也要不失信念。"
+      "topic": "爱与失去：被苹果解雇后的重生与发现真爱",
+      "summary": "乔布斯回忆被自己创立的苹果公司解雇的痛苦，以及这段经历如何促使他创立NeXT和Pixar，并最终重回苹果。他强调热爱自己所做之事是坚持下去的唯一动力，并鼓励人们不断寻找自己的热爱。"
     },
     {
       "id": "T3",
       "start_sec": 523,
       "end_sec": 909,
-      "topic": "死亡的启示与终身学习的智慧",
-      "summary": "乔布斯分享了自己对死亡的思考以及被诊断癌症又奇迹治愈的经历，领悟到生命有限，应追随内心，不活在他人期待中。最后引用《全球目录》的告别语“求知若饥，虚心若愚”激励毕业生。"
+      "topic": "死亡的意义：活出真实自我，保持求知若饥虚心若愚",
+      "summary": "乔布斯分享他对死亡的思考，以及被诊断出癌症后的经历，这让他更深刻地理解生命的有限。他鼓励毕业生不要浪费时间活在别人的影子里，要勇于追随内心和直觉，并以《全球概览》的告别语“求知若饥，虚心若愚”作为对毕业生的寄语。"
     }
   ],
   "p_segments": [
@@ -728,40 +728,40 @@
       "start_sec": 182,
       "end_sec": 317,
       "duration_sec": 135,
-      "question": "如何相信直觉，走非传统道路，让点滴经历最终连接起来？",
-      "insight": "你无法预知未来点滴的连接，只能在回顾时发现。因此，要相信直觉，追随内心，即使它带你偏离主流路径，这些点滴最终会连接成独特且有价值的经历，带来巨大不同。",
+      "question": "如何相信直觉，让看似无用的经历在未来发挥价值？",
+      "insight": "你无法预见未来，只能在回顾时串联起人生中的点滴。所以，要相信你的直觉和内心，即使它让你偏离常轨，最终也会带来巨大的不同。",
       "domain": [
         "学习与思维方法",
         "个人成长与状态"
       ],
       "fine_tags": [
         "连接点滴",
-        "回顾性理解",
-        "追随内心",
-        "直觉",
-        "非传统道路"
+        "相信直觉",
+        "回头看",
+        "非线性路径"
       ],
       "transcript": "And much of what I stumbled into by following my curiosity and intuition turned out to be priceless later on. Let me give you one example: Reed College at that time offered perhaps the best calligraphy instruction in the country. Throughout the campus every poster, every label on every drawer, was beautifully hand calligraphed. Because I had dropped out and didn't have to take the normal classes, I decided to take a calligraphy class to learn how to do this. I learned about serif and san serif typefaces, about varying the amount of space between different letter combinations, about what makes great typography great. It was beautiful, historical, artistically subtle in a way that science can't capture, and I found it fascinating. None of this had even a hope of any practical application in my life. But ten years later, when we were designing the first Macintosh computer, it all came back to me. And we designed it all into the Mac. It was the first computer with beautiful typography. If I had never dropped in on that single course in college, the Mac would have never had multiple typefaces or proportionally spaced fonts. And since Windows just copied the Mac, it's likely that no personal computer would have them. If I had never dropped out, I would have never dropped in on this calligraphy class, and personal computers might not have the wonderful typography that they do. Of course it was impossible to connect the dots looking forward when I was in college. But it was very, very clear looking backwards ten years later. Again, you can't connect the dots looking forward; you can only connect them looking backwards. So you have to trust that the dots will somehow connect in your future. You have to trust in something, your gut, destiny, life, karma, whatever. Beleiveing that the dots will connect down the road will give you the confidence to follow your heart Even when it leads you off the well worn path, and that will make all the difference."
     },
     {
       "id": "T2_P1",
       "parent_t_id": "T2",
-      "start_sec": 470,
-      "end_sec": 523,
-      "duration_sec": 53,
-      "question": "如何找到自己热爱的工作并坚持下去？",
-      "insight": "当你被生活重击时，不要失去信念，因为热爱是你坚持下去的唯一动力。工作将占据你生命的大部分，只有热爱你所做的事，才能真正感到满足并做出伟大的工作。所以，不断寻找，不要妥协。",
+      "start_sec": 413,
+      "end_sec": 470,
+      "duration_sec": 57,
+      "question": "被公司开除后，如何才能凤凰涅槃？",
+      "insight": "被公司解雇虽然痛苦，但它卸下了成功的重负，让我重回初心，反而激发了人生中最具创造力的时期，并最终带来了更大的成功和个人幸福。",
       "domain": [
-        "个人成长与状态"
+        "个人成长与状态",
+        "创业与起步"
       ],
       "fine_tags": [
-        "热爱工作",
-        "不妥协",
-        "坚持信念",
-        "找到激情",
-        "人生意义"
+        "被解雇",
+        "凤凰涅槃",
+        "放下成功",
+        "重新开始",
+        "创造力爆发"
       ],
-      "transcript": "Sometimes life hits you in the head with a brick. Don't lose faith. I'm convinced that the only thing that kept me going was that I loved what I did. You've got to find what you love. And that is as true for your work as it is for your lovers. Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it. And, like any great relationship, it just gets better and better as the years roll on. So keep looking. Don't settle."
+      "transcript": "I didn't see it then, but it turned out that getting fired from Apple was the best thing that could have ever happened to me. The heaviness of being successful was replaced by the lightness of being a beginner again, less sure about everything. It freed me to enter one of the most creative periods of my life. During the next five years, I started a company named NeXT, another company named Pixar, and fell in love with an amazing woman who would become my wife. Pixar went on to create the worlds first computer animated feature film, Toy Story, and is now the most successful animation studio in the world. In a remarkable turn of events, Apple bought NeXT, I returned to Apple, and the technology we developed at NeXT is at the heart of Apple's current renaissance. And Laurene and I have a wonderful family together. I'm pretty sure none of this would have happened if I hadn't been fired from Apple. It was awful tasting medicine, but I guess the patient needed it."
     },
     {
       "id": "T3_P1",
@@ -769,8 +769,8 @@
       "start_sec": 539,
       "end_sec": 592,
       "duration_sec": 53,
-      "question": "如何利用对死亡的思考来做人生选择？",
-      "insight": "每天自问“如果今天是生命最后一天，我是否还想做今天的事”，通过对死亡的觉知，能让人放下外部期待和恐惧，看清真正重要的事，从而有勇气追随内心。",
+      "question": "如何利用死亡意识，做出重要人生选择？",
+      "insight": "每天自问“如果今天是最后一天，我还会做现在的事吗？”能帮助你剥离外部期望和恐惧，看清真正重要的事，从而勇敢追随内心。",
       "domain": [
         "个人成长与状态",
         "决策与判断"
@@ -779,9 +779,8 @@
         "死亡意识",
         "人生选择",
         "追随内心",
-        "外部期待",
-        "恐惧",
-        "日问"
+        "摆脱恐惧",
+        "活出自我"
       ],
       "transcript": "It made an impression on me, and since then, for the past 33 years, I have looked in the mirror every morning and asked myself: \"If today were the last day of my life, would I want to do what I am about to do today?\" And whenever the answer has been \"No\" for too many days in a row, I know I need to change something. Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life. Because almost everything all external expectations, all pride, all fear of embarrassment or failure - these things just fall away in the face of death, leaving only what is truly important. Remembering that you are going to die is the best way I know to avoid the trap of thinking you have something to lose. You are already naked. There is no reason not to follow your heart."
     },
@@ -791,18 +790,17 @@
       "start_sec": 685,
       "end_sec": 730,
       "duration_sec": 45,
-      "question": "死亡的真正意义是什么？",
-      "insight": "死亡是生命最伟大的发明，它是生命的变革推动者，清除旧事物为新事物让路，确保生命的持续更新和演化。",
+      "question": "死亡对生命来说是好事吗？",
+      "insight": "死亡是生命最伟大的发明，它是变革的推动者，清除旧事物，为新事物腾出空间，确保生命不断更新和演进。",
       "domain": [
         "学习与思维方法",
         "个人成长与状态"
       ],
       "fine_tags": [
-        "死亡的意义",
+        "死亡哲学",
         "生命变革",
         "新陈代谢",
-        "哲学思考",
-        "生命演化"
+        "演化机制"
       ],
       "transcript": "Having lived through it, I can now say this to you with a bit more certainty than when death was a useful but purely intellectual concept: No one wants to die. Even people who want to go to heaven don't want to die to get there. And yet death is the destination we all share. No one has ever escaped it. And that is as it should be, because Death is very likely the single best invention of Life. It is Life's change agent. It clears out the old to make way for the new. Right now the new is you, but someday not too long from now, you will gradually become the old and be cleared away. Sorry to be so dramatic, but it is quite true."
     }

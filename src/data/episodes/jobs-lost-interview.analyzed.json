@@ -1,8 +1,8 @@
 {
   "id": "jobs-lost-interview",
   "videoId": "9m68auPIPRk",
-  "title": "Steve Jobs - The Lost Interview (11 May 2012) [VO] [ST-FR] [Ultra HD 4K]",
-  "subtitle": "TBD",
+  "title": "乔布斯：思想的自行车——1995年访谈录",
+  "subtitle": "深入了解苹果联合创始人史蒂夫·乔布斯对创新、商业、团队和未来的深刻洞察。",
   "speakerName": "",
   "speakerAvatar": "/avatars/jobs-lost-interview.webp",
   "startTime": 24,
@@ -1444,309 +1444,336 @@
       "id": "T1",
       "start_sec": 0,
       "end_sec": 325,
-      "topic": "史蒂夫·乔布斯早年与计算机的结缘及与沃兹尼亚克的相识",
-      "summary": "本段介绍了主持人对访谈的背景介绍，随后乔布斯讲述了他10岁时首次接触计算机的经历，以及12岁时打电话给惠普创始人比尔·休利特并获得惠普工作机会的故事。他还回忆了在惠普的经历和与史蒂夫·沃兹尼亚克的相遇，为Apple的诞生埋下伏笔。"
+      "topic": "乔布斯早年对计算机的痴迷与启蒙",
+      "summary": "访谈开场，乔布斯回忆了10岁时首次接触计算机的神秘与震撼，以及在惠普公司的工作经历。这段经历不仅塑造了他对公司的看法，也让他结识了沃兹尼亚克，共同探索电子世界。"
     },
     {
       "id": "T2",
       "start_sec": 325,
       "end_sec": 773,
-      "topic": "从“蓝盒子”到Apple I的创业历程",
-      "summary": "乔布斯详细讲述了他和沃兹尼亚克如何通过“蓝盒子”控制电话网络，从中领悟到用小东西控制大系统的力量。这段经历促使他们为了免费使用分时计算机而自制终端，进而开发出Apple I，并通过销售印刷电路板和组装电脑，逐步开启了他们的创业之路。"
+      "topic": "蓝盒子事件：控制巨型系统的启示与苹果的诞生",
+      "summary": "乔布斯和沃兹尼亚克通过制作“蓝盒子”免费打电话，从中领悟到用小装置控制庞大基础设施的力量。这种“我们也能做到”的信念促使他们设计并手工制作Apple I，最终在偶然机会下获得了第一笔大订单，开启了苹果公司的商业化之路。"
     },
     {
       "id": "T3",
       "start_sec": 773,
-      "end_sec": 1194,
-      "topic": "Apple II的愿景、公司发展与乔布斯的商业哲学",
-      "summary": "本段探讨了Apple II的设计理念，包括沃兹尼亚克的彩色图形愿景和乔布斯将个人电脑包装成完整产品的梦想。他分享了寻找风险投资人迈克·马库拉的经历，以及在西海岸计算机展上Apple II的成功。乔布斯还阐述了他对公司运营的看法，强调质疑传统、深入思考，并将计算机科学视为一种“博雅教育”的价值。"
+      "end_sec": 1248,
+      "topic": "Apple II 的愿景、早期融资与乔布斯的商业哲学",
+      "summary": "乔布斯阐述了Apple II的宏伟目标，包括彩色图形和成为首款真正“封装”的个人电脑。他通过寻找风险投资人Mike Markkula获得了资金和经验，并分享了他对商业的理解：质疑传统、深入内容而非流程，以及金钱的真正价值。"
     },
     {
       "id": "T4",
-      "start_sec": 1194,
-      "end_sec": 1584,
-      "topic": "财富观、施乐PARC之旅与大公司衰败的根源",
-      "summary": "乔布斯简述了他对财富的看法，认为金钱并非最重要的。随后他详细描述了1979年参观施乐PARC的经历，以及被图形用户界面（GUI）的巨大潜力所震撼。他深入分析了施乐和IBM等垄断性大公司为何会衰败，指出是销售和市场人员取代了产品人员，导致公司失去了对伟大产品的感知和创造力。"
+      "start_sec": 1248,
+      "end_sec": 1774,
+      "topic": "施乐PARC的图形界面革命与大公司衰落的症结",
+      "summary": "乔布斯回忆了在施乐PARC首次见到图形用户界面（GUI）的震撼，并预言了其必然性。他深入分析了施乐和IBM等大公司未能商业化这些伟大创新的原因：过度关注销售和营销，忽视产品内容和工艺，导致产品基因被腐蚀。苹果在Lisa项目上也出现了类似问题。"
     },
     {
       "id": "T5",
-      "start_sec": 1584,
-      "end_sec": 1899,
-      "topic": "Apple内部对GUI的阻力、Lisa的失败与Macintosh的诞生",
-      "summary": "乔布斯讲述了将GUI引入Apple时遇到的内部阻力，特别是来自惠普背景的工程师对鼠标等新概念的排斥。他批评了公司过度依赖流程而忽视内容的问题，并以Lisa电脑的失败为例，说明产品与公司文化和市场定位不符的后果。最终，他组建了Macintosh团队，通过重新设计产品、自动化生产和创新营销，旨在“拯救Apple”。"
+      "start_sec": 1774,
+      "end_sec": 2447,
+      "topic": "麦金塔的“神圣使命”与乔布斯的团队管理哲学",
+      "summary": "在Lisa项目失利后，乔布斯组建了麦金塔团队，肩负起“拯救苹果”的使命。他强调产品开发中的“匠心”和“打磨”过程，并用“磨石”的比喻来形容优秀团队通过碰撞和摩擦，共同打磨出卓越产品的过程。他还分享了只招募“A级人才”的理念和直接反馈的工作方式。"
     },
     {
       "id": "T6",
-      "start_sec": 1899,
-      "end_sec": 2590,
-      "topic": "乔布斯的产品开发哲学、团队管理与桌面出版的成功",
-      "summary": "乔布斯分享了他对产品开发的热情和“工艺”的重视，用“磨石机”的比喻阐释了优秀团队如何通过摩擦和协作打磨出卓越产品。他强调寻找“A级人才”，并直言不讳地指出工作不足之处，同时表示自己不介意犯错，只关心成功。本段还详细介绍了Apple如何通过与Adobe合作，推出LaserWriter并开创桌面出版市场，使Apple一度成为全球最大的打印机公司。"
+      "start_sec": 2447,
+      "end_sec": 2899,
+      "topic": "桌面出版的成功与乔布斯被迫离开苹果的痛苦",
+      "summary": "乔布斯讲述了苹果如何通过与Adobe合作，推出LaserWriter并开创桌面出版市场，使苹果一度成为全球最大的打印机公司。随后，他痛苦地回忆了与CEO约翰·斯卡利（John Scully）的权力斗争，以及自己被赶出苹果的经历，认为斯卡利摧毁了苹果的价值观。"
     },
     {
       "id": "T7",
-      "start_sec": 2590,
-      "end_sec": 2899,
-      "topic": "乔布斯离开Apple：与约翰·斯卡利的冲突与公司价值观的破坏",
-      "summary": "乔布斯痛苦地回忆了1985年离开Apple的经历，指责他雇佣的CEO约翰·斯卡利摧毁了他十年来的心血。他描述了在行业衰退和公司缺乏领导力的情况下，斯卡利如何利用生存本能将所有问题归咎于乔布斯，并最终在董事会的支持下将其排挤。乔布斯认为，他的离职不仅是个人挫折，更是Apple价值观被系统性破坏的开始。"
+      "start_sec": 2899,
+      "end_sec": 3395,
+      "topic": "1995年苹果的衰落、微软的崛起与NeXT的软件创新",
+      "summary": "乔布斯在1995年预言苹果正走向衰亡，因其停滞不前导致微软追赶上来。他承认微软的成功得益于IBM的助推和自身的机遇把握与坚持，但也批评微软产品缺乏“品味”和“精神”。他接着介绍了NeXT公司，以及他们如何通过“面向对象技术”革新软件开发，大幅提升效率。"
     },
     {
       "id": "T8",
-      "start_sec": 2899,
-      "end_sec": 3220,
-      "topic": "1995年Apple的困境与对微软成功及产品品味的批判",
-      "summary": "乔布斯在1995年（访谈时）指出Apple正走向衰亡，因为公司停滞不前，失去了Macintosh的十年领先优势和产品差异化。他承认微软的成功得益于IBM的巨大推动和自身的强大机会主义与韧性，但同时严厉批评微软产品缺乏“品味”和“精神”，认为它们平庸且未能提升人类的审美与认知水平。"
-    },
-    {
-      "id": "T9",
-      "start_sec": 3220,
-      "end_sec": 3518,
-      "topic": "NeXT的软件创新：面向对象技术与互联网的未来愿景",
-      "summary": "乔布斯介绍了NeXT公司在软件创新方面的努力，特别是对施乐PARC的“面向对象技术”的完善和商业化，这使得软件开发效率大幅提升。他进一步展望了互联网和万维网的未来，认为它将实现计算机作为通信设备的梦想，成为终极的直接客户分销渠道，并预言Web将是未来十年最具决定性的技术和社会时刻，为个人计算注入新的生命。"
-    },
-    {
-      "id": "T10",
-      "start_sec": 3518,
+      "start_sec": 3395,
       "end_sec": 3966,
-      "topic": "乔布斯的核心哲学：人类作为工具建造者与博雅教育的融合",
-      "summary": "乔布斯分享了他深受启发的“思想的自行车”比喻，强调人类是工具建造者，计算机是迄今最伟大的工具。他认为“品味”至关重要，鼓励人们接触最好的事物并“窃取”伟大的想法。他将Mac团队比作由音乐家、诗人、艺术家等组成的“博雅教育”群体，正是这种多元背景和“嬉皮士”精神，让产品充满灵魂，能够传递情感，成为人们表达自我的媒介。"
+      "topic": "互联网的未来愿景与计算机作为“思想的自行车”",
+      "summary": "乔布斯展望了互联网和万维网的巨大潜力，认为它将成为最重要的通信工具和“终极直销渠道”，推动社会变革。他引用“思想的自行车”比喻，强调计算机作为人类能力的放大器，是人类最伟大的发明之一。他认为产品应融入人文精神，并自称是“嬉皮士”，追求超越物质的意义。"
     }
   ],
   "p_segments": [
+    {
+      "id": "T1_P1",
+      "parent_t_id": "T1",
+      "start_sec": 69,
+      "end_sec": 178,
+      "duration_sec": 109,
+      "question": "计算机的魅力和本质吸引力是什么？",
+      "insight": "即使在早期原始的计算机时代，其核心魅力在于它能将人的想法转化为可执行的指令并给出结果，这种将概念变为现实的能力带来了难以置信的震撼和愉悦。",
+      "domain": [
+        "学习与思维方法",
+        "行业判断与未来"
+      ],
+      "fine_tags": [
+        "计算机启蒙",
+        "编程本质",
+        "想法执行",
+        "创造的震撼"
+      ],
+      "transcript": "personal computers H well um I ran into my first computer when I was about 10 or 11 um and it's hard to remember back then but I'm I'm an fossil now I'm an old fossil so when I was 10 or 11 it was about 30 years ago and no one had ever seen a computer to the extent that they'd seen them they'd seen them in movies and they were these big boxes with woring for some reason they fixated on the tape drives as being the icon of what the computer was or or flashing lights somehow and so nobody had ever seen one they're very mysterious very powerful things that did something in the background and um so to see one and actually get to use one was a real privilege back then and I I got into NASA am Research Center down here and I got to use a a time sharing terminal so I didn't actually see the computer but I saw a a time sharing terminal and in those days again it's it's hard to remember how primitive it was there was no such thing as a as a a computer with a graphics video play it was literally a printer it was a teletype printer with a keyboard on it so you would keyboard these commands in and then you would wait for a while and then the thing would go and it would tell you something out but even with that it was still remarkable especially for a 10-year-old that you could write a program in basic let's say or Fortran and actually this machine would sort of take your idea and it would it would sort of execute your idea and give you back some results and if they were the results that you predicted your program really worked it was an incredibly thrilling experience um so I became very um captivated by by a computer and a computer to me was still a little mysterious because it was at the other end of this wire and I I'd never really"
+    },
+    {
+      "id": "T2_P1",
+      "parent_t_id": "T2",
+      "start_sec": 473,
+      "end_sec": 514,
+      "duration_sec": 41,
+      "question": "小团队如何能控制大基础设施？",
+      "insight": "即使是两个一无所有的小孩，也能通过一个小装置控制价值数十亿美元的全球基础设施，这是我们学到的最深刻的教训。",
+      "domain": [
+        "创业与起步",
+        "战略与竞争"
+      ],
+      "fine_tags": [
+        "蓝盒子",
+        "控制基础设施",
+        "小团队大影响"
+      ],
+      "transcript": "and stuff and then you could call the pay phone next door and so you could shout in the phone and after about a minute it would come out the other phone it was it was miraculous um and and you might ask well what's so interesting about that what's so interesting is that we were young and what we learned was that we could build something ourselves that could control billions of dollars worth of infrastructure in the world that was what we learned was that us too you know we didn't know much we could build a little thing that could control a giant thing and that was an incredible lesson I don't think there"
+    },
     {
       "id": "T3_P1",
       "parent_t_id": "T3",
       "start_sec": 962,
       "end_sec": 1056,
       "duration_sec": 94,
-      "question": "为什么公司里很多流程没人知道为什么存在？",
-      "insight": "商业中很多约定俗成的做法只是“民间传说”，因为没人深入思考，所以通过不断提问和深入思考，可以快速学习并优化业务流程。",
+      "question": "为什么公司里很多事都说不清原因？",
+      "insight": "商业中很多事情之所以被做，只是因为“一直以来都是这么做的”，是“民间传说”；通过不断追问“为什么”，可以快速理解商业本质并改进。",
       "domain": [
         "组织与公司演化",
         "学习与思维方法"
       ],
       "fine_tags": [
-        "质疑传统",
-        "打破常规",
-        "深入思考",
-        "商业惯例",
-        "民间传说"
+        "质疑惯例",
+        "商业本质",
+        "民间传说",
+        "标准成本"
       ],
       "transcript": "how do you learn to run a company um you know throughout the years in business I found something which was I'd always ask why you do things and the answers you invariably get are oh that's just the way it's done nobody knows why they do what they do nobody thinks about things very deeply in business that's what I found I'll give you an example um when we were building our Apple ones in the garage we knew exactly what they cost uh when we got into a factory in the Apple 2 days um the accounting had this notion of a standard cost where you'd kind of set a standard cost and at the end of a quarter you'd adjust it with a variance and I kept asking well why do we do this and the answer was well that's just the way it's done and and after about 6 months of digging into this what I realized was the reason you do it is because you don't really have good enough control to know how much it costs so you guess and then you fix your guess at the end of the quarter and the reason you don't know how much it cost is because your information systems aren't good enough so but nobody said it that way and so later on when we designed this automated Factory for Macintosh we were able to get rid of a lot of these Antiquated Concepts and know exactly what something cost to the second um so in business a lot of things are I I call it folklore they're done because they were done yesterday and the"
     },
     {
       "id": "T3_P2",
       "parent_t_id": "T3",
-      "start_sec": 1109,
-      "end_sec": 1166,
-      "duration_sec": 57,
-      "question": "为什么说学编程能教人思考？",
-      "insight": "学习编程最大的价值不在于实用技能，而在于它能像法学院一样，训练你以特定的方式思考，将计算机科学视为一种博雅教育，帮助你理解思维过程。",
+      "start_sec": 1208,
+      "end_sec": 1248,
+      "duration_sec": 40,
+      "question": "钱的真正价值是什么？",
+      "insight": "金钱本身并非最重要的，它的真正价值在于能够投资那些没有短期回报的长期想法；但更重要的是公司、产品和能为人们带来的价值。",
       "domain": [
-        "学习与思维方法",
-        "个人成长与状态"
+        "个人成长与状态",
+        "创业与起步"
       ],
       "fine_tags": [
-        "编程思维",
-        "博雅教育",
-        "学习思考",
-        "法学院类比"
+        "金钱观",
+        "长期投资",
+        "产品价值",
+        "公司使命"
       ],
-      "transcript": "and to calculate you know how how much eror we would get in the frequencies and how much could be tolerated so we use them in our work but but much more importantly it had nothing to do with using them for anything practical it had to do with using them to be a mirror of your thought process to actually learn how to think words I think the greatest value of learning how to I think everybody in this country should learn how to program a computer should learn a computer language because it teaches you how to think it's like going to law school I don't think anybody should be a lawyer but I think going to law would actually be useful because it teaches you how to think in a certain way in the same way that computer programming teaches you in a slightly different way how to think and so I I view computer science as a liberal art it should be something that everybody learn you know takes a takes a year in their life one of the courses they take is you know learning how to program yeah but I learned APL which you"
+      "transcript": "and over $100 million when I was 25 um and it's it wasn't that important uh because I never did it for the money uh I I I think money is wonderful thing because it enables you to do things it enables you to invest in ideas that don't have a short-term payback and things like that but especially at that point in my life it was it was not the most important thing the most important thing was the company the people the products we were making what we were going to enable people to do with these products so uh I didn't think about it a great deal you I never sold any stock"
     },
     {
       "id": "T4_P1",
       "parent_t_id": "T4",
       "start_sec": 1403,
-      "end_sec": 1498,
-      "duration_sec": 95,
-      "question": "为什么大公司会失去做好产品的能力？",
-      "insight": "在垄断性大公司中，当销售和市场人员取代产品人员主导公司时，公司会逐渐失去对伟大产品的感知和创造力，最终导致衰败。",
+      "end_sec": 1542,
+      "duration_sec": 139,
+      "question": "为什么拥有伟大创新的大公司反而会衰落？",
+      "insight": "垄断性大公司往往会把重心从产品内容和工艺转移到销售和营销，导致产品基因被腐蚀，由不理解产品的人管理公司，最终错失巨大机会。",
       "domain": [
         "组织与公司演化",
-        "产品与打磨"
-      ],
-      "fine_tags": [
-        "垄断公司衰败",
-        "销售主导",
-        "产品人员",
-        "产品感知力丧失"
-      ],
-      "transcript": "happens is like with John Scully um John came from PepsiCo and they they at most would change their product you know once every 10 years I mean to them a new product was like a new new size bottle right so if you were a product person you couldn't change the course of that company very much so who influenced the success of PepsiCo the sales and marketing people therefore they were the ones that got promoted and therefore they were the ones that ran the company well for PepsiCo that might have been okay but it turns out the same thing can happen in technology companies that get get monopolies like oh IBM and Xerox if you were a product person at IBM or Xerox so you make a better copy or a better computer so what when you have a monopoly market share the company's not anymore successful so the people that can make the company more successful are sales and marketing people and they end up running the companies and the product people get driven out of the decision-making forums and the companies forget what it means to make great products it sort of the product sensibility and the the product gen genus that brought them to to that monopolistic position gets rotted out by people running these companies who have no conception of a good product versus a bad product they have no conception of the craftsmanship that's required to take a good idea and turn it into a good product and they really have no feeling in their hearts usually about wanting to really help the customers so that's what happened at Xerox that the people at Xerox Park used"
-    },
-    {
-      "id": "T5_P1",
-      "parent_t_id": "T5",
-      "start_sec": 1597,
-      "end_sec": 1667,
-      "duration_sec": 70,
-      "question": "为什么公司里的人会对显而易见的新技术产生抵触？",
-      "insight": "传统背景的工程师往往难以接受颠覆性创新，他们会用旧有思维来评估新事物（如鼠标），认为不可能或成本高昂，但通过实际行动可以迅速证明他们是错的。",
-      "domain": [
-        "组织与公司演化",
-        "产品与打磨"
-      ],
-      "fine_tags": [
-        "创新阻力",
-        "固有思维",
-        "惠普文化",
-        "鼠标发明"
-      ],
-      "transcript": "get them working on this the problem was that we'd hired a bunch of people from hulet Packard and um they didn't get this idea they didn't get it I remember having dramatic arguments with some of these people who thought the coolest thing in user interface was soft keys at the bottom of a screen you know they had no concept of proportionately spaced fonts no concept of a mouse matter of fact I remember arguing with these folks people screaming at me that it would take us 5 years to engineer a mouse and it would cost $300 to build and I finally got fed up I just went outside and found David Kelly design and uh asked him to design me a mouse and in 90 days we had a mouse we could build for 15 bucks that was phenomenally reliable so I found that in a way apple apple did not have the caliber of people that was necessary to seize this idea in many ways and there was a core team that did but there was a a larger team that most had mostly had come from hulet Packard that that didn't have a clue well this this becomes this issue of professionalism there's a dark side"
-    },
-    {
-      "id": "T5_P2",
-      "parent_t_id": "T5",
-      "start_sec": 1681,
-      "end_sec": 1735,
-      "duration_sec": 54,
-      "question": "为什么公司越大越容易陷入流程陷阱？",
-      "insight": "公司在扩张时常误以为成功源于流程，开始过度制度化，最终导致人们将流程等同于内容，从而忽视了产品本身的实质。真正优秀的人才理解内容，即便难以管理，也是创造伟大产品的关键。",
-      "domain": [
-        "组织与公司演化",
-        "产品与打磨"
-      ],
-      "fine_tags": [
-        "流程陷阱",
-        "内容为王",
-        "IBM的衰落",
-        "优秀人才管理"
-      ],
-      "transcript": "success and a lot of them think well somehow there's some magic in the process of how that success was created so they start to try to institutionalize process across the company and before very long people get very confused that the process is the content that's ultimately the downfall of IBM IBM has the best processed people in the world they just forgot about the content and that's what happened a little bit at Apple too we had a lot of people who were great at management process they just didn't have a clue as to the content and in my career I found that the best people you know are the ones that really understand the content and they're a pain in the butt to manage you know but you put up with it because they're so great at the content and that's what makes great products it's not process it's content so we had a little bit of that problem at Apple and"
-    },
-    {
-      "id": "T5_P3",
-      "parent_t_id": "T5",
-      "start_sec": 1802,
-      "end_sec": 1884,
-      "duration_sec": 82,
-      "question": "如何通过一个新项目彻底改造一家公司？",
-      "insight": "当公司陷入困境时，需要组建一支拥有“上帝使命”的团队，通过彻底地重新发明产品、生产、分销和营销等所有环节，才能实现公司的自我救赎和再造。",
-      "domain": [
-        "创业与起步",
         "战略与竞争"
       ],
       "fine_tags": [
-        "Macintosh使命",
-        "公司再造",
-        "自动化工厂",
-        "颠覆式创新"
+        "大公司病",
+        "产品基因",
+        "销售导向",
+        "内容与工艺",
+        "施乐PARC",
+        "垄断公司"
       ],
-      "transcript": "and um at that point in time you know I brooded for a few months but it it was it was not very long after that that it really occurred to me that if we didn't do something here The Apple 2 was running out of gas and we needed to do something with this technology fast or else Apple might cease to exist as the company that it was and so I formed a small team to do the Macintosh and you know we we were on a mission from God you know to save Apple no one else thought so but it turned out we were right and it as we evolved the Mac it it became very clear that this was also a way of Reinventing Apple we we reinvented everything we reinvented manufacturing I made I visited probably 80 automated factories in Japan and we built the world's first automated computer Factory in the world in California here so we adopted the uh 68,000 microprocessor that Lisa had we negotiated a price that was a fifth of what Lisa was going to pay for it because we were going to use it in much higher volume and we really started to design this product that could be sold for $1,000 uh called the Macintosh and um we didn't make it we we could have sold it at $2,000 although we came out at 2500 and um yeah we spent four years of our life doing that we built the product we built the automated Factory the"
+      "transcript": "happens is like with John Scully um John came from PepsiCo and they they at most would change their product you know once every 10 years I mean to them a new product was like a new new size bottle right so if you were a product person you couldn't change the course of that company very much so who influenced the success of PepsiCo the sales and marketing people therefore they were the ones that got promoted and therefore they were the ones that ran the company well for PepsiCo that might have been okay but it turns out the same thing can happen in technology companies that get get monopolies like oh IBM and Xerox if you were a product person at IBM or Xerox so you make a better copy or a better computer so what when you have a monopoly market share the company's not anymore successful so the people that can make the company more successful are sales and marketing people and they end up running the companies and the product people get driven out of the decision-making forums and the companies forget what it means to make great products it sort of the product sensibility and the the product gen genus that brought them to to that monopolistic position gets rotted out by people running these companies who have no conception of a good product versus a bad product they have no conception of the craftsmanship that's required to take a good idea and turn it into a good product and they really have no feeling in their hearts usually about wanting to really help the customers so that's what happened at Xerox that the people at Xerox Park used to call the people that ran Xerox toner heads uh and they just had these toner heads would come out to Xerox Park and they just had no CL clue about what they were seeing and for our our audience toner is what oh toner toner is what you put into a copier yeah you know the toner that you add to a to an industrial copier the black stuff the black stuff yeah so basically they were copier heads that just had no clue about uh a computer what it could do and so they they just grabbed uh grabbed defeat from the greatest victory in the computer industry Xerox could have owned the entire computer industry today um could have been you know a company 10 times its size could have been IBM could have been the IBM of the '90s could have been the Microsoft of the 90s so um but anyway that's all ancient history it doesn't really matter anymore sure you"
     },
     {
-      "id": "T6_P1",
-      "parent_t_id": "T6",
-      "start_sec": 1938,
-      "end_sec": 2039,
-      "duration_sec": 101,
-      "question": "为什么有了好点子，产品还是做不好？",
-      "insight": "伟大的想法只占产品开发的10%，真正的挑战在于将5000个细节在头脑中整合，通过持续的打磨、权衡和解决新问题，将想法转化为卓越的产品，这个过程才是魔力所在。",
-      "domain": [
-        "产品与打磨",
-        "决策与判断"
-      ],
-      "fine_tags": [
-        "好点子",
-        "产品打磨",
-        "工艺",
-        "5000个细节",
-        "持续演进"
-      ],
-      "transcript": "know one of the things that really hurt Apple was after I left John Scully got a very serious disease and that disease I've seen other people get it too it's um it's the disease of thinking that a really great idea is 90% of the work and that if you just tell your all these other people you know here's this great idea then of course they can go off and make it happen and the problem with that is is that there's a just a tremendous amount of craftsmanship in in between a great idea and a great product and as you evolve that great idea it changes and grows it never comes out like it starts because you learn a lot more as you get into the subtleties of it and you also find there's tremendous trade-offs that you have to make I mean you know there are there are just certain things you you can't make electrons do there are certain things you can't make plastic do or glass do and and and as you get in or Factories do or robots do and as you get into all these things designing a product is keeping 5,000 things in your brain these Concepts and fit fitting them all together in in in kind of continuing to push to fit them together in new and different ways to get what you want and and every day you discover something new that is a new problem or a new opportunity to fit these things together a little differently and it's that process that is the magic um and so we had a lot of great ideas when we started but what I've always felt that a team of people doing something they really believe in is like is is like when I was a young kid um there was a um a widowed"
-    },
-    {
-      "id": "T6_P2",
-      "parent_t_id": "T6",
-      "start_sec": 2024,
-      "end_sec": 2134,
-      "duration_sec": 110,
-      "question": "如何打造一个能产出卓越产品的团队？",
-      "insight": "一个充满激情的优秀团队，通过成员间的摩擦、争论和协作，就像磨石机一样，互相打磨，最终将想法和彼此都打磨成卓越的成果。",
+      "id": "T4_P2",
+      "parent_t_id": "T4",
+      "start_sec": 1597,
+      "end_sec": 1667,
+      "duration_sec": 70,
+      "question": "为什么我有了好点子，团队却做不出好产品？",
+      "insight": "团队中缺乏对新概念和愿景的理解力，尤其当成员来自传统大公司时，他们会抗拒颠覆性创新，并错误地评估实现难度，导致无法抓住机会。",
       "domain": [
         "团队与协作",
         "产品与打磨"
       ],
       "fine_tags": [
-        "磨石机比喻",
+        "颠覆性创新",
+        "团队阻力",
+        "产品远见",
+        "鼠标发明",
+        "惠普文化"
+      ],
+      "transcript": "get them working on this the problem was that we'd hired a bunch of people from hulet Packard and um they didn't get this idea they didn't get it I remember having dramatic arguments with some of these people who thought the coolest thing in user interface was soft keys at the bottom of a screen you know they had no concept of proportionately spaced fonts no concept of a mouse matter of fact I remember arguing with these folks people screaming at me that it would take us 5 years to engineer a mouse and it would cost $300 to build and I finally got fed up I just went outside and found David Kelly design and uh asked him to design me a mouse and in 90 days we had a mouse we could build for 15 bucks that was phenomenally reliable so I found that in a way apple apple did not have the caliber of people that was necessary to seize this idea in many ways and there was a core team that did but there was a a larger team that most had mostly had come from hulet Packard that that didn't have a clue well this this becomes this issue of professionalism there's a dark side"
+    },
+    {
+      "id": "T4_P3",
+      "parent_t_id": "T4",
+      "start_sec": 1681,
+      "end_sec": 1735,
+      "duration_sec": 54,
+      "question": "公司发展壮大后如何避免陷入流程陷阱？",
+      "insight": "公司做大后容易将成功归因于流程而非内容，过度制度化和流程化，最终忘记产品内容本身，而真正优秀的人才往往是理解内容而非流程的“刺头”。",
+      "domain": [
+        "组织与公司演化",
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "流程陷阱",
+        "内容为王",
+        "大公司病",
+        "IBM",
+        "优秀人才管理"
+      ],
+      "transcript": "success and a lot of them think well somehow there's some magic in the process of how that success was created so they start to try to institutionalize process across the company and before very long people get very confused that the process is the content that's ultimately the downfall of IBM IBM has the best processed people in the world they just forgot about the content and that's what happened a little bit at Apple too we had a lot of people who were great at management process they just didn't have a clue as to the content and in my career I found that the best people you know are the ones that really understand the content and they're a pain in the butt to manage you know but you put up with it because they're so great at the content and that's what makes great products it's not process it's content so we had a little bit of that problem at Apple and"
+    },
+    {
+      "id": "T5_P1",
+      "parent_t_id": "T5",
+      "start_sec": 1938,
+      "end_sec": 2039,
+      "duration_sec": 101,
+      "question": "为什么好点子难以变成好产品？",
+      "insight": "一个好点子只占工作的10%，真正的产品开发需要巨大的匠心和持续的打磨，因为在实践中会发现无数细节、权衡和新问题，是这个复杂过程而非初始灵感创造了魔力。",
+      "domain": [
+        "产品与打磨",
+        "组织与公司演化"
+      ],
+      "fine_tags": [
+        "好点子与好产品",
+        "匠心",
+        "打磨",
+        "产品开发过程",
+        "5000件事"
+      ],
+      "transcript": "know one of the things that really hurt Apple was after I left John Scully got a very serious disease and that disease I've seen other people get it too it's um it's the disease of thinking that a really great idea is 90% of the work and that if you just tell your all these other people you know here's this great idea then of course they can go off and make it happen and the problem with that is is that there's a just a tremendous amount of craftsmanship in in between a great idea and a great product and as you evolve that great idea it changes and grows it never comes out like it starts because you learn a lot more as you get into the subtleties of it and you also find there's tremendous trade-offs that you have to make I mean you know there are there are just certain things you you can't make electrons do there are certain things you can't make plastic do or glass do and and and as you get in or Factories do or robots do and as you get into all these things designing a product is keeping 5,000 things in your brain these Concepts and fit fitting them all together in in in kind of continuing to push to fit them together in new and different ways to get what you want and and every day you discover something new that is a new problem or a new opportunity to fit these things together a little differently and it's that process that is the magic um and so we had a lot of great ideas when we started but what I've always felt that a team of people doing something they really believe in is like is is like when I was a young kid um there was a um a widowed"
+    },
+    {
+      "id": "T5_P2",
+      "parent_t_id": "T5",
+      "start_sec": 2024,
+      "end_sec": 2134,
+      "duration_sec": 110,
+      "question": "优秀团队如何通过内部摩擦打磨创意？",
+      "insight": "一个充满激情的优秀团队，就像磨石机里的石头，通过彼此碰撞、摩擦、争论甚至争吵，互相打磨，也打磨创意，最终才能产出卓越的产品和想法。",
+      "domain": [
+        "团队与协作",
+        "产品与打磨"
+      ],
+      "fine_tags": [
+        "磨石机",
         "团队摩擦",
-        "协作",
-        "打磨想法",
+        "碰撞",
+        "打磨创意",
         "激情团队"
       ],
       "transcript": "magic um and so we had a lot of great ideas when we started but what I've always felt that a team of people doing something they really believe in is like is is like when I was a young kid um there was a um a widowed man that lived up the street and uh he he was in his 80s uh he's a little scary looking and and I got to know him a little bit um I think he might have paid me to cut his mow his lawn or something and one day he said come on into my garage I want to show you something and he pulled out this Dusty old rock tumbler it was a a motor and a and a and a coffee can and a little you know band between them and and he said come on with me we went out to the back and we got some just some rocks some regular old ugly rocks and he and we put them in the can with a little bit of uh of liquid and a little bit of of uh of grit powder and um we closed the can up and and he turned this motor on he said come back tomorrow and this can was making a you know racket as the stones went around and I came back the next day and we took we opened the can and we took out these amazingly beautiful polished rocks um the same common stones that had gone in through rubbing against each other like this a little bit of friction creating a little bit of noise had come out these beautiful polished rocks and that's always been in my mind my metaphor for a team working really hard on something they're passionate about is is that it's through the team through that group of incredibly talented people bumping up against each other having arguments having fights sometimes making some noise and working together they polish each other and they polish the ideas and what comes out are these really beautiful Stones you so"
     },
     {
-      "id": "T6_P3",
-      "parent_t_id": "T6",
-      "start_sec": 2148,
+      "id": "T5_P3",
+      "parent_t_id": "T5",
+      "start_sec": 2161,
       "end_sec": 2257,
-      "duration_sec": 109,
-      "question": "为什么招募顶尖人才如此重要？",
-      "insight": "在软件和硬件领域，顶尖人才的效率是普通人才的50到100倍，因此必须不惜代价招募A级人才，而A级人才组成的团队会自我筛选，只招募更多A级人才。",
+      "duration_sec": 96,
+      "question": "如何招聘和留住顶尖人才并组建A级团队？",
+      "insight": "在软件等高杠杆领域，顶尖人才和普通人才的效率差距可达50:1甚至100:1，因此不惜代价招募A级人才至关重要。当足够多的A级人才聚集时，他们会互相吸引并自我筛选，只愿与同样优秀的人共事，从而形成良性循环。",
       "domain": [
         "招聘与识人",
-        "组织与公司演化"
+        "团队与协作"
       ],
       "fine_tags": [
         "50:1动态范围",
         "A players",
         "自我筛选",
-        "人才密度",
-        "不妥协"
+        "顶尖人才"
       ],
-      "transcript": "something fairly early on uh at Apple um which is I didn't know how to explain it then but I've thought a lot about it since if you most things in life the dynamic range between average and the best is at most 2 to one right like if you go to New York City and you're get an average taxi cab driver versus the best taxi cab driver you know you're probably going to get to your destination with the best taxi cab maybe 30% faster you know in an automobile what's the difference between an average and the best maybe I know 20% uh the best CD player and an average CD player I don't know 20% so two to one is a big big dynamic range in in most of life um in software and it used to be the case in Hardware too the difference between average and the best is 50 to one maybe 100 to one easy okay I've very few things in life are like this but what I was lucky enough to spend my life in is like this and so I've built a lot of My Success off finding these truly gifted people and not settling for B and C players but really going for the a players and I found something I found that when you get enough a players together when you go to through the incredible work to find you know five of these a players they really like working with each other because they they've never had a chance to do that before and they don't want to work with B andc players and so it becomes self- policing and they only want to hire more a players and so you build up these pockets of a players and it propagates and that's what the Mac team was like they were all a players and um um these were extraordinarily talented"
+      "transcript": "dynamic range between average and the best is at most 2 to one right like if you go to New York City and you're get an average taxi cab driver versus the best taxi cab driver you know you're probably going to get to your destination with the best taxi cab maybe 30% faster you know in an automobile what's the difference between an average and the best maybe I know 20% uh the best CD player and an average CD player I don't know 20% so two to one is a big big dynamic range in in most of life um in software and it used to be the case in Hardware too the difference between average and the best is 50 to one maybe 100 to one easy okay I've very few things in life are like this but what I was lucky enough to spend my life in is like this and so I've built a lot of My Success off finding these truly gifted people and not settling for B and C players but really going for the a players and I found something I found that when you get enough a players together when you go to through the incredible work to find you know five of these a players they really like working with each other because they they've never had a chance to do that before and they don't want to work with B andc players and so it becomes self- policing and they only want to hire more a players and so you build up these pockets of a players and it propagates and that's what the Mac team was like they were all a players and um um these were extraordinarily talented"
     },
     {
-      "id": "T6_P4",
-      "parent_t_id": "T6",
-      "start_sec": 2298,
+      "id": "T5_P4",
+      "parent_t_id": "T5",
+      "start_sec": 2324,
       "end_sec": 2433,
-      "duration_sec": 135,
-      "question": "如何给优秀人才提负面反馈？领导者如何做到不固执己见？",
-      "insight": "对优秀人才的负面反馈要直接、清晰地指出工作不足，聚焦于工作本身而非能力，因为他们更看重成果。同时，领导者应不执着于对错，只追求成功，并乐于根据新证据迅速改变观点。",
+      "duration_sec": 109,
+      "question": "如何给优秀员工提供有效反馈？",
+      "insight": "对于真正优秀的人才，不必过于顾及他们的自尊，因为他们深知工作成果才是最重要的。管理者应直接、清晰地指出他们工作中的不足，并阐明原因，同时不质疑其能力，只聚焦于当前工作。领导者应以成功为导向，而非坚持己见，乐于承认错误并改变想法。",
       "domain": [
         "给反馈与冲突",
-        "决策与判断",
         "个人成长与状态"
       ],
       "fine_tags": [
         "直接反馈",
         "A players",
-        "不介意犯错",
-        "只关心成功",
-        "工作导向",
-        "开放心态"
+        "工作成果",
+        "不执着于对错",
+        "以成功为导向"
       ],
-      "transcript": "work a uh it usually means their work is sometimes it means I think your work is and I I'm wrong but uh uh usually it means their their work is not anywhere near good enough we have this great quote from Bill ainson who says when you say is someone's work is you really mean I don't quite understand it would you please explain it to me no that's not usually what I meant uh I you know when you get really good people um they know they're really good and you don't have to Baby people's egos so much and what really matters is the work that everybody knows that that's all that matters is the work so it people are being counted on to do specific pieces of the puzzle and the most important thing I think you can do for somebody who's really good and who's really being counted on is to point out to them when um they're not their work isn't good enough and to do it very clearly and to articulate why uh and to to get them back on track and you need to do that in a way that does not call into question your confidence in their abilities but leaves not too much room for interpretation that it's their work the work that they've done for this particular thing is not good enough to support the goal of the team and that's a hard thing to do um and I've always taken a very direct approach so um and I think if you talk to people that have worked with me um the really good people have found it beneficial uh some people have hated it you know but um and I'm also one of these people that I I don't really care about being right you know I just care about success so you'll find a lot of people that will tell you that uh I had a very strong opinion and uh they you know presented evidence to the contrary and five minutes later I completely changed my mind because I'm like that I don't mind being wrong and I'll admit that I'm"
+      "transcript": "me no that's not usually what I meant uh I you know when you get really good people um they know they're really good and you don't have to Baby people's egos so much and what really matters is the work that everybody knows that that's all that matters is the work so it people are being counted on to do specific pieces of the puzzle and the most important thing I think you can do for somebody who's really good and who's really being counted on is to point out to them when um they're not their work isn't good enough and to do it very clearly and to articulate why uh and to to get them back on track and you need to do that in a way that does not call into question your confidence in their abilities but leaves not too much room for interpretation that it's their work the work that they've done for this particular thing is not good enough to support the goal of the team and that's a hard thing to do um and I've always taken a very direct approach so um and I think if you talk to people that have worked with me um the really good people have found it beneficial uh some people have hated it you know but um and I'm also one of these people that I I don't really care about being right you know I just care about success so you'll find a lot of people that will tell you that uh I had a very strong opinion and uh they you know presented evidence to the contrary and five minutes later I completely changed my mind because I'm like that I don't mind being wrong and I'll admit that I'm"
     },
     {
-      "id": "T7_P1",
-      "parent_t_id": "T7",
-      "start_sec": 2722,
+      "id": "T6_P1",
+      "parent_t_id": "T6",
+      "start_sec": 2668,
       "end_sec": 2762,
-      "duration_sec": 40,
-      "question": "当公司面临危机时，领导者如何为了自保而推卸责任？",
-      "insight": "在公司面临危机和领导力真空时，拥有强大生存本能的领导者会为了自保而将问题归咎于他人，并通过经营董事会关系来巩固自己的地位。",
+      "duration_sec": 94,
+      "question": "为什么在公司危机中，领导者会选择替罪羊？",
+      "insight": "当公司面临外部经济衰退和内部领导力真空时，缺乏经验的领导者会因强大的生存本能，将所有问题归咎于他人，从而引发内部权力斗争和关键人才被排挤。",
       "domain": [
         "组织与公司演化",
         "决策与判断"
       ],
       "fine_tags": [
+        "危机领导力",
         "生存本能",
-        "推卸责任",
-        "领导力真空",
-        "董事会关系"
+        "替罪羊",
+        "权力斗争",
+        "领导力真空"
       ],
-      "transcript": "happy and where he was probably not long for the company and one thing I did not ever see about John uh until that time was he had an incredible survival Instinct uh somebody once told me this guy didn't get to be this you know the president of PepsiCo without these kinds of instincts and um and it was true and John decided that um a really good person to be the root of all these problems would be me and so uh we we came to loggerheads and John had cultivated a very close relationship with the board um"
+      "transcript": "Welly what happened was that the industry went into a recession in late 1984 sales started seriously Contracting and John didn't know what to do he had not a clue and there was a leadership vacuum at the top of Apple uh there were fairly strong general managers running the divisions I was running the Macintosh division somebody else was running the Apple 2 Division Etc there were some problems with some of the divisions there was a person running the storage division that was completely out lunch a bunch of things that needed to be changed but all of those problems got put in a pressure cooker because of this contraction in the marketplace and there was no leadership and um John was in a situation where the board was not happy and where he was probably not long for the company and one thing I did not ever see about John uh until that time was he had an incredible survival Instinct uh somebody once told me this guy didn't get to be this you know the president of PepsiCo without these kinds of instincts and um and it was true and John decided that um a really good person to be the root of all these problems would be me and so uh we we came to loggerheads and John had cultivated a very close relationship with the board um"
     },
     {
-      "id": "T8_P1",
-      "parent_t_id": "T8",
+      "id": "T6_P2",
+      "parent_t_id": "T6",
+      "start_sec": 2776,
+      "end_sec": 2828,
+      "duration_sec": 52,
+      "question": "如何分辨领导者是为了公司还是为了自己的权力？",
+      "insight": "真正的领导者在危机中会关注战略执行、统一团队和资源分配，而以自我为中心的领导者则会以维护个人权力为最高目标，不惜牺牲公司利益。",
+      "domain": [
+        "组织与公司演化",
+        "战略与竞争"
+      ],
+      "fine_tags": [
+        "领导者动机",
+        "战略执行",
+        "权力维护",
+        "自我中心",
+        "危机领导力"
+      ],
+      "transcript": "that lost out in this instance it it wasn't an issue of vision it was an issue um of execution in the sense that uh my belief was that Apple needed much stronger leadership uh to sort of unite these various factions that we created with the divisions that the Macintosh was the future of Apple that we needed to reain back expenses dramatically in the Apple 2 area that we needed to be spending very heavily in the Macintosh area um things like that and John's Vision was that um he should remain the CEO of the company and anything that would help him do that would would be acceptable so so uh I think that"
+    },
+    {
+      "id": "T7_P1",
+      "parent_t_id": "T7",
       "start_sec": 2913,
       "end_sec": 3004,
       "duration_sec": 91,
-      "question": "为什么领先的公司会停滞不前并走向衰落？",
-      "insight": "领先的公司若内部停滞、缺乏领导力、研发投入无效，即使曾有巨大优势，也会逐渐失去产品差异化并走向衰落。",
+      "question": "好公司为什么会失去做好产品的能力？",
+      "insight": "苹果在拥有十年领先优势后走向衰落，是因为内部停滞、研发投入无效、领导力缺失导致差异化优势被侵蚀，最终走向不可逆转的死亡。",
       "domain": [
         "组织与公司演化",
         "战略与竞争"
@@ -1754,137 +1781,159 @@
       "fine_tags": [
         "公司衰落",
         "内部停滞",
-        "领导力缺失",
         "研发无效",
+        "领导力缺失",
         "差异化侵蚀"
       ],
       "transcript": "this interview Steve immediately sold the Apple stock he received as part of the sale Apple's dying today Apple's dying a very painful death uh it's on a Glide slope to to die and uh the reason is is because you know when I walked out the door at Apple we had a 10-year lead on everybody else in the industry Macintosh was 10 years ahead I you know we watched Microsoft take 10 years to catch up with it well the reason that they could catch up with it was because Apple stood still I mean the Macintosh that's shipping today is like you know 25% different than the day I left they've spent hundreds of millions of dollars a year on R&D I mean you know a total of probably billion dollar on R&D what did they get for it I don't know but it was the what happened was the the the understanding of how to move these things forward and how to create these new products somehow evaporated and I think a lot of the good people stuck around for a while but there wasn't an opportunity to get together and do this uh because there wasn't any any leadership to do that so what's happened with apple now is is that they' they've fallen behind uh in in many respects certainly in market share and and most importantly their differentiation has has has been eroded by Microsoft and so what they have now is they have their installed base which is not growing and which is shrinking slowly but will provide a a you know a a"
     },
     {
-      "id": "T8_P2",
-      "parent_t_id": "T8",
+      "id": "T7_P2",
+      "parent_t_id": "T7",
       "start_sec": 3031,
       "end_sec": 3112,
       "duration_sec": 81,
-      "question": "一个公司如何抓住外部机遇并实现快速增长？",
-      "insight": "微软的成功得益于IBM的巨大推动，同时他们极具机会主义精神，敢于下大赌注，并像日本人一样持续不断地改进和进取，最终主导了市场。",
+      "question": "小公司如何抓住机遇并持续发展？",
+      "insight": "微软的崛起得益于IBM的巨大助推，但更关键的是其抓住机遇、敢于冒险（如为Mac开发应用）、持续改进的韧性，最终通过机会主义和坚持不懈成为市场主导者。",
       "domain": [
         "战略与竞争",
         "创业与起步"
       ],
       "fine_tags": [
         "IBM助推",
+        "抓住机遇",
+        "敢于冒险",
+        "持续改进",
         "机会主义",
-        "持续进取",
-        "Mac应用",
-        "市场主导"
+        "坚持不懈"
       ],
       "transcript": "it's yeah it's just you know what what's going on there how did those guys do that well Microsoft's orbit was made possible by a Saturn 5 booster called IBM and uh I know Bill would get upset with me for saying this but of course it was true and um much to Bill and Microsoft's credit they used that fantastic opportunity to create more opportunity for themselves uh most people don't remember but in 19 until 1984 with the Mac Microsoft was not in the applications business it was dominated by lotus and Microsoft took a big gamble to write for the mac and they came out with applications that were terrible but they kept at it they made them better and eventually they dominated the Macintosh application market and then used a springboard of of Windows to get into the PC market with those same applications and now they dominate the applications in the PC Space 2 so they have two characteristics I think they're very strong opportunists and I don't mean that in a bad way and two they're like the Japanese they just keep on coming now they were able to do that because of the revenue stream from the IBM deal uh but nonetheless they they made the most of it and I I give them a lot of credit for that the only problem with Microsoft is they just have no taste they have absolutely no taste"
     },
     {
-      "id": "T8_P3",
-      "parent_t_id": "T8",
+      "id": "T7_P3",
+      "parent_t_id": "T7",
       "start_sec": 3099,
       "end_sec": 3209,
       "duration_sec": 110,
-      "question": "为什么产品除了功能还需要有品味和精神？",
-      "insight": "微软产品缺乏品味和精神，没有原创思想，未能将文化融入产品，导致其产品平庸，无法提升人类的审美与认知水平，就像麦当劳一样。",
+      "question": "为什么产品除了功能还需要有“品味”和“精神”？",
+      "insight": "微软产品缺乏品味和精神，只追求功能性，导致其产品平庸。真正伟大的产品应具备文化和美学，通过提升用户体验来‘提升人类物种’，而非仅仅满足基本需求。",
       "domain": [
         "产品与打磨",
-        "行业判断与未来"
+        "学习与思维方法"
       ],
       "fine_tags": [
         "产品品味",
         "产品精神",
-        "原创思想",
         "文化融入",
-        "提升审美",
-        "麦当劳比喻"
+        "提升物种",
+        "平庸产品"
       ],
       "transcript": "that because of the revenue stream from the IBM deal uh but nonetheless they they made the most of it and I I give them a lot of credit for that the only problem with Microsoft is they just have no taste they have absolutely no taste and and and what that means is I don't mean that in a small way I mean that in a big way in the sense that they they don't think of original ideas and they don't bring much culture into their product um and and you say well why is that important well you know proportionally spaced fonts come from type setting and beautiful books that's where one gets the idea if it weren't for the Mac they would never have that in their products um and so I I guess I am saddened not by Microsoft's success I have no problem with their success they've earned their success for the most part I have a problem with the fact that they just make really Third Rate products their products have no Spirit to them their products have no sort of spirit of Enlightenment about them they are very pedestrian and the sad part is is that most customers don't don't have a lot of that spirit either but it but the way that we're going to ratchet up our species is to take the best and to spread it around everybody so that everybody grows up with better things and starts to understand the subtlety of these better things um and and Microsoft's just you know it's McDonald's so um that's what saddens me not that Microsoft is one but that uh Microsoft's products don't display more"
     },
     {
-      "id": "T9_P1",
-      "parent_t_id": "T9",
+      "id": "T7_P4",
+      "parent_t_id": "T7",
+      "start_sec": 3268,
+      "end_sec": 3380,
+      "duration_sec": 112,
+      "question": "如何通过技术创新大幅提升软件开发效率？",
+      "insight": "软件是当今产业创新的核心和最具竞争力的武器，但软件开发效率长期停滞。NeXT通过完善和商业化面向对象技术，实现了软件开发速度提升十倍且质量更优，这才是真正的软件革命。",
+      "domain": [
+        "行业判断与未来",
+        "产品与打磨"
+      ],
+      "fine_tags": [
+        "软件创新",
+        "面向对象技术",
+        "开发效率",
+        "竞争武器",
+        "软件革命"
+      ],
+      "transcript": "the the innovation in the computer industry is happening in software right now and there haven't there hasn't been a revolution in how we create software in a long sorry sorry um The Innovation in the industry is in software and there hasn't ever been a real revolution in how we created software certainly not in the last 20 years matter of fact it's gotten worse while the Macintosh was a revolution for the end user to make it easier to use it it was the opposite for the developer the develop paid the price and software got much more complicated to write as it became easier to use for the end user so software is is infiltrating everything we do these days uh in businesses software is one of the most potent competitive weapons I mean the most successful business war was friends and family mci's friends and family you know in the last 10 years and what was that it was a brilliant idea and it was custom billing software AT&T didn't respond for 18 months yielding billions of dollars worth of market share to MCI not cuz they were stupid but because they couldn't get the billing software done so in in in ways like that in smaller ways software is becoming an incredible force in this world um to provide new goods and services to people whether it's over the Internet or you know what have you software is going to be a major enabler in our society we have taken another one of those brillient original ideas at Xerox Park that I saw in 1979 but didn't see really clearly then called object oriented technology and we have perfected it and commercialized it here and become the biggest supplier of it to the market and this this object technology lets you build software 10 times faster and it's better and um so that's what we do and we've got a small to mediumsized business and we're the"
+    },
+    {
+      "id": "T8_P1",
+      "parent_t_id": "T8",
       "start_sec": 3410,
       "end_sec": 3505,
       "duration_sec": 95,
-      "question": "万维网的出现，对个人计算和商业模式意味着什么？",
-      "insight": "万维网将计算机从计算设备转变为通信设备，成为终极的直接客户分销渠道，让小公司也能拥有大公司的形象，并有望成为未来十年定义性的技术，为个人计算注入新生命。",
+      "question": "互联网会带来什么颠覆？",
+      "insight": "互联网将使计算机从计算设备转变为通信设备，成为终极的直销渠道，让小公司也能与大公司匹敌，并深刻改变社会。",
       "domain": [
         "行业判断与未来",
         "战略与竞争"
       ],
       "fine_tags": [
-        "万维网",
+        "互联网潜力",
         "通信设备",
-        "直接分销渠道",
-        "定义性技术",
-        "个人计算复兴"
+        "直销渠道",
+        "公平竞争",
+        "社会变革"
       ],
       "transcript": "internet and the web there are two exciting things happening in software and in Computing today I think one is objects but the other one is the web the web is incredibly exciting because it is the the Fulfillment of a lot of our dreams that the computer would ultimately not be primarily a device for computation but metamorphosize into a device for communication and the with the web that's finally happening um and secondly it's exciting because Microsoft doesn't own it and therefore there's a tremendous amount of innovation happening so I think uh that the web is going to be profound in what it does to our society as you know about 15% of the goods and services in the US are sold via catalogs over the television all that's going to go on the web and more billions and billions tens of billions of dollars where the goods and services are going to be sold on the web if you could a way to think about it is it is the ultimate direct to customer distribution Channel another way to think about it is the smallest company in the world can look as large as the largest company in the world on the web so I guess um I think the web as we look back 10 years from now the web is going to be the defining technology the defining social uh um the defining social moment for computer and um I think it's going to be huge I think it's breathed a whole new generation of life into personal Computing and um I think it's going to be huge yeah and you're making software that oh absolutely but so is everybody I mean just forget about what we're doing just as an industry the web is going to open a whole new door to this industry"
     },
     {
-      "id": "T10_P1",
-      "parent_t_id": "T10",
+      "id": "T8_P2",
+      "parent_t_id": "T8",
       "start_sec": 3558,
       "end_sec": 3638,
       "duration_sec": 80,
-      "question": "计算机如何成为思想的自行车，放大人类能力？",
-      "insight": "人类是工具建造者，通过工具能极大放大自身能力。计算机是迄今最伟大的工具，是“思想的自行车”，能帮助人类在精神层面实现巨大飞跃。",
+      "question": "计算机如何放大人的能力？",
+      "insight": "计算机是人类发明的“思想的自行车”，能够极大地放大我们与生俱来的人类能力，是人类历史上最伟大的工具之一，我们正处于其发展初期，有机会引导其走向更好的未来。",
       "domain": [
-        "行业判断与未来",
-        "学习与思维方法"
+        "学习与思维方法",
+        "行业判断与未来"
       ],
       "fine_tags": [
         "思想的自行车",
         "工具建造者",
-        "人类能力放大",
-        "计算机的未来"
+        "能力放大",
+        "人类发明",
+        "计算机本质"
       ],
       "transcript": "bicycle blew away the Condor all the way off the charts and I remember this really had an impact on me I I really remember this that humans are tool Builders and we build tools that can dramatically amplify our innate human abilities and to me we actually ran an ad like this very early to Apple that the personal computer was the bicycle of the mind and I believe that with every bone in my body that that of all the inventions of humans the computer is going to rank near if not at the top as history unfolds and we look back and it is the most awesome tool that we have ever invented and and I feel incredibly lucky to be at exactly the right place in Silicon Valley at exactly the right time historically where this invention has has taken form and and as you know when you set a vector off in space if you can change this direction a little bit at the beginning it's dramatic when it gets a few miles out in space I feel we've we we are still really at the beginning of that vector and if we can nudge it in the right directions uh it will be a much better thing uh as it as it progresses on and and I look you know I think we've had a chance to do that a few times and uh and it it brings I think all of us associated with a"
     },
     {
-      "id": "T10_P2",
-      "parent_t_id": "T10",
+      "id": "T8_P3",
+      "parent_t_id": "T8",
       "start_sec": 3655,
       "end_sec": 3722,
       "duration_sec": 67,
-      "question": "如何培养品味，并从他人成果中汲取灵感创造好产品？",
-      "insight": "品味至关重要，要通过接触人类最好的作品来培养。伟大的艺术家“窃取”（而非简单复制）灵感，将不同领域的精华融入自身创作，这正是Mac团队多元背景的“博雅教育”精神。",
+      "question": "如何做出有品味的好产品？",
+      "insight": "做出好产品需要品味，要从人类最好的成就中汲取灵感，并像Macintosh团队那样，汇集来自音乐、诗歌、艺术等不同领域的人才，将广博的文科精神融入产品。",
       "domain": [
         "产品与打磨",
-        "学习与思维方法"
+        "团队与协作"
       ],
       "fine_tags": [
         "品味",
-        "窃取灵感",
-        "博雅教育",
-        "Mac团队",
-        "跨领域融合"
+        "文科精神",
+        "跨学科团队",
+        "好艺术家偷",
+        "产品哲学"
       ],
       "transcript": "taste it comes down to taste it's it comes down to trying to expose yourself to the best things that humans have done and then try to bring those things in to what you're doing I mean Picasso had a saying he said good artists copy great artists steal and we have you know always been Shameless about stealing great ideas um and I think part of what made the Macintosh great was that the people working on it were musicians and Poets and artists and zoologists and historians who also happen to be the best computer scientists in the world but if it hadn't been for computer science these people would have all been you know doing amazing things in life in other fields and they brought with them we all brought to this to this effort uh a very liberal arts a sort of air a very a very um liberal arts attitude that we wanted to pull in the best that we saw in these"
     },
     {
-      "id": "T10_P3",
-      "parent_t_id": "T10",
-      "start_sec": 3763,
+      "id": "T8_P4",
+      "parent_t_id": "T8",
+      "start_sec": 3774,
       "end_sec": 3907,
-      "duration_sec": 144,
-      "question": "如何将超越物质的“嬉皮士”精神注入产品，使其拥有灵魂并传递情感？",
-      "insight": "“嬉皮士”精神代表着对超越日常物质生活的追求。这种精神可以被注入产品，让产品拥有灵魂，成为传递情感和感受的媒介，就像Macintosh一样，让用户感受到爱。",
+      "duration_sec": 133,
+      "question": "产品如何注入灵魂？",
+      "insight": "真正的“嬉皮士精神”是追求超越日常物质生活和职业的意义，在“空隙”中体验到某种涌入的感受；这种精神能被注入产品，让用户感受到，因为最优秀的人是把计算机作为媒介来传递情感和理念。",
       "domain": [
         "产品与打磨",
         "个人成长与状态"
       ],
       "fine_tags": [
         "嬉皮士精神",
+        "超越物质",
         "产品灵魂",
         "情感传递",
-        "超越物质",
-        "Macintosh"
+        "媒介"
       ],
-      "transcript": "lot of connotations but to me you know because I grew up I mean remember that the 60s happened in the early 70s right so we have to remember that and that's sort of when I came of age so I saw a lot of this and uh you know a lot of it happened right in our backyard here um so to me the spark of that was that there was something Beyond sort of what you see every day there's something going on here in life beyond just a job and a family and two cars in the garage and a career there's something more going on there's another side of the coin that we don't talk about much and and and and we experience it when there's gaps when we kind of just aren't really when everything's not ordered and perfect when there's kind of a gap you experience this inrush of something and and a lot of people have set off throughout history to find out what that was you know whether it's thorough or whether it's you know some Indian Mystics or whoever it might be and and the hippie movement got a little bit of that and they wanted to find out what that was about and that life wasn't about what they saw their parents doing and of course the pendulum swung too far the other way and it was crazy but there was a germ of something there and um it's it's the same thing that causes people to want to be poets instead of Bankers you know and and I think that's a wonderful thing and I think that that same Spirit can be put into products and those products can be manufactured and given to people and they can sense that spirit I if you talk to people that use the Macintosh they love it you don't hear people loving thing products very often you know really but but you could feel it in there there was something really wonderful there so um I I don't think that most of the really best people that I've worked with have worked with computers for the sake of working with computers they've work with computers because they are the medium that is best capable of transmitting some feeling that you have that you want to share with other people does that make any sense to you oh yeah and you know before they invented these things all these people would have done other other things but but they but"
+      "transcript": "right in our backyard here um so to me the spark of that was that there was something Beyond sort of what you see every day there's something going on here in life beyond just a job and a family and two cars in the garage and a career there's something more going on there's another side of the coin that we don't talk about much and and and and we experience it when there's gaps when we kind of just aren't really when everything's not ordered and perfect when there's kind of a gap you experience this inrush of something and and a lot of people have set off throughout history to find out what that was you know whether it's thorough or whether it's you know some Indian Mystics or whoever it might be and and the hippie movement got a little bit of that and they wanted to find out what that was about and that life wasn't about what they saw their parents doing and of course the pendulum swung too far the other way and it was crazy but there was a germ of something there and um it's it's the same thing that causes people to want to be poets instead of Bankers you know and and I think that's a wonderful thing and I think that that same Spirit can be put into products and those products can be manufactured and given to people and they can sense that spirit I if you talk to people that use the Macintosh they love it you don't hear people loving thing products very often you know really but but you could feel it in there there was something really wonderful there so um I I don't think that most of the really best people that I've worked with have worked with computers for the sake of working with computers they've work with computers because they are the medium that is best capable of transmitting some feeling that you have that you want to share with other people does that make any sense to you oh yeah and you know before they invented these things all these people would have done other other things but but they but"
     }
   ]
 }

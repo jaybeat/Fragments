@@ -10,6 +10,8 @@ logger = logging.getLogger(__name__)
 STEP2_SCHEMA = {
     "type": "object",
     "properties": {
+        "title": {"type": "string"},
+        "subtitle": {"type": "string"},
         "t_segments": {
             "type": "array",
             "items": {
@@ -26,8 +28,8 @@ STEP2_SCHEMA = {
             },
         }
     },
-    "required": ["t_segments"],
-    "propertyOrdering": ["t_segments"],
+    "required": ["title", "subtitle", "t_segments"],
+    "propertyOrdering": ["title", "subtitle", "t_segments"],
 }
 
 
@@ -62,6 +64,8 @@ def run(
         temperature=0.4,
     )
 
+    title = result.get("title", "")
+    subtitle = result.get("subtitle", "")
     t_segments = result.get("t_segments", [])
 
     # Validate contiguity and coverage
@@ -111,6 +115,8 @@ def run(
 
     output = {
         "episode_id": episode_id,
+        "title": title,
+        "subtitle": subtitle,
         "t_segments": t_segments,
     }
     return output, token_usage

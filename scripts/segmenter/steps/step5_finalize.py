@@ -11,6 +11,7 @@ def run(
     t_segments: list[dict],
     p_segments: list[dict],
     config: dict,
+    step2_output: dict = None,
 ) -> dict:
     """Step 5: Produce final analyzed.json.
 
@@ -23,6 +24,13 @@ def run(
 
     # Deep copy episode as base
     analyzed = json.loads(json.dumps(episode, ensure_ascii=False))
+
+    # Override title/subtitle from step2 if present
+    if step2_output:
+        if "title" in step2_output and step2_output["title"]:
+            analyzed["title"] = step2_output["title"]
+        if "subtitle" in step2_output and step2_output["subtitle"]:
+            analyzed["subtitle"] = step2_output["subtitle"]
 
     # Fill who fields
     who_map = {}

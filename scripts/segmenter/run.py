@@ -256,6 +256,7 @@ def main() -> None:
                 "t_segments": t_segments,
                 "p_segments": p_segments,
                 "config": config,
+                "step2_output": step2_result,
             },
             "step5",  # not used by LLM
             args.force,
