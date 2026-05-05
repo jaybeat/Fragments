@@ -98,9 +98,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A single-page audio player (Vite + React + TypeScript) inspired by [Claudio FM](https://mmguo.dev/claudio-fm/). Audio streams from YouTube via the IFrame Player API; a word-level synced transcript highlights the spoken text in real time, and a procedural canvas waveform reacts to playback.
 
-Currently ships two curated episodes:
+Currently ships three curated episodes:
 - `jobs-stanford` — Steve Jobs Stanford Commencement 2005
 - `jobs-lost-interview` — Steve Jobs The Lost Interview
+- `jobs-interview-1990` — Steve Jobs 1990 Interview (WGBH)
 
 ## Common Commands
 
@@ -116,7 +117,8 @@ npm run format            # prettier --write .
 npx vitest run src/lib/tokenize.test.ts
 
 # Data pipelines (see "Data pipelines" below)
-npm run fetch-transcript -- <videoId> --output <path> --speaker "<name>" [--start-time <sec>]
+npm run fetch-transcript -- <videoId> --output <path> --speaker "<name>" [--start-time <sec>] [--translation-lang <code>]
+npm run add-episode -- <videoUrl> --output <path> --speaker "<name>" [--start-time <sec>] [--translation-lang zh-Hans] [--auto-segment]
 npm run segmenter -- --episode-id <id> [--from-step N] [--force]
 ```
 
@@ -144,7 +146,7 @@ Episode data lives in `src/data/episodes/<id>.analyzed.json` — these are the *
 
 - `src/data/episodes.ts` imports the `*.analyzed.json` files and runs `normalizeEpisode`, which adds `episode.startTime` to every turn / chapter / t_segment / p_segment time so all downstream code can compare against absolute YouTube `getCurrentTime()`.
 - `src/lib/tokenize.ts` linearly distributes words across the interval between consecutive turn `start` times. This produces per-word `start`/`end` without word-level Whisper data.
-- `src/components/Transcript.tsx` renders tokenized turns and applies `.said` / `.current` / `.future` classes from `state.currentTime`.
+- `src/components/Transcript.tsx` renders tokenized turns and applies `.said` / `.current` / `.future` classes from `state.currentTime`. It also supports bilingual display: when `turn.textCn` is present, a language toggle bar appears (英文原文 / 中文 / 双语对照). English mode keeps word-level highlighting; Chinese mode highlights the entire turn; both mode shows English on top and Chinese below. The active language is tracked in `PlayerState.transcriptLang` (default `'cn'`).
 
 ### Chapter markers in the player
 
@@ -167,6 +169,8 @@ Two CLI pipelines feed the React app. **The app only loads `*.analyzed.json`**, 
 `scripts/fetch-transcript.ts` (entry) + `scripts/lib/youtube-api.ts` (InnerTube ANDROID v20.10.38 client + srv3/classic XML parsers) + `scripts/lib/merge-turns.ts` (sentence-level Turn merger).
 
 - Custom InnerTube client because the `youtube-transcript` lib silently picks the auto-generated track when both auto and manual tracks share a `languageCode`. ASR auto-captions are lowercase / unpunctuated. `pickTrack` defaults to `preferManual=true`; `--list-tracks` shows all tracks; `--prefer-auto` opts in to ASR.
+- `--translation-lang <code>` fetches YouTube auto-translated captions via `&tlang=`. If YouTube returns 429 or fails, it automatically falls back to Google Translate batch API (free, no key needed) to populate `turn.textCn`.
+- `--auto-segment` runs the Python segmenter automatically after writing the JSON, producing `<id>.analyzed.json` in one shot.
 - Writes `EpisodeSkeleton` to `src/data/episodes/<id>.json` with `subtitle: "TBD"` (no automatic subtitle generation — see segmenter step2 below if you want to revive that).
 - `--preserve-meta` replaces only `turns` and `duration`, keeping any existing `chapters` / `subtitle` / etc. After refreshing turns, segment indices in `02_t_segments.json` etc. become stale — re-run segmenter from step 2.
 
@@ -188,12 +192,24 @@ P-segments carry `question` (search-style user phrasing) + `insight` + `domain` 
 
 ## Adding episodes
 
+**One-shot pipeline (recommended):**
+```bash
+npm run add-episode -- <youtubeUrl> \
+  --output src/data/episodes/<id>.json \
+  --speaker "Speaker Name" \
+  --start-time 22 \
+  --translation-lang zh-Hans \
+  --auto-segment
+```
+This fetches English captions, fetches/translates Chinese captions, writes the JSON, and runs the segmenter automatically.
+
+**Manual steps (if you need fine control):**
 1. Fetch the captions:
    ```bash
    npm run fetch-transcript -- <youtubeUrl> --output src/data/episodes/<id>.json --speaker "Speaker Name"
    ```
 2. Hand-edit `<id>.json` if needed (set `title` with `<br>` for line break, fill `speakerAvatar` path, adjust `startTime`/`endTime` to trim).
-3. Add a speaker avatar SVG to `public/avatars/<name>.svg`.
+3. Add a speaker avatar image to `public/avatars/<name>.svg` (or `.jpg`/`.webp`).
 4. Run the segmenter to produce the analyzed file the app actually loads:
    ```bash
    npm run segmenter -- --episode-id <id>
