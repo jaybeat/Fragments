@@ -65,6 +65,10 @@ interface InnerTubePlayerResponse {
         trackName?: string;
         name?: { runs?: Array<{ text?: string }>; simpleText?: string };
       }>;
+      translationLanguages?: Array<{
+        languageCode: string;
+        languageName?: { simpleText?: string };
+      }>;
     };
   };
   videoDetails?: {
@@ -199,9 +203,13 @@ export function pickTrack(tracks: CaptionTrack[], lang: string, preferManual = t
 export async function fetchTrackXml(
   baseUrl: string,
   dispatcher: Dispatcher | undefined,
-  signal: AbortSignal
+  signal: AbortSignal,
+  translationLang?: string
 ): Promise<string> {
-  const url = baseUrl.includes('fmt=') ? baseUrl : `${baseUrl}&fmt=srv3`;
+  let url = baseUrl.includes('fmt=') ? baseUrl : `${baseUrl}&fmt=srv3`;
+  if (translationLang) {
+    url += `&tlang=${encodeURIComponent(translationLang)}`;
+  }
   const res = await undiciFetch(url, { dispatcher, signal });
   if (!res.ok) throw new CaptionError(`Caption fetch failed: ${res.status} ${res.statusText}`);
   return await res.text();

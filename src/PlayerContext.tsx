@@ -16,6 +16,7 @@ export const initialState: PlayerState = {
     waveIntensity: 1.0,
     waveSpeed: 1.0,
   },
+  transcriptLang: 'cn',
 };
 
 export function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
@@ -42,6 +43,8 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
       return { ...state, isReady: action.payload };
     case 'UPDATE_TWEAKS':
       return { ...state, tweaks: { ...state.tweaks, ...action.payload } };
+    case 'SET_TRANSCRIPT_LANG':
+      return { ...state, transcriptLang: action.payload };
     default:
       return state;
   }

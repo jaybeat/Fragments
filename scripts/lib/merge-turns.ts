@@ -4,6 +4,7 @@ export interface Turn {
   who: string;
   start: number;
   text: string;
+  textCn?: string;
 }
 
 export interface MergeOptions {

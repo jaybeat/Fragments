@@ -2,6 +2,7 @@ export interface Turn {
   who: string;
   start: number;
   text: string;
+  textCn?: string;
 }
 
 export interface Chapter {
@@ -64,6 +65,7 @@ export interface PlayerState {
   isPlaying: boolean;
   isReady: boolean;
   tweaks: Tweaks;
+  transcriptLang: 'en' | 'cn' | 'both';
 }
 
 export type PlayerAction =
@@ -73,4 +75,5 @@ export type PlayerAction =
   | { type: 'PLAY' }
   | { type: 'PAUSE' }
   | { type: 'SET_READY'; payload: boolean }
-  | { type: 'UPDATE_TWEAKS'; payload: Partial<Tweaks> };
+  | { type: 'UPDATE_TWEAKS'; payload: Partial<Tweaks> }
+  | { type: 'SET_TRANSCRIPT_LANG'; payload: 'en' | 'cn' | 'both' };

@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "fetch-transcript": "tsx scripts/fetch-transcript.ts",
+    "add-episode": "tsx scripts/fetch-transcript.ts",
     "segmenter": "python scripts/segmenter/run.py",
     "test": "vitest run",
     "format": "prettier --write .",

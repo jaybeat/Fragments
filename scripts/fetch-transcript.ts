@@ -1,5 +1,6 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
+import { spawnSync, execSync } from 'node:child_process';
 import { ProxyAgent, type Dispatcher } from 'undici';
 import {
   getPlayerData,
@@ -31,6 +32,8 @@ interface Args {
   maxDurSec: number;
   listTracks: boolean;
   noCache: boolean;
+  translationLang?: string;
+  autoSegment: boolean;
 }
 
 interface EpisodeSkeleton {
@@ -59,6 +62,8 @@ Options:
   --speaker <name>         Value to write into turn.who                                    [default: video author from YouTube]
   --lang <code>            Caption language preference                                     [default: "en"]
   --prefer-auto            Prefer YouTube auto-generated captions over manual              [default: false]
+  --translation-lang <code> Fetch translated captions via YouTube tlang (e.g. zh-Hans)      [default: none]
+  --auto-segment           After writing JSON, auto-run segmenter to produce .analyzed.json [default: false]
   --max-dur <seconds>      Max duration of a merged turn before forced break               [default: 15]
   --preserve-meta          When --output already exists, only replace the turns field     [default: false]
   --overwrite              Allow replacing an existing --output file (without --preserve-meta) [default: false]
@@ -87,6 +92,8 @@ function parseArgs(argv: string[]): Args {
   let maxDurSec = 15;
   let listTracks = false;
   let noCache = false;
+  let translationLang: string | undefined;
+  let autoSegment = false;
 
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
@@ -131,6 +138,12 @@ function parseArgs(argv: string[]): Args {
       case '--list-tracks':
         listTracks = true;
         break;
+      case '--translation-lang':
+        translationLang = argv[++i];
+        break;
+      case '--auto-segment':
+        autoSegment = true;
+        break;
       default:
         if (a.startsWith('--')) {
           throw new Error(`Unknown flag: ${a}`);
@@ -168,6 +181,8 @@ function parseArgs(argv: string[]): Args {
     maxDurSec,
     listTracks,
     noCache,
+    translationLang,
+    autoSegment,
   };
 }
 
@@ -199,6 +214,96 @@ function summarize(turns: Turn[]): string {
   const tailStart = Math.max(head, turns.length - 3);
   for (let i = tailStart; i < turns.length; i++) sample(i);
   return lines.join('\n');
+}
+
+function mergeTranslationTurns(enTurns: Turn[], cnTurns: Turn[]): Turn[] {
+  if (cnTurns.length === 0) return enTurns;
+  return enTurns.map((en) => {
+    const closest = cnTurns.reduce(
+      (best, t) => (Math.abs(t.start - en.start) < Math.abs(best.start - en.start) ? t : best),
+      cnTurns[0]
+    );
+    if (closest && Math.abs(closest.start - en.start) < 5) {
+      return { ...en, textCn: closest.text };
+    }
+    return en;
+  });
+}
+
+function translateBatch(texts: string[]): string[] {
+  const joined = texts.join('\n');
+  const url =
+    'https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q=' +
+    encodeURIComponent(joined);
+  try {
+    const raw = execSync('curl -s --connect-timeout 10 --max-time 45 ' + JSON.stringify(url), {
+      encoding: 'utf-8',
+      timeout: 60000,
+    });
+    const data = JSON.parse(raw);
+    const parts: Array<[string, string, ...unknown[]]> = data[0];
+    let full = '';
+    for (const part of parts) {
+      full += part[0];
+    }
+    return full
+      .split('\n')
+      .map((s) => s.trim())
+      .filter((s) => s);
+  } catch {
+    if (texts.length > 1) {
+      const mid = Math.ceil(texts.length / 2);
+      const first = translateBatch(texts.slice(0, mid));
+      const second = translateBatch(texts.slice(mid));
+      return [...first, ...second];
+    }
+    throw new Error(`Failed to translate: ${texts[0]?.slice(0, 80)}`);
+  }
+}
+
+function chunkTexts(texts: string[], maxLen = 2000): string[][] {
+  const chunks: string[][] = [];
+  let current: string[] = [];
+  let currentLen = 0;
+  for (const t of texts) {
+    if (currentLen + t.length + 1 > maxLen && current.length > 0) {
+      chunks.push(current);
+      current = [];
+      currentLen = 0;
+    }
+    current.push(t);
+    currentLen += t.length + 1;
+  }
+  if (current.length > 0) chunks.push(current);
+  return chunks;
+}
+
+function translateViaGoogle(turns: Turn[]): Turn[] {
+  process.stdout.write('[fetch-transcript] falling back to Google Translate...\n');
+  const texts = turns.map((t) => t.text);
+  const chunks = chunkTexts(texts);
+  let allResults: string[] = [];
+  for (let ci = 0; ci < chunks.length; ci++) {
+    const chunk = chunks[ci];
+    process.stdout.write(`[fetch-transcript] translate batch ${ci + 1}/${chunks.length} (${chunk.length} turns)\n`);
+    const results = translateBatch(chunk);
+    if (results.length !== chunk.length) {
+      process.stderr.write(
+        `  warn: batch returned ${results.length} lines for ${chunk.length} turns\n`
+      );
+      // pad with empty strings to maintain alignment
+      while (results.length < chunk.length) results.push('');
+    }
+    allResults = allResults.concat(results);
+    if (ci < chunks.length - 1) {
+      try {
+        execSync('sleep 1', { stdio: 'ignore' });
+      } catch {
+        /* ignore sleep failure */
+      }
+    }
+  }
+  return turns.map((t, i) => ({ ...t, textCn: allResults[i] || undefined }));
 }
 
 function describeTrack(t: CaptionTrack): string {
@@ -389,6 +494,52 @@ async function main(): Promise<void> {
       endTime: args.endTime,
     });
 
+    if (args.translationLang) {
+      process.stdout.write(
+        `[fetch-transcript] fetching translation: ${args.translationLang}\n`
+      );
+      const transCacheKey = `${videoId}-${track.languageCode}-${track.kind ?? 'manual'}-${args.translationLang}`;
+      let transXml = args.noCache ? undefined : getCachedTrack(transCacheKey);
+      let useGoogleFallback = false;
+      if (transXml) {
+        process.stdout.write('[fetch-transcript] using cached translation XML\n');
+      } else {
+        try {
+          transXml = await fetchTrackXml(
+            track.baseUrl,
+            dispatcher,
+            ctrl.signal,
+            args.translationLang
+          );
+          if (!args.dryRun) {
+            setCachedTrack(transCacheKey, transXml);
+          }
+        } catch (err) {
+          process.stdout.write(
+            `[fetch-transcript] YouTube tlang failed: ${(err as Error).message}\n`
+          );
+          useGoogleFallback = true;
+        }
+      }
+      if (!useGoogleFallback && transXml) {
+        const transSegments = parseTrackXml(transXml);
+        process.stdout.write(
+          `[fetch-transcript] parsed ${transSegments.length} translated segments\n`
+        );
+        const transTurns = mergeIntoTurns(transSegments, {
+          speaker: finalSpeaker,
+          maxDurSec: args.maxDurSec,
+          startTime: args.startTime,
+          endTime: args.endTime,
+        });
+        turns = mergeTranslationTurns(turns, transTurns);
+        process.stdout.write(`[fetch-transcript] merged translation into ${turns.length} turns\n`);
+      } else {
+        turns = translateViaGoogle(turns);
+        process.stdout.write(`[fetch-transcript] translated ${turns.length} turns via Google Translate\n`);
+      }
+    }
+
     process.stdout.write(`[fetch-transcript] merged into ${turns.length} turns\n`);
     process.stdout.write(summarize(turns) + '\n');
 
@@ -487,6 +638,17 @@ async function main(): Promise<void> {
     fs.mkdirSync(path.dirname(outPath), { recursive: true });
     fs.writeFileSync(outPath, JSON.stringify(skeleton, null, 2) + '\n', 'utf-8');
     process.stdout.write(`[fetch-transcript] wrote ${outPath} (auto-filled)\n`);
+
+    if (args.autoSegment) {
+      process.stdout.write(`[fetch-transcript] running segmenter for ${id}...\n`);
+      const seg = spawnSync('python', ['scripts/segmenter/run.py', '--episode-id', id, '--force'], {
+        stdio: 'inherit',
+        shell: false,
+      });
+      if (seg.status !== 0) {
+        process.stderr.write(`[fetch-transcript] segmenter exited with code ${seg.status ?? seg.signal}\n`);
+      }
+    }
   } finally {
     clearTimeout(timer);
   }

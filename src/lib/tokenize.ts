@@ -12,6 +12,7 @@ export interface TokenizedTurn {
   start: number;
   end: number;
   text: string;
+  textCn?: string;
   words: WordToken[];
 }
 
