@@ -16,16 +16,11 @@ export default function Header() {
       }}
     >
       <div className="header-top">
-        <div>
-          <div className="header-name">
-            <div className="header-avatar">
-              <img src={episode.speakerAvatar} alt={episode.speakerName} />
-            </div>
-            {episode.speakerName}
+        <div className="header-name">
+          <div className="header-avatar">
+            <img src={episode.speakerAvatar} alt={episode.speakerName} />
           </div>
-          <div className="header-status">
-            <span>{state.isPlaying ? 'Speaking…' : 'Paused'}</span>
-          </div>
+          {episode.speakerName}
         </div>
         <div className="header-time">{time}</div>
       </div>

@@ -82,7 +82,7 @@ export default function Waveform() {
           }
         }
 
-        cx.fillStyle = `rgba(${r},${g},${b},${Math.min(0.9, alpha) * 0.2})`;
+        cx.fillStyle = `rgba(${r},${g},${b},${Math.min(0.9, alpha) * 0.45})`;
         cx.fillRect(x, y, barWidth, h);
       }
 
