@@ -20,7 +20,10 @@ def run(
     """
     episode_id = episode["id"]
     speaker_name_map = config.get("speaker_name_map", {})
-    default_guest_name = speaker_name_map.get(episode_id, "Guest")
+    # Priority: 1) explicit config mapping, 2) episode JSON speakerName, 3) fallback "Guest"
+    default_guest_name = speaker_name_map.get(
+        episode_id, episode.get("speakerName") or "Guest"
+    )
 
     # Deep copy episode as base
     analyzed = json.loads(json.dumps(episode, ensure_ascii=False))

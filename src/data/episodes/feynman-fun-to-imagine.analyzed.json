@@ -1,0 +1,2319 @@
+{
+  "id": "feynman-fun-to-imagine",
+  "videoId": "P1ww1IXRfTA",
+  "title": "费曼谈科学：想象力、物理与认知",
+  "subtitle": "理查德·费曼带你探索原子世界、电磁奥秘、宇宙尺度与量子现实，揭示科学思考的本质与乐趣。",
+  "speakerName": "Richard Feynman",
+  "speakerAvatar": "/avatars/feynman-fun-to-imagine.jpg",
+  "startTime": 0,
+  "duration": 4009,
+  "turns": [
+    {
+      "who": "Richard Feynman",
+      "start": 11,
+      "text": "It's interesting that some people find science so easy and others find it kind of dull and difficult especially kids you know, some of them are just eat it up and I don't know why it is, it's the same perhaps for all subjects For instance lot of people love music and I could never carry a tune",
+      "textCn": "有趣的是，有些人觉得科学很容易，而另一些人觉得它有点枯燥和困难，尤其是你认识的孩子，他们中的一些人只是把它吃光了，我不知道为什么会这样，也许所有科目都是一样的，例如很多人喜欢音乐，而我永远无法掌握曲调"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 29,
+      "text": "and I lose a great deal a pleasure out of that and I think that people lose a lot of pleasure who find the science dull In the case of science, I think that one of the things that make it very difficult is that it takes a lot of imagination",
+      "textCn": "我因此失去了很多乐趣，我认为那些觉得科学枯燥的人失去了很多乐趣就科学而言，我认为使它变得非常困难的事情之一是它需要很多想象力"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 45,
+      "text": "It's very hard to imagine all the crazy things that things really are like Nothing's really as it seems, we used to get you know hot and cold and all that hot and cold is the speeds that the atoms are jiggling",
+      "textCn": "很难想象所有疯狂的事情，事情实际上是这样的，没有什么是真的像看起来那样，我们过去常常让你知道冷热，而所有的热和冷都是原子抖动的速度"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 63,
+      "text": "if they jiggle more it corresponds to hotter and colder is jiggling less So if you have a bunch of atom, like a cup of coffee or something, sitting on a table and the atoms are jiggling a great deal and they bounce against the cup",
+      "textCn": "如果它们摇动得更多，则对应于更热和更冷，摇动更少所以如果你有一堆原子，比如一杯咖啡或其他东西，坐在桌子上，原子摇动得厉害，它们会在杯子上反弹"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 80,
+      "text": "and the cup then gets shaking and the atoms in the cup shake and the bounce against each other and the heat heats the cup and heats everything else and then hot things spread that heat to other by mere contact because the atoms that are jiggling a lot in the hot thing",
+      "textCn": "然后杯子开始摇晃，杯子里的原子摇晃并相互弹跳，热量加热杯子并加热其他所有东西，然后热的东西通过简单的接触将热量传播到其他东西，因为原子在热的东西中经常摇晃"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 95,
+      "text": "shake the ones that are jiggling only a little bit in the cold thing so that the hot (heat we say) goes into the cold thing, it spreads but what is spreading is just jiggling, an irregular motion, but it is easy to kind of understand.",
+      "textCn": "摇动那些在冷的东西中只稍微摇晃的东西，这样热（我们说的热量）就会进入冷的东西，它会扩散，但传播的只是摇晃，一种不规则的运动，但很容易理解。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 113,
+      "text": "It brings up another thing that's kind of curious: that I say that things jiggle and if you're used to balls bouncing you know they slow up and stop after a while",
+      "textCn": "它带来了另一件有点奇怪的事情：我说物体会摇晃，如果你习惯了球的弹跳，你就会知道它们会减慢速度并在一段时间后停止"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 129,
+      "text": "but we have to imagine with the atoms a perfect elasticity they never lose any energy every time they bounce they keep on bouncing all the time they don't lose anything they're perpetually moving And that the things that happen when we say something loses energy if a ball comes down and bounces,",
+      "textCn": "但我们必须想象原子具有完美的弹性，它们每次弹跳时都不会失去任何能量，它们一直弹跳，它们不会失去任何东西，它们永远在移动，当我们说如果一个球落下并弹跳时，某物会失去能量，就会发生这种情况，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 144,
+      "text": "it shakes irregularly some of the atoms in the floor and when it comes up again, it leaves some of the atoms moving, they jiggling So as it bounces, it is passing its extra energies, its extra motions to little patches on the floor each time it rebounces and it loses a little heat each time",
+      "textCn": "它会不规则地摇动地板上的一些原子，当它再次出现时，它会让一些原子移动，它们会摇晃所以当它弹跳时，它会在每次弹跳时将其额外的能量和额外的运动传递到地板上的小块上，并且每次都会损失一点热量"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 163,
+      "text": "until it settles down, we say as the falling motion stops But what's left is the floor is shaking more than it was before and the atoms in the ball are shaking more than they were before that the organized motion of all these atoms moving the same way falling down",
+      "textCn": "直到它稳定下来，我们说，当下落运动停止时，但剩下的是地板比以前摇晃得更多，球中的原子比以前摇晃得更多，所有这些原子以相同的方式下落的有组织的运动"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 179,
+      "text": "and the quiet floor, is now transformed into a ball sitting on the ground But all the motion is still there in the form of energy of motion in the form of the jiggling of the floor which is a little bit warmer (unbelievable!).",
+      "textCn": "安静的地板现在变成了坐在地上的一个球，但所有的运动仍然以运动能量的形式存在，以地板的摇动形式存在，有点温暖（令人难以置信！）。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 193,
+      "text": "But anybody who's hammered a great deal on something knows that it's true that if you pound something and hit it a lot you can feel the temperature difference it heats up it heats up simply because you're jiggling it this picture of atoms is a beautiful one that you can keep looking at all kinds of things this way",
+      "textCn": "但是任何经常敲击某物的人都知道，如果你敲击某物并经常敲击它，你可以感觉到它升温的温差，它升温只是因为你摇动它，这张原子图是一幅美丽的图，你可以用这种方式继续观察各种各样的东西"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 210,
+      "text": "you see a little drop of water a tiny drop and the atoms attract each other they like to be next to each other they want as many partners as they can get Now the guys at the surface have only partners on one side here in the air on the other side so they're trying to get in",
+      "textCn": "你看到一小滴水，一小滴，原子相互吸引，他们喜欢彼此相邻，他们想要尽可能多的合作伙伴，现在表面上的人只有一侧的合作伙伴，在另一侧的空气中，所以他们试图进入"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 227,
+      "text": "And you can imagine this team of people, this team in people, all moving very fast all try (to get) to have as many partners as possible and the guys on the edge are very unhappy and nervous and they keep pounding in trying to get in, and that makes a tight ball instead of a flat",
+      "textCn": "你可以想象这个团队的人，这个团队的人，所有人都移动得非常快，所有人都试图（获得）尽可能多的合作伙伴，而边缘的人非常不高兴和紧张，他们不断地试图进入，这使得一个紧密的球而不是平坦的球"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 243,
+      "text": "and that's what you know surface tension when you realize when you see how sometimes a water drop sits like this on a table then you start to imagine why it's like that because everybody is trying to get in to the water and at the same time while all this is happening, other atoms leaving the surface",
+      "textCn": "这就是你所知道的表面张力，当你看到有时一滴水滴像这样放在桌子上时，你开始想象为什么会这样，因为每个人都试图进入水中，而在这一切发生的同时，其他原子离开表面"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 261,
+      "text": "and the water drop is slowly disappearing I find myself trying to imagine all kinds of things all the time and I get a kick out of it like a runner gets a kick out of sweating I GET A KICK of thinking about these things!",
+      "textCn": "水滴正在慢慢消失，我发现自己一直在尝试想象各种事情，我从中得到了乐趣，就像跑步者因出汗而得到乐趣一样，我对思考这些事情感到很高兴！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 276,
+      "text": "I can't stop I mean if you may I could talk forever If you could cool off the water so that the jiggling is less and less, it jiggles slower and slower then the atoms get stuck in a place, they like to be with their friend there's force of attraction and they get packed together,",
+      "textCn": "我不能停止 我的意思是如果你可以的话我可以一直说下去 如果你能让水冷却，这样晃动越来越少，它晃动得越来越慢，然后原子被卡在一个地方，他们喜欢和他们的朋友在一起，有吸引力，他们挤在一起，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 294,
+      "text": "they're not rolling over each other, they're in a nice pattern like oranges in a crate in a nice organized pattern, all just jiggling in place but not having enough motion to get loose of their own place and to break the structure down And that what I'm describing is a solid, it's ice, it has a structure",
+      "textCn": "它们不会互相滚动，它们的形状很好，就像板条箱里的橙子，有一个很好的组织结构，所有这些都只是在适当的位置摇晃，但没有足够的运动来松开自己的位置并打破结构，而我所描述的是固体，它是冰，它有一个结构"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 311,
+      "text": "If you held the atom in one end in a certain position all the rest are lining up in a position sticking out and it’s solid at the end whereas if you heat that harder then they begin to get loose and roll all over each other and that's the liquid.",
+      "textCn": "如果你把原子的一端固定在某个位置，那么所有其余的原子都会排列在一个伸出的位置，最后它是固体，而如果你加热得更用力，它们就会开始松动并相互滚动，这就是液体。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 325,
+      "text": "And if you heat that still harder, then they bounce still harder and they simply bounce apart from each other and they're just individuals, I said atoms, these are really little groups of atoms: molecule which come flying and hit and although they have a tendency to stick, they're moving too fast",
+      "textCn": "如果你加热得更厉害，那么它们弹跳得更厉害，它们只是彼此弹开，它们只是个体，我说原子，这些实际上是很小的原子团：分子飞来飞去，撞击，虽然它们有粘住的倾向，但它们移动得太快"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 341,
+      "text": "their hands don't grab so to speak, as they pass and they fly apart again and this is the gas we call steam You can get all kinds of understanding When I was a kid with this \"air\", I was always interested in",
+      "textCn": "可以这么说，他们的手不会抓住，当他们经过时，他们会再次飞散，这就是我们称之为蒸汽的气体，你可以得到各种各样的理解当我还是个有这种“空气”的孩子时，我总是对"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 357,
+      "text": "I've noticed that when I pumped up my tires on the bicycle you can learn a lot by having a bicycle I'd pump up the tires that the pump would get hot and that also understand we see as the pump handle comes down and the atoms are coming up against it and bouncing off and it's moving in the ones that are coming off have a bigger speed than the ones that are coming in",
+      "textCn": "我注意到，当我在自行车上给轮胎打气时，你可以通过拥有一辆自行车学到很多东西。我给轮胎打气时，打气筒会变热，这也理解我们看到打气筒手柄下降，原子碰到它并弹开，它在脱落的原子中移动，其速度比进入的原子速度更大。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 375,
+      "text": "so that as it comes down and each time they collide it speeds them up and so they're hotter when you compress the gas it heats and when you pull the piston back out then the atoms which are coming faster than the piston feel receiving or sort of a give it gives and it comes out with less energy",
+      "textCn": "这样当它下降时，每次它们碰撞时，它们都会加速，所以当你压缩它加热的气体时，它们会更热，当你把活塞拉回来时，比活塞来得更快的原子会感觉到接收或给予它所给予的能量，并且它会以更少的能量出来"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 393,
+      "text": "it's like going up against something which is soft and yielding it go boom boom and it loses so as you pull the piston out and the atoms are hit they lose their speed and they cool off and gases are cool when they expand and the fun of it is that all these things which you see or you notice in the world",
+      "textCn": "这就像碰到一个柔软的东西，然后产生轰隆轰隆，然后它就失去了，所以当你拉出活塞时，原子受到撞击，它们失去了速度，它们冷却下来，气体在膨胀时变冷，它的乐趣在于你在世界上看到或注意到的所有这些东西"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 410,
+      "text": "about it the pump heats the gas and the gas cools when it expands or the steam evaporates until you cover the cover and all these things you can understand from these simple pictures and that's kind of a lot of fun to think about I don't want to take this stuff seriously",
+      "textCn": "关于它，泵加热气体，气体在膨胀或蒸汽蒸发时冷却，直到你盖上盖子，所有这些你可以从这些简单的图片中理解，想到这一点很有趣，我不想认真对待这些东西"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 426,
+      "text": "I think we should just have fun imagining it not worry about there's no teacher going to ask you questions at the end otherwise it's a horrible subject the atoms like each other the different degrees",
+      "textCn": "我认为我们应该享受想象的乐趣，不要担心最后没有老师会问你问题，否则这是一个可怕的主题原子彼此相似程度不同"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 446,
+      "text": "oxygen for instance in the air would like to be next to carbon and if they're getting near each other they snap together if they're not too close though they repel and they go apart so they don't know that they could snap together it's just as if you had a ball that was trying to climb a hill",
+      "textCn": "例如空气中的氧气会喜欢靠近碳，如果它们彼此靠近，如果它们不太靠近，它们就会咬合在一起，尽管它们会排斥并且会分开，所以它们不知道它们可以咬合在一起，就像你有一个试图爬山的球一样"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 462,
+      "text": "and there was a hole it could go into like a volcano hole a deep one it's rolling along it doesn't go down in the deep hole because if it starts to climb the hill and then rolls away again but if you made it go fast enough it'll fall into the hole and so if it's have something like wood in oxygen",
+      "textCn": "有一个洞，它可以像火山洞一样进入一个很深的洞，它会沿着它滚动，它不会落入深洞，因为如果它开始爬山，然后再次滚走，但如果你让它走得足够快，它就会掉进洞里，所以如果它有氧气之类的木头之类的东西"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 480,
+      "text": "there's carbon in the wood from a tree and the oxygen comes and hits it carbon but not hot enough it just goes away again the air is always coming nothing's happening if you can get it faster by heating it up somehow somewhere",
+      "textCn": "树木中的木头里有碳，氧气来袭，碳但不够热，它就会再次消失，空气总是进来，如果你能通过某种方式在某个地方加热它来更快地得到它，什么也不会发生"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 496,
+      "text": "somehow get it started a few of them come fast they go over the top so to speak they come close enough to the carbon and snap in and that gives a lot of jiggly motion which might hit some other atoms making those go faster so they can climb up and bump against other carbon atoms",
+      "textCn": "不知怎的，它们中的一些来得很快，它们越过了顶部，可以说，它们足够接近碳并卡入，这会产生很多摇晃的运动，可能会撞击其他一些原子，使它们跑得更快，这样它们就可以爬上并碰撞其他碳原子"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 512,
+      "text": "and they jiggle and they make other jiggle, and you get an horrible catastrophe which is one after the other all these things are going faster and faster and snapping in and the whole thing is changing that catastrophe is a fire it's just a way of looking at it",
+      "textCn": "它们摇晃，又摇晃，然后你会遇到一场可怕的灾难，一个接一个，所有这些事情都变得越来越快，然后突然发生变化，整个事情都在改变，灾难是一场火灾，这只是一种看待它的方式"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 527,
+      "text": "and these things are happening they perpetual once it gets started it keeps on going the heat makes the other atoms capable of reaching to make more heat to make other atoms and so on so this terrible snapping is producing a lot of jiggling and if I put with all lack activity of the atoms there",
+      "textCn": "这些事情正在发生，一旦开始，它就会持续下去，热量使其他原子能够产生更多的热量来制造其他原子，依此类推，所以这种可怕的断裂会产生大量的抖动，如果我把那里的原子都缺乏活动的话"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 544,
+      "text": "and I put a cup of coffee over that mess of wood that's doing this it's going to get a lot of jiggling so that's what the heat of the fire is and then of course uh you see what's happening when you start thinking, just go on and on wonder how did it get started",
+      "textCn": "我把一杯咖啡放在一堆乱七八糟的木头上，它会剧烈摇晃，这就是火的热量，然后当然，呃，当你开始思考时，你就会看到发生了什么，继续思考它是如何开始的"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 561,
+      "text": "why is it that the wood's been sitting around all this time with the oxygen all this time and it didn't do this earlier or something where did I get this from？ well it came from a tree and the substance of a tree is carbon, where did that come from?",
+      "textCn": "为什么木头一直都和氧气在一起，而且它没有更早地这样做，或者我从哪里得到这个？好吧，它来自一棵树，而树的物质是碳，它从哪里来？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 579,
+      "text": "that comes from the air it's carbon dioxide from the air people look at trees and they think it comes out of the ground the plants grow out of the ground but if you ask where the substance comes from you find out where do they come from the trees come out of the air?",
+      "textCn": "来自空气的二氧化碳，人们看着树木，他们认为它来自地下，植物从地下长出来，但如果你问这些物质来自哪里，你会发现它们来自树木，来自空气？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 593,
+      "text": "they surely come out of you know they come out of the air the carbon dioxide in the air goes into the tree and it changes it kicking out the oxygen and uh pushing the oxygen away from the carbon and leaving the carbon substance with water water comes out of the ground you see",
+      "textCn": "它们肯定是从你的身体里出来的，你知道它们是从空气中出来的，空气中的二氧化碳进入树，它改变了树，把氧气踢出了，呃，把氧气从碳中排出，让碳物质和水在一起，水从地下出来，你看"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 612,
+      "text": "only it had to get in there it came out of the air didn't it it came down from the sky so in fact most of a tree almost all of the tree is out of the ground I'm sorry it's out of the air there's a little bit from the ground some minerals and so forth",
+      "textCn": "只是它必须进入那里，它是从空中来的，不是吗，它是从天上掉下来的，所以事实上，一棵树的大部分，几乎所有的树都长在地面上，对不起，它是从空中来的，有一点来自地面，一些矿物质等等"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 627,
+      "text": "now of course I told you the oxygen and we… oxygen carbon stick together very tight how is that the tree is so smart to take the carbon dioxide which is carbon and oxygen nicely combined and undo that so easy?",
+      "textCn": "当然，我告诉你氧气，我们……氧气碳非常紧密地粘在一起，树怎么会如此聪明，能够吸收碳和氧很好地结合的二氧化碳，并如此容易地消除它？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 643,
+      "text": "Ah! Life! Life has some mysterious force!",
+      "textCn": "啊!生活！生命有某种神秘的力量！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 646,
+      "text": "No! The sun is shining, and this sunlight comes down and knocks this oxygen away from the carbon, so it takes sunlight to get the plant to work!",
+      "textCn": "不！阳光灿烂，阳光照射下来，将碳中的氧气带走，因此植物需要阳光才能工作！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 655,
+      "text": "and so the sun, all the time, is doing the work of separating the oxygen away from the carbon the oxygen is some kind of terrible by-product, which it spits back into the air and leaving the carbon and water and stuff to make the substance of the tree and then we take the substance of the tree to get the fireplace",
+      "textCn": "所以太阳一直在做着将氧气与碳分离的工作，氧气是某种可怕的副产品，它把它吐回到空气中，留下碳、水和其他物质来制造树的物质，然后我们用树的物质来制造壁炉"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 674,
+      "text": "and there's all the oxygen made by these trees and all the carbons would much prefer to be close together again and once you let the heat to get it started it continues and make an awful lot of activity while it's going back together again",
+      "textCn": "这些树木产生的所有氧气和所有碳都更愿意再次靠近在一起，一旦你让热量启动它，它就会继续进行大量活动，同时又会再次聚集在一起"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 690,
+      "text": "and all those nice light and everything comes out and everything is being undone you're going from carbon and oxygen back to carbon dioxide and the light and heat that's coming out, that's the light and heat of the sun that went in so it's sort of stored sun that is coming out when you burned a log",
+      "textCn": "所有这些美好的光，一切都出来了，一切都被破坏了，你从碳和氧回到二氧化碳，光和热出来了，这是进入的太阳的光和热，所以它是一种储存的太阳，当你燃烧一根木头时就会出来"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 712,
+      "text": "next question: how is the sun so jiggly, so hot?",
+      "textCn": "下一个问题：太阳怎么这么晃动、这么热？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 718,
+      "text": "I gotta stop somewhere; I leave you something to imagine most elastic things like steel springs and so on is nothing but this electrical thing pulling back",
+      "textCn": "我得找个地方停下来；我留给你一些想象，像钢弹簧之类的大多数有弹性的东西只不过是这种电动东西拉回来"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 738,
+      "text": "you pull the atoms up a little bit apart when you bend something and then they try to come back together again but rubber bands work on a different principle there there's some long molecules like chains and other little ones that are shaking all the time that are bombarding them these chains",
+      "textCn": "当你弯曲某物时，你把原子拉得分开一点，然后它们试图再次回到一起，但橡皮筋的工作原理不同，有一些长分子，如链条和其他小分子，它们一直在震动，轰击它们这些链条"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 758,
+      "text": "and the chains are all kind of kinky and knockabout in shape when you pull open the rubber band the strings get straighter but these strings are being bombarded on the side by these other atoms trying to shorten them by kinking them so it pulls back it's trying to pull back",
+      "textCn": "当你拉开橡皮筋时，链条的形状都是扭曲和混乱的，绳子会变得更直，但这些绳子在侧面受到其他原子的轰击，试图通过扭结来缩短它们，所以它会向后拉，它试图向后拉"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 775,
+      "text": "and it's pulling back only because of the heat so if you heat a rubber band it'll pull strong more strongly for instance if you hang a weight with a rubber band put a little match to it it's kind of fun to watch it rise because heats want and there's another thing you can check that this idea is right",
+      "textCn": "它只是因为热量而向后拉，所以如果你加热橡皮筋，它会拉得更厉害，例如，如果你用橡皮筋挂一个重物，在上面放一根小火柴，看着它升起是很有趣的，因为热量需要，还有另一件事你可以检查这个想法是否正确"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 792,
+      "text": "that is heat that drives a rubber band if you pull the band out just like when we push the piston and the gas if you pull the band out this tightening string hitting those molecules makes them move faster so it's warmer",
+      "textCn": "这是驱动橡皮筋的热量，如果你把橡皮筋拉出来，就像我们推动活塞一样，如果你把橡皮筋拉出来，就会产生气体，紧绷的绳子撞击这些分子，使它们移动得更快，所以温度更高"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 808,
+      "text": "and if you take the band and let it in then the molecules hitting the strings which sort of give as the thing hits it they give in to the soft like and they lose energy when they hit these retiring band, string",
+      "textCn": "如果你把乐队放进去，那么分子撞击琴弦，当物体击中它时，它们就会屈服于柔软的感觉，当它们撞击这些退休的乐队、琴弦时，它们就会失去能量"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 824,
+      "text": "so it cools and there is a little way you can do this you're not very sensitive it's a small effect and if you take a fairly wide rubber band and put it between your lips and pull it out you'll certainly notice it's hotter and if you then hold it out and let it in you'll notice it's cooler",
+      "textCn": "所以它会变凉，有一个小方法你可以做到这一点，你不是很敏感，这是一个很小的影响，如果你拿一根相当宽的橡皮筋，把它放在你的嘴唇之间，然后把它拉出来，你肯定会发现它更热，如果你把它拿出来，让它进去，你会发现它更凉"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 841,
+      "text": "at least you'll notice a certain difference in whether what happens when you expand it and when you contract it and that's i've always found rubber bands fascinating to think that when they're sitting on an old package of papers for a long time holding those papers together",
+      "textCn": "至少你会注意到，当你扩张它和收缩它时，会发生什么，这是有一定区别的，这就是我一直觉得橡皮筋很有趣，因为它们长时间坐在一包旧纸上，将这些纸粘在一起。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 856,
+      "text": "it's done by a perpetual pounding pounding pounding and the atoms that get these chains to hold it, try to kink them and try kink them year after year well rubber bands don't last that long but anyhow for a long time trying to hold this whole thing together",
+      "textCn": "它是通过永久的敲击敲击和让这些链保持它的原子来完成的，尝试扭结它们并尝试年复一年地扭结它们橡皮筋不会持续那么久但无论如何要花很长时间试图将整个东西固定在一起"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 872,
+      "text": "The world is a dynamic mess of jiggling things if you look at it right And if you magnify, you will hardly see a little thing anymore because everything is jiggling in its own pattern, and there's a lot of little balls It's lucky that we have such a large scale of view of everything that we can see these as \"things\"",
+      "textCn": "如果你看得对的话，世界就是一个充满动态的混乱的摇动的东西如果你放大，你几乎看不到任何小东西了，因为一切都在以自己的模式摇动，并且有很多小球幸运的是，我们对所有事物都有如此大的视野，我们可以将它们视为“东西”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 889,
+      "text": "without having worry about all these little atoms all the time If you get hold of two magnet and you push them you can feel this pushing between them.",
+      "textCn": "不用一直担心所有这些小原子如果你抓住两个磁铁并推动它们，你可以感觉到它们之间的推动力。"
+    },
+    {
+      "who": "Host",
+      "start": 903,
+      "text": "Turn around the other way and they slam together Now, what is it, the feeling between those two magnets?",
+      "textCn": "转向另一个方向，它们猛烈地撞在一起 现在，那两块磁铁之间的感觉是什么？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 909,
+      "text": "what do you mean \"what's the feeling between two magnets when you hold them\"?",
+      "textCn": "“当你握住两块磁铁时，它们之间的感觉如何”是什么意思？"
+    },
+    {
+      "who": "Host",
+      "start": 911,
+      "text": "well, there's something there, isn't it?",
+      "textCn": "嗯，那里有东西，不是吗？"
+    },
+    {
+      "who": "Host",
+      "start": 913,
+      "text": "I mean that the sensation that they're something there when you push the two magnets together.",
+      "textCn": "我的意思是，当你将两块磁铁推到一起时，会有一种感觉，它们就在那里。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 917,
+      "text": "Listen to my question what is the meaning when you say that there's there's a feeling of course you feel it. Now what do you want to know?",
+      "textCn": "听我的问题，当你说有一种感觉，你当然感觉到它是什么意思。现在你想知道什么？"
+    },
+    {
+      "who": "Host",
+      "start": 924,
+      "text": "What I want to know is what's going on, between these two bits of matter?",
+      "textCn": "我想知道的是，这两种物质之间到底发生了什么？"
+    },
+    {
+      "who": "Host",
+      "start": 930,
+      "text": "magnets repel each other Well then, what does that mean or why are they doing that or how are they doing that?",
+      "textCn": "磁铁相互排斥 那么，这意味着什么，或者为什么他们要这样做，或者他们是如何做到的？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 940,
+      "text": "I'm not saying... That's a perfectly reasonable question.",
+      "textCn": "我并不是说……这是一个完全合理的问题。"
+    },
+    {
+      "who": "Host",
+      "start": 943,
+      "text": "Of course it's a reasonab... it's an excellent question. Okay?",
+      "textCn": "当然这是一个合理的问题……这是一个很好的问题。好的？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 949,
+      "text": "But the problem that you are asking, you see, when you ask why something happens how does a person answers \"why something happens?\"",
+      "textCn": "但是你所问的问题，你看，当你问为什么某事发生时，一个人如何回答“为什么某事发生？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 960,
+      "text": "for example Aunt Minnie is at the hospital. Why? Because she slip.",
+      "textCn": "例如，米妮阿姨在医院。为什么？因为她滑倒了。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 968,
+      "text": "she went out and she slipped on the ice and broke her hip that satisfies people. It satisfies but wouldn't satisfy someone who came from another planet knew nothing about things first you understand \"Why when you break your hip you go to the hospital?",
+      "textCn": "她出去，在冰上滑倒，摔断了臀部，这让人满意。它满足但不会满足那些来自另一个星球的人，他们对事物一无所知，首先你会明白“为什么当你摔断髋骨时你要去医院？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 982,
+      "text": "\"How do you get to the hospital when the hip is broken\" well because her husband seeing that she had her hip broken called the hospital up and send somebody to get her all that is understood by people now when you explain a \"Why\" you have to be in some framework that you allow something to be true",
+      "textCn": "“当髋部骨折时，你如何去医院”，因为她的丈夫看到她的髋部骨折，打电话给医院，并派人去给她提供现在人们所理解的一切，当你解释“为什么”时，你必须在某种框架中，你允许某些事情是真实的"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1001,
+      "text": "Otherwise you are perpetually asking why Why did the husband call up the hospital?",
+      "textCn": "否则你会一直问为什么丈夫打电话给医院？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1006,
+      "text": "Because the husband is interested in his wife's welfare. Not always some husbands aren't interested in their wives' welfare when they are drunk and angry So you begin to get very interesting understanding of the world and all its complications in order to… if you try to follow anything up",
+      "textCn": "因为丈夫关心妻子的福祉。并不总是有些丈夫在喝醉和生气时对妻子的福利不感兴趣所以你开始对世界及其所有复杂性有非常有趣的了解，以便……如果你尝试跟进任何事情"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1023,
+      "text": "you go deeper and deeper in various directions.",
+      "textCn": "你在各个方向上越来越深入。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1025,
+      "text": "for example you could go “why did she slip upon the ice?\"",
+      "textCn": "例如，你可以问“她为什么在冰上滑倒？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1029,
+      "text": "Well ice is lippery everybody knows that no problem But you ask \"why is ice slippery?\"",
+      "textCn": "好吧，冰很滑，每个人都知道，没问题，但你问“为什么冰很滑？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1035,
+      "text": "that's kind of curious, ice is extremely slippery it's very interesting You say \"How does it work?\"",
+      "textCn": "这有点奇怪，冰非常滑，很有趣，你说“它是如何工作的？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1042,
+      "text": "you could either say \"I'm satisfied that you have answered me ice is slippery, that explains it\" or you could go on and say \"Why is ice slippery?”",
+      "textCn": "你可以说“我很满意你回答了我，冰很滑，这解释了这一点”或者你可以继续说“为什么冰很滑？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1052,
+      "text": "and then you're involved with something because there are not many things as slippery as ice It's very hard to get greasy stuff, but that's a sort of wet slimy But a solid that is so slippery? Because it is in the case of ice when you stand on it (they say), momentarily the pressure melts the ice a little bit",
+      "textCn": "然后你就卷入了一些事情，因为没有多少东西像冰一样滑。油腻的东西很难得到，但那是一种湿滑的东西，但是固体这么滑？因为在冰的情况下，当你站在冰上时（他们说），瞬间压力会稍微融化冰"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1071,
+      "text": "so you get a sort of instantaneous water surface on which you are slipping Why on ice and not on other things?",
+      "textCn": "所以你会得到一种瞬时的水面，你在上面滑行 为什么是在冰上而不是在其他物体上？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1078,
+      "text": "Because ice expands… water expands when it freezes so the pressure tries to undo the expansion and melts it.",
+      "textCn": "因为冰会膨胀……水结冰时会膨胀，因此压力会试图消除膨胀并将其融化。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1085,
+      "text": "It is capable about melting it But other substances contract when they're freezing and when you push them they're just satisfied to be solid why does water expand when it freezes and another substance don't expand when they freeze all right? I'm not answering the question but I am telling you how difficult a \"why\" question is.",
+      "textCn": "它能够融化它，但是其他物质在冻结时会收缩，当你推动它们时，它们只是满足于成为固体，为什么水在冻结时会膨胀，而另一种物质在冻结时不会膨胀，好吧？我不是在回答这个问题，而是在告诉你“为什么”这个问题是多么困难。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1102,
+      "text": "You have to know what it is that you are permitted to understand and allow to be understood and known and what it is you're not you'll notice in this example that the more I ask why, it gets interesting after all that's my idea that the deeper thing is the more interesting in it",
+      "textCn": "你必须知道什么是你可以理解、允许被理解和知道的，以及你不可以理解的是什么，你会在这个例子中注意到，我越问为什么，它就会变得有趣，毕竟我的想法是，越深入的东西越有趣。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1120,
+      "text": "and you can even go further and say \"Why did she fall down when she slip?\"",
+      "textCn": "你甚至可以更进一步说“为什么她滑倒时会摔倒？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1126,
+      "text": "That has to do with gravity and involves all other planets, and everything else never mind, it goes on and on!",
+      "textCn": "这与重力有关，并涉及所有其他行星，其他一切都没关系，它一直在继续！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1132,
+      "text": "Now when you ask for example \"Why two magnets repel?\"",
+      "textCn": "现在，当你问“为什么两块磁铁相斥？”时"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1137,
+      "text": "there are many different levels it depends on whether you are a student of physics or an ordinary person who doesn’t know anything or not If you are somebody that doesn't know anything about all I can say is that it is the magnetic force that makes things repel And that you are feeling that force. You see, that is very strange",
+      "textCn": "有很多不同的层次，这取决于你是一个物理系的学生，还是一个什么都不知道的普通人。如果你是一个什么都不知道的人，我只能说，是磁力使物体相互排斥，而你感受到了这种力。你看，这很奇怪"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1153,
+      "text": "because I don't feel kind of force like that in other circumstances.",
+      "textCn": "因为在其他情况下我感觉不到那样的力量。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1156,
+      "text": "When you turn them in the other way they attract there's a very analogous force, electrical force which is the same kind of a question and you say that's also very weird but you're not at all disturbed by the fact that when you put your hand on the chair, it pushes you back.",
+      "textCn": "当你以另一种方式转动它们时，它们会吸引，会产生一种非常相似的力，电力，这是同一类问题，你说这也很奇怪，但你一点也不担心，当你把手放在椅子上时，它会把你推回去。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1171,
+      "text": "But we have find that looking at it that it is the same force as a matter of fact the electrical force (not magnetic exactly in that case) but it is the same electric repulsions that are involved in keeping you finger away from the chair because everything is made out... it is electrical force in minor, microscopic details",
+      "textCn": "但我们发现，事实上，它与电力（在这种情况下不完全是磁力）是相同的力，但它与使你的手指远离椅子所涉及的电斥力相同，因为一切都已确定......它是微小的微观细节中的电力"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1188,
+      "text": "there are other forces involved, but they are connected to electrical force It turns out that the magnetic and the electric forces with which I wish to explain these things this repulsion in the first place is what ultimately is the deeper thing that we have to start that we can start with to explain many other things that looks like they were...",
+      "textCn": "还涉及其他力，但它们与电力有关事实证明，我希望用磁力和电力来解释这些事物，这种排斥力最终是我们必须开始的更深层次的事物，我们可以从它开始解释许多其他看起来像它们的事物……"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1208,
+      "text": "Everybody would just accept them.",
+      "textCn": "每个人都会接受它们。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1209,
+      "text": "You know you cannot put your hand through the chair, that's taken for granted.",
+      "textCn": "你知道你不能把手伸进椅子，这是理所当然的。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1214,
+      "text": "But you can't put your hand through the chair when you look at it more closely: \"Why?\"",
+      "textCn": "但当你仔细观察时，你却无法把手伸进椅子里：“为什么？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1218,
+      "text": "it involves these same repulsive forces that appear in magnets The situation is then to have to explain is: \"why in the magnet it goes over a bigger distance than ordinarily?\"",
+      "textCn": "它涉及到与磁铁中出现的相同的排斥力。那么必须解释的情况是：“为什么在磁铁中它会比平常移动更大的距离？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1229,
+      "text": "There it has to do with the fact that in iron, all the electrons are spinning in the same direction, they all get lined up and they magnify the effect of the force until it's large enough at a distance that you can feel it but it's a force which is present all the time and very common",
+      "textCn": "这与这样一个事实有关：在铁中，所有电子都朝同一方向旋转，它们都排成一排，它们放大了力的影响，直到它在一定距离内足够大，您可以感觉到它，但它是一种一直存在且非常常见的力"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1246,
+      "text": "and is in a basic force or almost I mean I can go a a little further back if I went more technical but in the early level, I just have to tell you that is going to be one of the thing you will have to take as an element in the world the existence of magnetic repulsion or electrical or magnetic attraction",
+      "textCn": "是一种基本力，或者几乎我的意思是，如果我更专业一点，我可以追溯到更远的地方，但在早期水平，我只需要告诉你，这将是你必须将其视为世界上的一个元素的东西之一，磁斥力或电或磁吸引力的存在"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1265,
+      "text": "I can't explain that attraction in terms of anything else that is familiar to you.",
+      "textCn": "我无法用你所熟悉的其他事物来解释这种吸引力。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1271,
+      "text": "For example, if we say that the magnets attracts like if they were connected by rubber bands I would be cheating you because they are not connected by rubber bands; I shouldn't be in trouble you'll soon ask me about the nature of the bands And secondly, if you are curious enough you will ask me",
+      "textCn": "例如，如果我们说磁铁就像用橡皮筋连接一样吸引，那么我就是在欺骗你，因为它们不是用橡皮筋连接的；它们不是由橡皮筋连接的。我不应该有麻烦你很快就会问我关于乐队的性质其次，如果你足够好奇你会问我"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1287,
+      "text": "\"why rubber bands tend to pull back together again?\"",
+      "textCn": "“为什么橡皮筋往往会再次拉回到一起？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1290,
+      "text": "I would end up explaining that in terms of electrical forces which are the very things I try to use the rubber band to explain so I have cheated very badly you see So I'm not going to be able to give you an answer to \"why magnets attract each other\" except to tell you that they do",
+      "textCn": "我最终会用电力来解释，这正是我试图用橡皮筋来解释的东西，所以我作弊得很严重，你看，所以我无法给你“为什么磁铁相互吸引”的答案，除了告诉你它们确实如此"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1307,
+      "text": "and to tell you that's one of the elements in the world among different forces: there are electrical forces, magnetic forces, gravitational forces and others, and those are some of the parts If you are a student, I could go further and tell you that the magnetic forces are related to the electrical forces very intimately",
+      "textCn": "告诉你这是世界上不同力之间的元素之一：有电力，磁力，引力等等，这些是其中的一些部分如果你是学生，我可以更进一步告诉你磁力与电力非常密切相关"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1326,
+      "text": "that the relationship between the gravity forces and the electrical forces remains unknown and so on.",
+      "textCn": "重力和电力之间的关系仍然未知等等。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1333,
+      "text": "But I really can't do a good job, any job of explaining magnetic forces in terms of something else that you are more familiar with, because I don't understand it in terms of anything else that you are more familiar with.",
+      "textCn": "但我真的不能做好工作，任何用你们更熟悉的东西来解释磁力的工作，因为我不能用你们更熟悉的东西来理解它。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1352,
+      "text": "The stuff of fantasizing in looking at the world, imagining things, which really isn't fantasizing because you just try to imagine the way it really is, comes up handy sometimes The other day I was at the dentist, he was getting ready with this electric drill to make holes",
+      "textCn": "幻想看世界，想象事物，这实际上不是幻想，因为你只是试图想象它的真实情况，有时会派上用场。前几天我去看牙医，他正准备用电钻打洞"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1369,
+      "text": "and I thought I'd better think of something fast or else it's gonna hurt.",
+      "textCn": "我想我最好尽快想出点办法，否则会很痛苦。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1374,
+      "text": "And then I thought about this little motor going around and what was that make it turn? And what was going on?",
+      "textCn": "然后我想到了这个小马达在转动，是什么让它转动？到底发生了什么事？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1383,
+      "text": "and what's going on is that there's a dam some distance away here and water going over the dam turns a great big wheel, alright and this wheel is connected with long thin pieces of copper",
+      "textCn": "发生的事情是，这里有一段距离有一座水坝，水流过水坝，转动了一个巨大的轮子，好吧，这个轮子与长长的薄铜片相连"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1399,
+      "text": "which split up into other pieces of copper and split up and spread all over the city and then they're connected back to another little gadget and makes wheels turn all the wheels in the city are turning, because this thing turns.",
+      "textCn": "它分裂成其他铜片，分裂并散布到整个城市，然后它们连接回另一个小装置，使轮子转动，城市中所有的轮子都在转动，因为这个东西转动。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1413,
+      "text": "If this thing stops, all the wheels stop. If it starts again, they all start again.",
+      "textCn": "如果这件事停止了，所有的轮子都会停止。如果重新开始，他们都会重新开始。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1419,
+      "text": "And I think it's kind of a marvelous thing of nature. It's extremely curious that phenomenon I like to think about a lot, because all it is, it's copper and iron.",
+      "textCn": "我认为这是一种奇妙的自然现象。我非常喜欢思考这个现象，这非常奇怪，因为它就是铜和铁。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1431,
+      "text": "see, sometimes we think it's man-made generator very complicated, the phenomenon is a result of somet special something that we've made.",
+      "textCn": "看，有时我们认为人造发电机非常复杂，这种现象是我们制造的一些特殊东西的结果。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1439,
+      "text": "But it's nature doing it, and it's just iron and copper; if you just take a big long loop of copper, and add iron at each end and move the piece of iron here, the other iron move at the other piece.",
+      "textCn": "但这是大自然在做的，而且只是铁和铜；如果你只取一个大的长铜环，并在每一端添加铁并将一块铁移动到这里，另一块铁会移动到另一块。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1451,
+      "text": "And if you get it down to the NOTHING here just moving piece of iron in a loop a copper and see other piece of iron move you realize what a fantastic mystery nature is!",
+      "textCn": "如果你把它归结为这里什么都没有，只是将一块铁放在一个铜环中移动，然后看到其他一块铁移动，你就会意识到大自然是多么奇妙的神秘！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1468,
+      "text": "you don't even need the iron you could if you at least get this pump prime primed and started by jiggling copper strands around fast enough knotting them and unknotting them and so forth you can get other copper strands move at the other end, over a long connection.",
+      "textCn": "你甚至不需要熨斗，如果你至少让这个泵启动并启动，以足够快的速度摇晃铜线，将它们打结和解开，依此类推，你可以让其他铜线在另一端移动，通过长连接。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1486,
+      "text": "And what is it? It's only copper! And motion!",
+      "textCn": "那是什么？只不过是铜而已！还有运动！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1492,
+      "text": "We're so used to circumstances in which these electrical phenomena are all canceled out Everything is sort of neutral: pushing and pulling, it's all very dull.",
+      "textCn": "我们已经习惯了这些电现象全部被抵消的环境，一切都是中性的：推和拉，一切都很乏味。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1504,
+      "text": "But nature has these wonderful things Magnetic forces and electrical forces when you comb your hair with your comb and you get some strange condition so you put it in front of a piece a paper, that lifts up the paper, the paper jiggles at a distance far away that in fact turns out that that is the thing that's deeper inside of everything than the things we're used to",
+      "textCn": "但大自然有这些奇妙的东西，磁力和电力，当你用梳子梳理头发时，你会遇到一些奇怪的情况，所以你把它放在一张纸前面，举起纸，纸在很远的地方摇晃，事实证明，那是比我们习惯的东西更深层的东西"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1531,
+      "text": "We're used to forces that only act directly, right?",
+      "textCn": "我们已经习惯了只直接起作用的力量，对吗？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1534,
+      "text": "you push with your finger, it only acts directly, but then you have to imagine what it is that's pushing with the finger here's this finger is made of little balls of atoms.",
+      "textCn": "你用手指推动，它只直接起作用，但是你必须想象是什么在用手指推动，这个手指是由小原子球组成的。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1544,
+      "text": "And it has got another bunch of atoms that are pushing it.",
+      "textCn": "它还有另一群原子在推动它。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1547,
+      "text": "At that little space between those atoms. And that pushing is going through that space.",
+      "textCn": "在这些原子之间的那个小空间里。这种推动力正在穿过那个空间。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1553,
+      "text": "And the only thing that happens with the comb and the paper is that the circumstances have a reason which makes it possible to see those forces go through a bigger distance than just the short distance between the atoms",
+      "textCn": "梳子和纸发生的唯一事情是，环境有一个原因，使得可以看到这些力穿过比原子之间的短距离更大的距离"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1568,
+      "text": "What it is they have charges like electrons, that are both the same they repel each other with a force. They are very tiny parts, they are piece of the atoms and they repel each other with a force which is enormous it's inversely as the square of the distance just like gravity is inverse to the square of the distance",
+      "textCn": "它们具有像电子一样的电荷，它们都是相同的，它们通过力相互排斥。它们是非常小的部分，它们是原子的一部分，它们以巨大的力相互排斥，它与距离的平方成反比，就像重力与距离的平方成反比一样"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1586,
+      "text": "but gravity is attractive whereas this one is repulsive and for two electrons the gravity is so weak compared to the electricity electricity is so much more enormous than the gravity I can't express because I don’t know the name of the numbers it's one with thirty eight or forty zeros after the one",
+      "textCn": "但引力是吸引性的，而这个是排斥性的，对于两个电子来说，与电力相比，引力是如此微弱。电力比引力大得多，我无法表达，因为我不知道数字的名称，它是一，后面有三十八个或四十个零。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1604,
+      "text": "Bigger is electricity!",
+      "textCn": "更大的是电！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1606,
+      "text": "It's so enormous, that if I were all electrons... well, the number is too big!",
+      "textCn": "它是如此巨大，如果我都是电子……好吧，这个数字太大了！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1615,
+      "text": "There's also however for electrical thing other kind of charges, positive charges example of protons are positive, they're inside the nucleus of the atoms and the attract electrons Opposite charges attracts, alike charges repel So you have to imagine enormous forces",
+      "textCn": "然而，对于带电的东西来说，也有其他类型的电荷，例如质子的正电荷是正的，它们位于原子核内并且吸引电子异性电荷吸引，同性电荷排斥所以你必须想象巨大的力"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1631,
+      "text": "where likes are trying to get away from likes, and unlikes are trying to get near the opposite What would happen if you had a lot of them?",
+      "textCn": "喜欢的人试图远离喜欢的人，而不喜欢的人试图接近相反的人，如果你有很多这样的人会发生什么？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1640,
+      "text": "they'd be all the likes would collect with unlike, they attract each other and they'd get an intimate mixture of pluses and minuses all on top of each other, very close together You wouldn't have a lot of pluses anywhere, because they repel each other They're all being compensated with minus very close,",
+      "textCn": "他们会是所有喜欢和不喜欢的人，他们互相吸引，他们会得到一个紧密的优点和缺点的混合体，所有的优点和缺点都在彼此之上，非常接近，你在任何地方都不会有很多优点，因为它们互相排斥，他们都被非常接近的缺点所补偿，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1655,
+      "text": "and you get these little knots of plus and minus the reason that the knots don't get smaller and smaller is because they are particles and there are quantum mechanical effects that we won’t discuss that don’t make they can't get any smaller than a certain size So you get these little lumps which are balls, they are the atoms",
+      "textCn": "你得到这些正负的小结 结不会变得越来越小的原因是因为它们是粒子并且存在我们不会讨论的量子力学效应，这不会使它们不能变得小于某个尺寸所以你得到这些小块，它们是球，它们是原子"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1672,
+      "text": "The atoms are positive and negative charges and they neutralize they cancel their charges as nearly as they can and because of these force are so big, it ends up nowhere, with very little left because they're so big they cancels out, there's always so exactly the same pluses and minuses in any normal material",
+      "textCn": "原子带有正电荷和负电荷，它们会中和它们，尽可能地消除它们的电荷，由于这些力太大，它最终无处可去，只剩下很少的东西，因为它们太大了，它们抵消了，任何普通材料总是有完全相同的优点和缺点"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1691,
+      "text": "When you comb your hair, it rubs just a little bit extra off just a few extra minuses say here, and somewhere else a few extra pluses But the forces are so big that just the extra ones which make a force that we can see, that seems to get over a long range",
+      "textCn": "当你梳理头发时，它会额外擦掉一点点，只是这里说一些额外的缺点，而在其他地方说一些额外的优点，但力量是如此之大，以至于我们可以看到额外的力量，这似乎可以跨越很长的范围"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1708,
+      "text": "and that we find mysterious and that we need an explanation for and we try to find an explanation for it in terms of ideas like forces that are inside of rubber bands, or steel bars and twisted things We would like to have some kind of puller, at a distance",
+      "textCn": "我们发现它很神秘，我们需要一个解释，我们试图用像橡皮筋、钢条和扭曲的东西内部的力这样的想法来解释它，我们希望有某种拉手，在远处"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1725,
+      "text": "because we're used to it that we don't get any push until we're touching but the fact is that the reason we don't get any push until we're touching is the same force as you see at a long distance only it's come down to short because the pluses and minuses have cancelled out so well that you don't feel anything until it gets very very close",
+      "textCn": "因为我们习惯了在接触之前我们不会受到任何推力，但事实是，在接触之前我们不会受到任何推力的原因与你在远距离看到的力相同，只是它变得很短，因为优点和缺点已经抵消得很好，直到它变得非常非常接近时你感觉不到任何东西"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1743,
+      "text": "When it gets close enough of course it makes a difference which is plus and which is minus and where they are and they repel each other so it's kind of fun to imagine that this intimate mixture of highly attractive opposites which are so strong that they cancel out the effects",
+      "textCn": "当它足够接近时，当然会产生区别，哪个是正，哪个是负，它们在哪里，它们互相排斥，所以想象这种高度有吸引力的对立面的亲密混合是很有趣的，它们是如此强大，以至于它们抵消了效果"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1759,
+      "text": "and it's only sometimes, when you have an excess of one kind or another that you get this mysterious electrical force And how can I explain the mysterious electrical forces in any other way?",
+      "textCn": "只有有时，当你有一种或另一种过量时，你才会得到这种神秘的电力，我怎样才能以任何其他方式解释神秘的电力呢？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1771,
+      "text": "Why should I try to explain it in terms of something like jelly or other things which are made?",
+      "textCn": "为什么我应该尝试用果冻或其他制成的东西来解释它？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1779,
+      "text": "And I understand the other way around in terms of strong, long distance forces which are all canceled out So it's the electrical forces in fact, and the magnetic forces in fact that we have to accept as the base reality",
+      "textCn": "我的理解是相反的，强大的长距离力全部被抵消所以我们必须接受事实上的电力和磁力作为基本现实"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1794,
+      "text": "in which we are going to explain all the other things.",
+      "textCn": "我们将在其中解释所有其他事情。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1798,
+      "text": "So again it turns out it's hard to understand, you have to do a lot of imagining that the real world has as its base, a force that acts at long distance that we haven't got much experience with that force",
+      "textCn": "所以事实证明这很难理解，你必须做很多想象，现实世界有一种远距离作用的力量作为其基础，而我们对这种力量没有太多经验"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1814,
+      "text": "we have peculiar phenomena here and there, but ordinarily we don't have much experience with that force is simply because that's what requires explanation That's what requires imagination. The long distance force we haven't other picture for",
+      "textCn": "我们到处都有奇特的现象，但通常我们对这种力量没有太多经验，只是因为这需要解释，这需要想象力。我们没有其他图片的远距离部队"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1831,
+      "text": "And in the example of the generator for instance what happens is that the electrons which are part of an atom they're pushed by the motion of the copper wires",
+      "textCn": "在发电机的例子中，发生的情况是，作为原子一部分的电子被铜线的运动推动"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1850,
+      "text": "wonderful to think that if you push a few here, and they get too close together so they push the others because they repel at a long distance so it's not just like water which repel at a short distance but it's a wonderful fluid which repel at a long distance and the effects therefore can go very quickly through the wire",
+      "textCn": "想象一下，如果你在这里推几个，它们靠得太近，所以它们会推其他的，因为它们在很长的距离上相互排斥，所以它不仅仅是像水一样在短距离上排斥，而且它是一种奇妙的流体，在长距离上排斥，因此效果可以很快地通过电线"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1866,
+      "text": "there is a little concentration you go ZINNNG through the wire all over the city at once.",
+      "textCn": "稍微集中一点，你就会立刻穿过整个城市的电线。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1870,
+      "text": "And you can use that stuff to make signals, you can push a few electrons here and there by talking in a telephone, at the other end of the line, a long line of copper across the city the electrons respond because of this very rapid interactions over these long distances to what you're saying in this room",
+      "textCn": "你可以用这些东西来产生信号，你可以通过电话交谈来推动一些电子，在电话线的另一端，一条横跨城市的长铜线，电子会做出响应，因为在这些长距离上对你在这个房间里所说的话进行非常快速的相互作用"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1889,
+      "text": "and they discovered experimentally the existence of these long forces and that this rapid motion action and so forth was a tremendous thing for human beings I think that the discovery of electricity and magnetism and the electromagnetic effects",
+      "textCn": "他们通过实验发现了这些长力的存在，这种快速运动等对人类来说是一件巨大的事情我认为电和磁以及电磁效应的发现"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1906,
+      "text": "which are finally worked out, the full equations were worked out by Maxwell in 1873 probably the most fundamental transformation, the most remarkable thing in history the biggest change in history",
+      "textCn": "最终被解决了，麦克斯韦在1873年制定了完整的方程，这可能是最基本的转变，历史上最引人注目的事情，历史上最大的变化"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1930,
+      "text": "I went to a scientific school-MIT, and then fraternity when you first join they try to keep you from being feeling that you're too smart by giving you what looked like simple questions to try to figure out what actually happens",
+      "textCn": "我去了一所科学学校 - 麻省理工学院，然后当你第一次加入兄弟会时，他们会通过给你看似简单的问题来试图弄清楚实际发生的情况，从而避免你觉得自己太聪明了"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1947,
+      "text": "and it's like training for imagination you know, it's kind of fun and I'd tell you some of them that I remember I learned them of course once you learn them the next time somebody comes along with this wonderful puzzle you look at them kind of quietly you wait two or three seconds or five seconds",
+      "textCn": "这就像训练想象力，你知道，这很有趣，我会告诉你其中一些，我记得我学过它们，当然，一旦你学会了，下次有人提出这个奇妙的谜题时，你静静地看着它们，你等待两三秒或五秒"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1964,
+      "text": "to show ways that you were thinking and then you come up with this answer to astonish your friends but the fact was of course that you were trained by your fraternity brothers as to how to answer these things early on one of the questions we used to we got was the problem about the mirror",
+      "textCn": "展示你的思考方式，然后你想出这个答案让你的朋友感到惊讶，但事实当然是你的兄弟会兄弟训练你如何回答这些问题，我们以前遇到的问题之一是关于镜子的问题"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1980,
+      "text": "it's an old-fashioned it's an old problem You look in a mirror, and let's say you part your hair in the right side and you look in the mirror and the image has got its hair part on the left side so the image is left to right mixed up it's not top and bottom mixed up",
+      "textCn": "这是一个老式的问题，这是一个老问题，你照镜子，假设你把头发分成右侧，你照镜子，图像的头发部分在左侧，所以图像从左到右混合在一起，而不是上下混合在一起"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 1995,
+      "text": "because the top of the head of the image is on the top and the bottom of the feet are at the bottom and the question is how does the mirror know to get the left and right mixed up and not the up and down you get a better idea of the problem if you think of lying down and looking at the mirror all right your hair is still on the left side",
+      "textCn": "因为图像的头顶部在顶部，脚底部在底部，问题是镜子如何知道左右混合而不是上下混合，如果你想躺下来看镜子，你的头发仍然在左侧，你会更好地了解这个问题"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2012,
+      "text": "and now the left and right was the up and down Whereas the up and down which look okay was the left and right before and the mirror somehow figured out what you are gonna do when you're looking at it so what to describe in a sort of symmetrical way what the mirror does that it doesn't look lopsided and it takes left and mixes it up with right",
+      "textCn": "现在左和右是上和下而看起来不错的上和下是之前的左和右，镜子以某种方式弄清楚了当你看它时你要做什么，所以如何以一种对称的方式描述镜子的作用，它看起来不会不平衡，它会把左和右混合在一起"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2031,
+      "text": "and doesn't do the same with up and down and after a lot of fiddling you gradually read we can worked out the answer to that one you see if you wave this hand then the hand in the mirror that waves is the right opposite at it The hand on the east is the hand on the east and the hand on the west is the hand on the west,",
+      "textCn": "向上和向下不会做同样的事情，经过大量的摆弄，你逐渐阅读，我们可以找出你所看到的那个的答案，如果你挥动这只手，那么镜子中挥动的手就是与它相对的右手。东边的手是东边的手，西边的手是西边的手，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2050,
+      "text": "and the hand that head that up is up and the feet that is down is down.",
+      "textCn": "头朝上的手是向上的，脚朝下的是向下的。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2054,
+      "text": "Everything is really all right!",
+      "textCn": "一切真的都好起来了！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2057,
+      "text": "but what's wrong is if this is north your nose is to the north of the back of your head, but in the image the nose is to the south of the back of the head so what happens really in the image is neither the left and the right mixed nor the top and the bottom, but the front and back had been reversed, you see",
+      "textCn": "但问题是，如果这是北的话，你的鼻子在后脑勺的北边，但在图像中，鼻子在后脑勺的南边，所以图像中真正发生的既不是左右混合，也不是顶部和底部，而是前后颠倒了，你看"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2074,
+      "text": "that is just the nose of the thing is on the wrong side of the head if you want it, all alright?",
+      "textCn": "那只是鼻子在头的反面，如果你想要的话，好吗？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2079,
+      "text": "Now ordinarily when we think of the image we think at it as of another person and we think the normal way that another person would get on that condition over there It's a psychological thing We don't think of the idea that the person has been squashed and pushed backward with his nose and his head because that's not what ordinarily happens to people",
+      "textCn": "现在，通常当我们想到这个形象时，我们会把它想象成另一个人，我们认为另一个人在那里会出现这种情况，这是一种心理问题，我们不会想到这个人被他的鼻子和头压扁并向后推的想法，因为这不是人们通常会发生的事情"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2095,
+      "text": "A person gets to look like you looks in the mirror by walking around and facing you and because people when they walk around don't turn their head for their feet we leave that part alone but they get their right and left hand swung about you see when they turn around",
+      "textCn": "一个人通过走来走去并面向你，看起来就像你在镜子里一样，因为人们走来走去时不会把头转向他们的脚，我们不去管那部分，但他们转身时会左右摇摆你看，当他们转身时"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2110,
+      "text": "so we say that it's left and right interchanged but really the symmetrical way is along the axis of the mirror that thing get interchangeable but that's kind of an easy one a harder one and very entertaining was \"what keeps a train on the track?\"",
+      "textCn": "所以我们说它是左右互换的，但实际上对称的方式是沿着镜子的轴线，东西可以互换，但这是一种容易的一种困难的一种，非常有趣的是“是什么让火车保持在轨道上？”"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2126,
+      "text": "And of course the answer is, as everyone thinks: the flanges on the wheels you know the wheels have some kind of flange on them but that's not the answer. Because flange is just safety devices if the flanges rub against the tracks you hear a terrible squealing they're just in case the real mechanism doesn't work",
+      "textCn": "当然，正如每个人所想的那样，答案是：车轮上的法兰，您知道车轮上有某种法兰，但这不是答案。因为法兰只是安全装置，如果法兰与轨道摩擦，您会听到可怕的尖叫声，以防万一真正的机制不起作用"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2144,
+      "text": "there's another problem with trains that's connected to it now people all know this about their automobile that when you go around the corner the outside wheels have to go further than the inside wheels and if the wheels were connected on a solid shaft",
+      "textCn": "连接到它的火车还有另一个问题，现在人们都知道他们的汽车，当你转弯时，外侧车轮必须比内侧车轮走得更远，并且如果车轮连接在实心轴上"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2160,
+      "text": "you couldn't do that you can't turn the outside wheels further than the inside wheels and so the shaft is broken in the middle with a gear system it's called a differential did you ever see the differential on a railroad train?",
+      "textCn": "你不能这样做，你不能将外侧车轮转动得比内侧车轮更远，所以轴在中间被齿轮系统损坏，这就是所谓的差速器，你见过火车上的差速器吗？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2173,
+      "text": "no you look at those wheels under a freight car and there are the two wheels and there's a solid steel rod going from one wheel to the other there's nothing that one turns the same as the other so now how does it go around the corner, a curve?",
+      "textCn": "不，你看看货车下面的那些轮子，有两个轮子，有一根实心钢棒从一个轮子连接到另一个轮子，没有任何东西可以与另一个轮子转动相同，所以现在它是如何绕过拐角的，一条曲线？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2186,
+      "text": "when the outside wheel has to go further than the inside wheel and the answer is that the wheels are flanged like this I mean not flange they're cones this way that is they're a little fatter closer to the train and a little thinner further out",
+      "textCn": "当外侧车轮必须比内侧车轮走得更远时，答案是车轮像这样有凸缘，我的意思是不是凸缘，它们是圆锥体，这样靠近火车的地方稍胖一些，离火车较远的地方稍薄一些"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2202,
+      "text": "if you look closely you'll see they've got this beveled edge and it's all very simple when they go around the curve, they slide out on the track a bit So that this wheel travels on a fatter pond a bigger diameter and this on a smaller diameter",
+      "textCn": "如果你仔细观察，你会发现它们有这个斜边，当它们绕弯道行驶时，这一切都非常简单，它们在轨道上滑出一点，这样这个轮子在较肥的池塘上行驶，直径较大，而这个轮子直径较小"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2218,
+      "text": "so when they both turn one turn this swings further than the other and that's what keeps it on the track also the same way suppose the train's running along on this thing, on the track and the track's here and here the two wheels are exactly balanced and it's nice and even",
+      "textCn": "所以当他们都转一圈时，这个比另一个转得更远，这就是让它保持在轨道上的原因，同样的方式假设火车在这个东西上运行，在轨道上，轨道在这里和这里，两个轮子完全平衡，它很好而且均匀"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2233,
+      "text": "suppose accidentally it gets a bump or something and slides out this way then this wheel is on a bigger circumference than this one but they're on a solid shaft so when it turns once around it carries this wheel forward relative to the other and steers the train back on the track",
+      "textCn": "假设它不小心受到撞击或其他东西并以这种方式滑出，那么这个轮子的周长比这个轮子大，但它们位于实心轴上，因此当它转动一圈时，它会相对于另一个轮子向前推动该轮子，并将火车引导回轨道上"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2249,
+      "text": "of course if it gets too far off on the other side it goes back and forth and it stays on the track because the wheels are tapered and the flange is safety well we had a lot of stuff like that that we had to learn you know that would get straightened out before we could become full-fledged members of the fraternity",
+      "textCn": "当然，如果它在另一侧偏离太远，它会来回移动并保持在轨道上，因为车轮是锥形的，并且法兰很安全，我们有很多类似的东西，我们必须了解，你知道，在我们成为兄弟会的正式成员之前，这些东西会得到理顺"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2274,
+      "text": "If I'm sitting next to a swimming pool and somebody dives in and she's not too pretty, so I can think of something else I think of the waves and things that have formed in the water and when there's lot's of people that have dived in the pool, there's a very great choppiness of all these waves all over the water,",
+      "textCn": "如果我坐在游泳池旁边，有人跳入水中，而她不太漂亮，那么我就能想到别的东西，我会想到水中形成的波浪和事物，当有很多人在游泳池里潜水时，水面上的所有这些波浪都会非常剧烈，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2293,
+      "text": "and to think that it's possible, maybe, that in those waves there a clue as to what's happening in the pool, that some sort of insect or something with sufficient cleverness, could sit in the corner of the pool and just be disturbed by the waves, and by the nature of the irregularities and bumping of the waves have figured out",
+      "textCn": "并认为有可能，也许，在那些波浪中，有关于池中发生的事情的线索，某种昆虫或具有足够聪明的东西，可能坐在池的角落里，只是受到波浪的干扰，并且通过波浪的不规则和碰撞的性质已经弄清楚了"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2311,
+      "text": "who jumped in, where and when and what's happening all over the pool.",
+      "textCn": "谁跳入水中的、何时何地以及泳池里发生了什么。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2317,
+      "text": "And that's what we're doing when we're looking at something: the light that comes out is waves just like in the swimming pool, except in 3 dimensions instead of 2 dimensions of the pool and it's going in all directions and we have a 8'th of an inch black hole into which these things go,",
+      "textCn": "这就是我们在观察某物时所做的事情：发出的光是波，就像在游泳池中一样，除了在 3 维而不是 2 维的泳池中，它会向各个方向传播，我们有一个 8 英寸的黑洞，这些东西会进入其中，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2333,
+      "text": "which is particularly sensitive to parts of the wave that are coming in a particular direction and it's not particularly sensitive when they're coming in at the wrong angle, which we say is from the corner of our eye, and if we want to get more information from the corner of our eye, we swivel this ball about so that the hole moves from place to place.",
+      "textCn": "它对来自特定方向的波的部分特别敏感，而当它们以错误的角度进入时，它就不是特别敏感，我们说这是来自我们的眼角，如果我们想从我们的眼角获得更多信息，我们旋转这个球，以便孔从一个地方移动到另一个地方。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2350,
+      "text": "Then, it's quite wonderful that we figure out so easy;",
+      "textCn": "然后，我们很容易就明白了，这真是太棒了；"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2359,
+      "text": "that's really because the light waves are easier and the waves in water are a little bit more complicated;",
+      "textCn": "这实际上是因为光波更容易，而水中的波更复杂一些；"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2363,
+      "text": "it would have been harder for the bug than for us, but it's the same idea, to figure out what the thing is that we're looking at at a distance, and it's really kind-of incredible because when I'm looking at you, someone standing to my left can see somebody who's standing at my right;",
+      "textCn": "对虫子来说比对我们来说更难，但这是同样的想法，弄清楚我们在远处看的东西是什么，这真的有点令人难以置信，因为当我看着你时，站在我左边的人可以看到站在我右边的人;"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2380,
+      "text": "that is, the light could be going right across this way, the waves are going this way, the waves are going this way, the waves are going this way, it's just a complete network.",
+      "textCn": "也就是说，光可以从这边穿过，波可以从这边穿过，波可以从这边穿过，波可以从这边穿过，这就是一个完整的网络。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2388,
+      "text": "Now, it's easy to just think of them as arrows passing each other, but that's not the way it is, because all of this is something shaking -it's called the electric field, but we don't have to bother with what it is- it's just like the water height is going up and down.",
+      "textCn": "现在，我们很容易把它们想象成互相穿过的箭头，但事实并非如此，因为所有这些都是震动的东西——它被称为电场，但我们不必担心它是什么——就像水位在上下波动一样。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2400,
+      "text": "So there's some quantity shaking about here and the combination of motions that's so elaborate and complicated that the result is to produce an influence which makes me see you.",
+      "textCn": "所以这里有一些晃动的量，以及如此精细和复杂的动作组合，结果是产生一种影响，让我看到你。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2409,
+      "text": "At the same time, completely undisturbed by the fact that there are influences that represent the other guy seeing him on this side.",
+      "textCn": "同时，完全不受代表对方在这边看到他的影响的影响。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2417,
+      "text": "So that there's this TREMENDOUS mess of waves all over in space which we call which is the light bouncing around the room and going from one thing to the other, because of course most of the room doesn't have 8'th inch black holes. It's not interested in that light,",
+      "textCn": "因此，太空中到处都是巨大的混乱波，我们称之为光线在房间里反射，从一件事传到另一件事，因为房间的大部分地方当然没有 8 英寸的黑洞。它对那种光不感兴趣，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2435,
+      "text": "but the light is there anyway, and it bounces off this, and it bounces off that, and all this is going on, and yet we can sort it out with this instrument.",
+      "textCn": "但光无论如何都在那里，它从这个反射，从那个反射，所有这一切都在发生，但我们可以用这个仪器来解决它。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2445,
+      "text": "But beside all that, you see, those waves that I was talking about in the water, maybe they're so big - some of them - and then there's slower swashes which are longer, and shorter.",
+      "textCn": "但除此之外，你看，我在水中谈论的那些波浪，也许它们是如此之大 - 其中一些 - 然后还有较慢的波浪，更长，更短。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2454,
+      "text": "Perhaps that animal is making it's study only using waves between this length and that length, so it turns out that the eye is only using waves between this length and that length, except those two lengths are 100,000'th of an inch - 100,000'th of an inch big,",
+      "textCn": "也许该动物只使用这个长度和那个长度之间的波浪进行研究，所以事实证明眼睛只使用这个长度和那个长度之间的波浪，除了这两个长度是十万英寸 - 十万英寸大，"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2473,
+      "text": "and what about the slower swashes?",
+      "textCn": "那么较慢的花饰呢？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2476,
+      "text": "The waves that go more slowly, that have a longer distance from crest to trough.",
+      "textCn": "波浪移动速度较慢，从波峰到波谷的距离较长。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2481,
+      "text": "Those represent heat. We feel those, but our eye doesn't see them focused very well, we don't in fact at all.",
+      "textCn": "这些代表热量。我们感觉到这些，但我们的眼睛看不到它们聚焦得很好，事实上我们根本看不到。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2488,
+      "text": "The shorter waves are blue, the longer waves are red. But when it gets longer than that then we call them infrared.",
+      "textCn": "较短的波浪为蓝色，较长的波浪为红色。但当它变得比这更长时，我们就称它们为红外线。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2495,
+      "text": "And all this is in there at the same time. That's the heat.",
+      "textCn": "所有这些都同时存在。这就是热量。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2500,
+      "text": "Pit viper that get down here in the desert, they have a very little thing that they can see longer waves and pick up mice, which are radiating their heat in the longer waves but their body heat by looking at them with this eye, which is the pit of the pit viper.",
+      "textCn": "生活在沙漠中的毒蛇，它们有一个很小的东西，就是它们可以看到更长的波浪，并抓起老鼠，老鼠在更长的波浪中散发热量，但用这只眼睛看它们却能散发出体温，这就是毒蛇的坑。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2517,
+      "text": "But we can't, we are not able to do that.",
+      "textCn": "但我们不能，我们无法做到这一点。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2519,
+      "text": "And then these waves get longer and longer, and all through the same space, all these things are going on at the same time, so that in this space, there's not only my vision of you, but information from Moscow Radio that's being broadcasted at present moment, and the seeing of somebody from Peru.",
+      "textCn": "然后这些波变得越来越长，在同一个空间里，所有这些事情同时发生，所以在这个空间里，不仅有我对你的视野，还有来自莫斯科广播电台目前正在广播的信息，以及来自秘鲁的某个人的视野。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2538,
+      "text": "All the radio waves are just the same kind of waves, only they are longer waves.",
+      "textCn": "所有的无线电波都是同一种波，只是波更长。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2543,
+      "text": "And there's the radar, from the airplane which is looking at the ground to figure out where it is, which is coming to the room at the same time.",
+      "textCn": "还有雷达，来自飞机，它正在观察地面以确定它在哪里，同时它也来到房间。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2549,
+      "text": "Plus X-rays, cosmic rays and all of these other things that are the same kind of waves, EXACTLY the same kind of waves, but shorter, faster or longer, slower.",
+      "textCn": "再加上X射线、宇宙射线和所有其他东西，它们都是同一种波，完全相同的一种波，但更短、更快或更长、更慢。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2558,
+      "text": "It is exactly the same thing.",
+      "textCn": "这是完全相同的事情。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2559,
+      "text": "So this big field, this - this area of irregular motions of this electric field, this vibration, contains this tremendous information, and it's ALL REALLY there, that's what gets you.",
+      "textCn": "所以这个大场，这个电场的不规则运动区域，这个振动，包含着巨大的信息，而且它真的就在那里，这就是你所理解的。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2575,
+      "text": "If you don't believe it, then you pick a piece of wire and connect it to a box and in the wire the electrons would be pushed back and forth by this electric field, swashing just at the right speed for the certain kind of long waves, and you turn some knobs on the box to get the swashing just right, and you hear Radio Moscow!",
+      "textCn": "如果你不相信，那么你拿起一根电线并将其连接到一个盒子上，在电线中，电子将被这个电场来回推动，以适合某种长波的正确速度摆动，然后你转动盒子上的一些旋钮，使摆动恰到好处，然后你就会听到莫斯科广播电台！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2593,
+      "text": "Then you know that it was there. How else did it get there?",
+      "textCn": "然后你就知道它就在那里。不然它是怎么到达那里的呢？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2596,
+      "text": "It was there all the time. It is only when you turn on the radio that you notice it.",
+      "textCn": "它一直都在那里。只有当您打开收音机时您才会注意到它。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2601,
+      "text": "But that all these things are going through the room at the same time which everybody knows, but you gotta stop and think about it to really get the pleasure about the complexity - the INCONCEIVABLE nature of nature.",
+      "textCn": "但是，所有这些东西同时穿过房间，这是每个人都知道的，但你必须停下来思考一下，才能真正享受到复杂性的乐趣——大自然不可思议的本质。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2623,
+      "text": "When we were talking about the atoms, one of the trouble we have with the atoms is that they are so tiny and it is so hard to imagine the scale.",
+      "textCn": "当我们谈论原子时，我们遇到的原子问题之一是它们太小了，很难想象其规模。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2630,
+      "text": "The atoms are in size compared to an apple is the same scale as an apple is compared to the size of the earth.",
+      "textCn": "原子的大小与苹果相比，就像苹果与地球的大小相比一样。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2639,
+      "text": "That's kind of a hard think to take, and you have to go through all these things all the time and people find these numbers inconceivable and I do too And the only thing you do is just change your scale you just think of small balls but you don't try to know exactly how small they are too often or you get kind of a bit nutty, alright?",
+      "textCn": "这是一个很难接受的想法，你必须一直经历所有这些事情，人们发现这些数字不可思议，我也是如此，你所做的唯一一件事就是改变你的规模，你只是想到小球，但你不会经常尝试知道它们到底有多小，否则你会有点疯狂，好吗？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2656,
+      "text": "but in astronomy you have the same thing in reverse because the distances to these stars are so enormous You know that light goes so fast, and it only takes few seconds to go to the moon and back or it goes around the earth in seven and a half times in a second",
+      "textCn": "但在天文学中，你也有相反的情况，因为到这些恒星的距离是如此之大你知道光走得如此之快，它只需要几秒钟就可以到达月球并返回，或者在一秒钟内绕地球七次半"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2672,
+      "text": "and it goes for years... two years, three years before it gets to the nearest other star that there is to us!",
+      "textCn": "它持续了很多年……两年、三年才到达距离我们最近的另一颗恒星！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2678,
+      "text": "But all our stars are in nearby galaxies, a big mess of stars which is called a galaxy, a group but our galaxy is (what is it) some hundred thousand light years, like 100 000 years",
+      "textCn": "但是我们所有的恒星都在附近的星系中，一大堆恒星被称为星系，一个群体，但我们的星系（它是什么）有几十万光年，比如10万年"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2695,
+      "text": "And then there's another patch of stars It takes a million years for the light to get here going at this enormous rate and you just go crazy trying to make too real that distance.",
+      "textCn": "然后还有另一片恒星，光需要一百万年才能以如此巨大的速度到达这里，而你会疯狂地试图让这个距离变得太真实。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2706,
+      "text": "You have to do everything in proportion. That's easy say that galaxies are little patches of stars and they're ten times as far apart as they are big So that's an easy picture. But you just go to a different scale, that's easier once in a while you try to come back to earth scale to discuss the galaxies, but it's kind of hard",
+      "textCn": "你必须按比例做每件事。这很容易说，星系是由恒星组成的小斑块，它们之间的距离是它们大小的十倍，所以这是一幅简单的图画。但你只是去不同的尺度，偶尔你尝试回到地球尺度来讨论星系会更容易，但这有点困难"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2723,
+      "text": "The number of stars we see at night is only about five thousand.",
+      "textCn": "我们晚上看到的星星数量大约只有五千颗。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2728,
+      "text": "but the number of stars in our galaxy, the telescope have shown when you improve the instruments Oh! We look at a galaxy, we look at the stars, all the light that we see, the little tiny influence, spread from the stars over this enormous distance of what three light-years for the nearest stars",
+      "textCn": "但是我们银河系的星星数量，当你改进仪器时望远镜已经显示出来了哦！我们看着一个星系，我们看着星星，我们看到的所有光，微小的影响，从星星传播到最近的星星三光年的巨大距离"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2745,
+      "text": "on! on! on! this light from the star is spreading, the wavefront's getting wider and wider weaker and weaker, weaker and weaker out into all of space and finally the tiny fraction that comes in one square eighth of an inch little black hole and does something to me so I know it's there!",
+      "textCn": "上！在！在！来自恒星的光正在扩散，波前变得越来越宽，越来越弱，越来越弱，进入整个空间，最后，一小部分进入八分之一英寸的小黑洞，对我做了一些事情，所以我知道它就在那里！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2761,
+      "text": "Well to know a little bit more about, I'd rather gather a little more of this tiny fraction of the front of light and so I make a big telescope which is a kind of funnel.",
+      "textCn": "好吧，为了了解更多一点，我宁愿收集更多一点光前的这一小部分，所以我制作了一个大望远镜，它是一种漏斗。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2772,
+      "text": "The light that comes over this big area-200 inches in cross-is very carefully organized so it is all concentrated back so it can go through pupil.",
+      "textCn": "穿过这个 200 英寸十字形的大区域的光线经过精心组织，因此全部集中回来，以便可以穿过瞳孔。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2781,
+      "text": "Actually it's better to photograph, and nowadays they use photocells which are better instruments but anyway the idea of a telescope is to focus the light from a bigger area into a smaller area so that we see things that are weaker, less light and in that way we find there's a very large number of stars in the galaxy.",
+      "textCn": "事实上，拍照更好，现在他们使用光电管，这是更好的仪器，但无论如何，望远镜的想法是将光线从较大的区域聚焦到较小的区域，这样我们就可以看到较弱、光线较少的物体，这样我们就发现银河系中有大量的恒星。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2798,
+      "text": "There's so many that if you try to name them, one in a second, all of the stars in our galaxy I don't mean all the stars in the universe just this galaxy here it takes three thousand years! And yet that's not a very big number Because if those stars were to drop one dollar bill on the earth",
+      "textCn": "数量太多了，如果你试图在一秒钟内说出它们的名字，我们银河系中的所有恒星我不是指宇宙中的所有恒星，只是这个星系需要三千年的时间！但这并不是一个很大的数字因为如果那些星星将一美元的钞票扔到地球上"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2816,
+      "text": "during a year each star dropping one dollar bill they might take care of the deficit, which is suggested for the budget of the United States!",
+      "textCn": "在一年内，每颗星星扔下一美元钞票，他们可能会解决赤字，这是美国预算的建议！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2826,
+      "text": "So you see what kind of numbers we have to deal with!",
+      "textCn": "所以你知道我们要处理什么样的数字了！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2829,
+      "text": "Anyway I think that the numbers are problems in astronomy, the size and numbers the best thing to do is to relax and enjoy the tininess of us and the enormity of the rest of the universe Of course, if you're feeling depressed by that, you can always look at it the other way",
+      "textCn": "无论如何，我认为数字是天文学中的问题，大小和数字最好的办法就是放松并享受我们的渺小和宇宙其他部分的巨大当然，如果你对此感到沮丧，你可以随时以其他方式看待它"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2847,
+      "text": "and think how big you are compared to the atoms and the parts of atoms then you're an enormous universe to those atoms so you can sort of stand in the middle and enjoy everything both ways But the great part of astronomy is the imagination that is necessary to guess what kind of structures",
+      "textCn": "想想你与原子和原子的部分相比有多大，那么对于这些原子来说你就是一个巨大的宇宙，所以你可以站在中间并享受双向的一切但天文学的伟大部分是想象力，这是猜测什么样的结构所必需的"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2866,
+      "text": "what kind of things can be happening to produce the light and the effect of the light of the stars that we do see and I could take an example, a historical example many times in science, by using imagination you imagine something",
+      "textCn": "什么样的事情会发生，以产生我们所看到的星星的光和光的效果，我可以举一个例子，一个科学中多次出现的历史例子，通过使用想象力，你可以想象一些东西"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2882,
+      "text": "which could be according to all the known knowledge and the laws and you don't know whether it is yet or not And that's very interesting, there is a creative imagination you'd like to call it not just imagining thing that are relatively easy, but something different And to take an example of, a star as we understand it",
+      "textCn": "这可能是根据所有已知的知识和规律，你不知道它是否还存在，这很有趣，有一种创造性的想象力，你想称之为创造性的想象力，不仅仅是想象相对容易的东西，而是一些不同的东西，举个例子，我们理解的一颗星星"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2901,
+      "text": "ordinary stars like the Sun, which is just a big ball of gas, of hydrogen that's burning up the hydrogen and so forth and it's an enormous mass of gas and it's held together by gravity you don't to always understand gravity as a curved space good enough for the purpose that a force inversely square the distance",
+      "textCn": "像太阳这样的普通恒星，它只是一个巨大的气体球，由氢组成的球，正在燃烧氢等等，它是一个巨大的气体质量，它通过重力聚集在一起，你并不总是将重力理解为一个弯曲的空间，足以达到力与距离成反比的目的。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2918,
+      "text": "When the things are closer together, the force is stronger, and it pulls everything together By the way that's why the world is round: because the globe of earth is pulled together as much as possible and if it had a great mountain and an irregularity like a bump so it would be pulled in by gravity and it all gets smooth",
+      "textCn": "当物体靠得更近时，力就更强，它会把所有东西拉到一起顺便说一下，这就是为什么世界是圆的：因为地球被尽可能地拉在一起，如果它有一座大山和一个像凹凸一样的不规则物，那么它就会被重力拉进去，一切都会变得光滑"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2934,
+      "text": "Rocks aren't strong enough to hold a bump much bigger than a few miles and Mount Everest is our biggest bump But on the moon where the gravity is less, the bumps are higher; the mountains are bigger on the moon.",
+      "textCn": "岩石的强度不足以支撑比几英里大得多的隆起物，而珠穆朗玛峰是我们最大的隆起物，但在重力较小的月球上，隆起物更高;月球上的山更大。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2945,
+      "text": "Anyway, to get back to the star, it's all held together by gravity and it's got a nuclear fuel which we've haven't been talking about that's burning up the hydrogen and generating energy which keeps things going And after a while, it would use the fuel a lot people began to think about what would happen then",
+      "textCn": "无论如何，要回到恒星，它都是通过重力结合在一起的，并且它有一种我们还没有讨论过的核燃料，它会燃烧氢气并产生能量，使事物继续运转一段时间后，它会使用燃料，很多人开始思考接下来会发生什么"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2962,
+      "text": "and it would be possible to just be gas sort of hanging around held together by gravity but quiet but another possibility was to think if I push the stuff together closer, the gravity is stronger, would hold it together.",
+      "textCn": "有可能只是气体通过重力聚集在一起，但很安静，但另一种可能性是，如果我把这些东西推得更近，重力就会更强，会把它们粘在一起。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2977,
+      "text": "Well if you push a little bit together, the pressure increases when you push the gas together, there are more atoms and they pound on it so the pressure is higher but the gravity is stronger and it turns out the pressure wins so it would just come out again if you're pushing a star like that, it oscillates",
+      "textCn": "好吧，如果你稍微推到一起，当你把气体推到一起时，压力会增加，有更多的原子，它们会撞击它，所以压力更高，但引力更强，结果是压力获胜，所以如果你像那样推一颗恒星，它会再次出现，它会振荡"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 2993,
+      "text": "and there are some stars that are oscillating and vibrating and so on but it turns out if you keep on analyzing you push it together very far to the incredible concentration that the whole mass of the sun is down to the size of the earth or smaller",
+      "textCn": "有一些恒星正在振荡和振动等等，但事实证明，如果你继续分析，你就会将它们推到一起，达到令人难以置信的浓度，太阳的整个质量会下降到地球的大小或更小"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3009,
+      "text": "then it turns all the nuclear matter all the nuclei of the atoms are all stuck next to each other tight Spaces where the electrons are all squashed out and it comes out when you get to THAT far, the gravity is strong enough to overpower the pressure again",
+      "textCn": "然后所有的核物质所有的原子核都被粘在一起紧密的空间，电子都被压扁了，当你到达那么远的时候，它就出来了，引力足够强大，足以再次压倒压力"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3026,
+      "text": "even though the pressure has got to be enormous, the gravity has to be even more enormous and the thing will stay steady at a different size and be nothing but a neutron, a nuclear matter, nothing solid, nuclear matter and this possibility was worked out by Oppenheimer and Volkov, it's called a neutron star",
+      "textCn": "尽管压力必须很大，引力必须更大，并且该物体将在不同的尺寸下保持稳定，并且只不过是中子，核物质，没有任何固体，核物质，这种可能性是由奥本海默和沃尔科夫提出的，它被称为中子星"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3047,
+      "text": "And people waited to see if there were any such neutron stars for years until recently they found these strange pulsars which emit flashes of radio waves later they found light which can go 30 times a second for instance the fastest ones or maybe 10 times a second or one a second",
+      "textCn": "人们多年来一直想看看是否有这样的中子星，直到最近他们发现了这些发出无线电波闪光的奇怪脉冲星，后来他们发现了每秒可以传播 30 次的光，例如最快的中子星，或者可能是每秒 10 次或每秒一次"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3068,
+      "text": "And at first, that's very mysterious; you are used to stars being big and slow how can anything in a star move in a thirtieth of a second?",
+      "textCn": "起初，这非常神秘；你已经习惯了恒星又大又慢，恒星中的任何东西怎么可能在三十分之一秒内移动？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3076,
+      "text": "Well these things are very small neutron stars and they’re spinning very fast.",
+      "textCn": "嗯，这些东西是非常小的中子星，它们旋转得非常快。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3081,
+      "text": "For reason not yet understood, they are emitting a beam, a beam of radio waves like a search light in an airport or something those things that go around boop boop boop so we get the flashes tick tick tick, that fast to imagine a star the mass of the sun, doing something, turning so fast 30 times a second",
+      "textCn": "由于尚不明白的原因，它们发射出一束光束，一束无线电波，就像机场的探照灯或其他东西，围绕着“噗噗噗”，所以我们会看到闪烁的滴答滴答声，快到可以想象一颗太阳质量的恒星正在做某事，每秒旋转30次"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3099,
+      "text": "another one of these big numbers, hard to conceive imaginary things okay?",
+      "textCn": "又一个这么大的数字，很难想象想象出来的东西好吗？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3106,
+      "text": "and the whole idea that there could be a star of such enormous density that a teaspoon would weigh so much of the matter if you put it on the earth surface it is so heavy that that it will just plough right to the center of the earth!",
+      "textCn": "整个想法是，可能存在一颗密度如此之大的恒星，如果你把它放在地球表面，一茶匙的物质就可以重这么多，它是如此重，以至于它会直接犁到地球的中心！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3118,
+      "text": "and things like that, it took a lot of imagination: it comes out the mathematics and the analysis of all this helps you to make sure you are not making a mistake and it turns out that such a star is possible, and it turned out a little bit later they do exist and that's a good example of how imagination is a useful thing",
+      "textCn": "诸如此类的事情，需要大量的想象力：数学和所有这些的分析可以帮助你确保你没有犯错误，事实证明这样的恒星是可能的，过了一会儿事实证明它们确实存在，这是想象力如何有用的一个很好的例子"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3138,
+      "text": "and produces a guessing ahead of time and how we make advances by using it Besides, the very difficult thing of imagining all the things that might be up there to explain the things we see in the case of astronomy, we have a large number of things we see",
+      "textCn": "并提前产生猜测以及我们如何通过使用它取得进展此外，想象所有可能存在的事物来解释我们在天文学中看到的事物是非常困难的，我们有大量我们看到的事物"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3155,
+      "text": "that we have not yet quite clearly got the imagination to see what it is that's producing them Quasars are very powerful sources of light and radio waves from very great distances and we see them because they are so bright.",
+      "textCn": "我们还没有足够的想象力来了解是什么产生了它们。类星体是来自很远距离的非常强大的光和无线电波来源，我们看到它们是因为它们非常明亮。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3170,
+      "text": "The exact cause of their sources is gradually been recently understood in terms of another nutty concept of imagination: the black hole which is something that comes from following the logic of gravity of Einstein to its ultimate",
+      "textCn": "最近，人们逐渐通过另一个疯狂的想象力概念来理解其来源的确切原因：黑洞是遵循爱因斯坦引力逻辑至其终极结果的东西。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3189,
+      "text": "working out the consequences in crazy circumstances Suppose you had an amount of matter so great that the gravity force is so much that even light trying to get out falls back Nothing can go faster that light, and nothing could escape. You couldn't see it!",
+      "textCn": "在疯狂的情况下计算出后果假设你有大量的物质，以至于引力是如此之大，以至于即使是试图逃逸的光也会向后退去，没有任何东西可以比光走得更快，也没有任何东西可以逃脱。你看不到它！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3209,
+      "text": "how would you get there? If you have a large amount of matter to start with, it could fall together and get into this condition that no longer could the light come out.",
+      "textCn": "你怎样才能到达那里？如果一开始就有大量物质，它们可能会聚集在一起并陷入这种情况，不再发出光。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3218,
+      "text": "So you would have this thing which continues to attract things to it things would go in and nothing would come out. That is called the black hole.",
+      "textCn": "所以你会有这个东西，它会继续吸引东西到它那里，东西会进去，但什么也不会出来。这就是所谓的黑洞。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3226,
+      "text": "and you say well how can a black hole which is absorbing everything make all this energy that we see Is that an explanation of a quasar? Actually, it may well be Because the things that are falling in don't go pluck in but go around, falling in by swirling",
+      "textCn": "你说得好，一个吸收一切的黑洞如何产生我们看到的所有能量，这是对类星体的解释吗？事实上，很可能是因为掉进去的东西不是被拉进去而是绕着走，通过旋转掉进去的"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3242,
+      "text": "then as they are falling irregularly and so forth, and in the fast motions that it produces they go down this whirlpool they generate a lot of energy and friction and so forth, and different kind of effects magnetic and electric effects that could make the jets of matter that come out of the quasar and the radio galaxies",
+      "textCn": "然后，当它们不规则地下落时，等等，在它产生的快速运动中，它们会沿着这个漩涡下降，它们会产生大量的能量和摩擦力等等，以及不同种类的磁效应和电效应，这些效应可能使物质射流从类星体和射电星系中喷出"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3259,
+      "text": "in ways that are not really understood.",
+      "textCn": "以一种未被真正理解的方式。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3262,
+      "text": "We don't have a real picture why there are jets of radio waves, matter emitting radio waves in galaxies there are galaxies which great jets coming out with big clouds of matter on each side which are emitting radio waves",
+      "textCn": "我们不知道为什么星系中有无线电波喷流、发射无线电波的物质，有些星系有巨大的喷流，两侧都有大量物质云，正在发射无线电波"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3277,
+      "text": "so there's some kind of a source in there it sort of gets wound up and shoots these jets of matter out with tremendous energy And it's guessed that maybe it's a black hole somehow or other and the somehow or other is the challenge of the imagination",
+      "textCn": "所以那里有某种源头，它会卷起并以巨大的能量射出这些物质射流据猜测，也许它是一个黑洞，而这种或其他的方式是想象力的挑战"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3295,
+      "text": "Which has not yet been answered. by anybody, with any great confidence.",
+      "textCn": "目前尚未得到答复。任何人都可以怀着极大的信心。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3306,
+      "text": "You ask me if an ordinary person, by studying hard, would get to be able to imagine these things, like I imagine Of course! I was an ordinary person who had studied hard.",
+      "textCn": "你问我，一个普通人，通过努力学习，是否能够像我想象的那样，能够想象到这些事情？当然！我是一个努力学习的普通人。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3317,
+      "text": "There are no miracle people.",
+      "textCn": "没有奇迹的人。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3319,
+      "text": "It just happen they got interested in these things and they learned all these stuffs.",
+      "textCn": "碰巧他们对这些东西感兴趣并且学到了所有这些东西。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3324,
+      "text": "There are just people There's no talent, special, miracle ability to understand quantum mechanics or a miracle ability to imagine electromagnetic fields that comes without practicing and reading and learning and study",
+      "textCn": "只是人没有天赋、特殊的、奇迹般的能力来理解量子力学，也没有奇迹般的能力来想象电磁场，而无需练习、阅读、学习和研究。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3341,
+      "text": "so if you say it take an ordinary person who's willing to devote a great deal of time and study and work and thinking and mathematics and time, then he has become a scientist.",
+      "textCn": "所以如果你说一个普通人愿意投入大量的时间学习、工作、思考、数学和时间，那么他就成为了一名科学家。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3356,
+      "text": "When I'm actually doing my own things and working in a high, deep and esoteric stuff that I worry about I don't think I can describe very well what it's like",
+      "textCn": "当我真正做自己的事情并从事我担心的高深深奥的事情时，我认为我无法很好地描述它是什么样的"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3371,
+      "text": "First of all, it's like asking a centipede which leg comes after which it happens quickly and I'm not exactly sure what flashes and stuff go in the head But I know it's a crazy mixture of partial equations, partial solving in equations, then having some sort of picture of what is happening that the equation is saying it's happening",
+      "textCn": "首先，这就像问蜈蚣哪条腿先来，然后它很快就会发生，我不太确定头脑中闪过什么东西，但我知道这是部分方程的疯狂混合，方程中的部分求解，然后对正在发生的事情有某种图像，方程说它正在发生"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3389,
+      "text": "but they're not that well separated as the words I'm using and it's a kind of a nut nutty thing it's very hard to describe, and I don't know that it does any good to describe And there's something that struck me, it's very curious:",
+      "textCn": "但它们并没有像我使用的词那样分开得那么好，这是一种很难描述的疯狂的事情，我不知道它有什么好处来描述，有一些东西让我印象深刻，它非常好奇："
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3405,
+      "text": "I suspect that what goes on in every man's head might be very very different, the actual imagery or semi-imagery which comes and when we are talking to each other at these high and complicated levels",
+      "textCn": "我怀疑每个人的头脑中发生的事情可能非常不同，当我们在如此高而复杂的层面上相互交谈时，所出现的实际图像或半图像"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3421,
+      "text": "and we think we are speaking very well, that we are communicating but what we are really doing is having a some kind of big translation scheme going on for translating what this fellow says into our images, which are very different.",
+      "textCn": "我们认为我们说得很好，我们正在沟通，但我们真正做的是进行某种大型翻译计划，将这个人所说的话翻译成我们的图像，这是非常不同的。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3435,
+      "text": "I found that out because in the very lowest level I wouldn't go into much details but I got interested in...",
+      "textCn": "我发现这一点是因为在最低层次上我不会透露太多细节，但我对……感兴趣。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3446,
+      "text": "Well I was doing some experiments and I was trying to figure out something about our time sense and so what I would do is trying to count to a minute actually say I'd count to 48 then it would be one minute so I calibrate myself and I would count a minute in 48",
+      "textCn": "嗯，我正在做一些实验，我试图弄清楚我们的时间感，所以我要做的就是尝试数到一分钟，实际上说我会数到 48，那么它将是一分钟，所以我校准自己，我会用 48 数一分钟"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3462,
+      "text": "think I was counting seconds but it's close enough and then it turns out if you repeat that you can do very accurately when you get to 48 or 47 or 49, not far off, you're very close to a minute.",
+      "textCn": "我想我在数秒，但它已经足够接近了，然后事实证明，如果你重复一遍，当你达到 48 或 47 或 49 时，你可以非常准确地完成，不远，你非常接近一分钟。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3474,
+      "text": "And I was trying to find out what affected that time sense and whether I could do anything at the same time I was counting and I found that I could do many things I could, there were some things that not For example, I had great difficulty…",
+      "textCn": "我试图找出是什么影响了时间感，以及我是否可以在计数的同时做任何事情，我发现我可以做很多我可以做的事情，有些事情不能，例如，我遇到了很大的困难......"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3491,
+      "text": "I was in the university, I had to get my laundry ready, and I was putting the socks out and I had to make a list \"how many socks\", there were something like 6 or 8 socks and I couldn't count them because the counting machine was being used, and I couldn't count them",
+      "textCn": "我在大学的时候，我必须准备好要洗的衣服，我把袜子拿出来，我必须列出“有多少只袜子”，大约有 6 或 8 只袜子，我无法数它们，因为计数机正在使用，我无法数它们"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3508,
+      "text": "until I found that I could put them in a pattern and recognize the number and so I learned a way after practicing by which I could count the line of type in a newspaper and see them in groups three, three, three, three, one that's a group of ten, three, three, three, one without saying the numbers just seeing the groupings I could therefore count the line of types I was practicing in the newspaper",
+      "textCn": "直到我发现我可以把它们放在一个模式中并识别数字，所以我在练习后学会了一种方法，通过它我可以数出报纸上的字体行，并看到它们分为三，三，三，三，一组，一组十，三，三，三，一，无需说出数字只需看到分组，因此我可以数出我在报纸上练习的字体行"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3527,
+      "text": "the same time I was counting internally the seconds so I could do this fantastic trick of saying \"forty-eight, that's one minute and there are sixty seven lines of type\" you see!",
+      "textCn": "同时我在内部计算秒数，这样我就可以做这个奇妙的技巧，说“四十八，那是一分钟，有六十七行类型”你看！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3538,
+      "text": "It was quite wonderful and I discovered many things I could read while I was..",
+      "textCn": "这真是太棒了，我发现了很多我可以阅读的东西。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3545,
+      "text": "no, excuse me, yes, I could read perfectly alright while I was counting and get an idea of what it was about But I couldn't speak, I couldn’t say anything.",
+      "textCn": "不，对不起，是的，我可以在数数时完全阅读并了解它的内容，但我不能说话，我什么也不能说。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3557,
+      "text": "Because of course I was sort of trying to speak to myself, inside, I would say \"one, two, three\" or sort of in the head.",
+      "textCn": "因为当然，我有点想在内心对自己说话，我会在脑海中说“一，二，三”或类似的东西。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3564,
+      "text": "Then I went down to the breakfast, and there was John Tukey was a mathematician at Princeton in the same time and we had many discussions, and I was telling him about these experiments and what I could do and he says \"that's absurd!\" he says",
+      "textCn": "然后我去吃早餐，约翰·图基（John Tukey）是普林斯顿大学的数学家，我们进行了很多讨论，我告诉他这些实验以及我能做什么，他说“这太荒谬了！”他说"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3580,
+      "text": "He said \"I don't see why you have any difficulty talking whatsoever, And I can't possibly believe that you could read\" so I couldn't believe all this but we calibrated him it was 52 for him to get to 60 seconds or whatever I don't remember the numbers now",
+      "textCn": "他说“我不明白为什么你说话有任何困难，而且我不可能相信你能读书”所以我无法相信这一切，但我们校准了他，他需要 52 秒才能达到 60 秒或其他我现在不记得的数字"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3595,
+      "text": "and then he said \"alright, what do you want me to say?",
+      "textCn": "然后他说：“好吧，你想让我说什么？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3598,
+      "text": "Mary had a little lamb. I can speak about anything, blah blah blah, blah blah, 52! that's one minute\". He was right. And I couldn't possibly do that And he wanted me to read, because he couldn’t possibly believe it.",
+      "textCn": "玛丽有一只小羊羔。我可以谈论任何事情，等等等等，等等，52！那是一分钟”。他是对的。我不可能那样做，他想让我读，因为他不可能相信。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3610,
+      "text": "and then we compared note, and it turned out that when he thought of counting what he did inside his head when he counted was he saw a tape with numbers it went \"clink, clink clink\" the tape would change with numbers printed on it, he could see well since it's sort of an optical system that he was using, and not voice.",
+      "textCn": "然后我们比较笔记，结果发现，当他想到数数时，他在脑子里做了什么，当他数数时，他看到一卷带有数字的磁带，它发出“叮当，叮当叮当”的声音，磁带上印着的数字会改变，他看得很清楚，因为他使用的是一种光学系统，而不是声音。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3628,
+      "text": "He could speak as much as he wanted but if he had to read, then he couldn't look at his clock!",
+      "textCn": "他可以随心所欲地说话，但如果他必须读书，那么他就不能看时钟！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3634,
+      "text": "Whereas for me it was in the other way.",
+      "textCn": "但对我来说却是另外一种情况。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3635,
+      "text": "And that's where I discovered, at least in this very simple operation of counting the great difference in what goes on in the head when people think they are doing the same thing And so it struck me therefore, if that is already true at the most elementary level",
+      "textCn": "这就是我发现的地方，至少在这个非常简单的操作中，当人们认为自己在做同样的事情时，计算大脑中发生的巨大差异，因此，如果这在最基本的层面上已经是正确的，那么它让我震惊"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3651,
+      "text": "That when we learn mathematics and Bessel functions, and the exponential and the electric field and all these things that the imageries and the method by which we are storing it all and the way we think about it could be really, if we get to each other's head, entirely different",
+      "textCn": "当我们学习数学和贝塞尔函数、指数和电场以及所有这些东西时，如果我们互相思考的话，我们存储所有这些的图像和方法以及我们思考它的方式可能真的是完全不同的"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3670,
+      "text": "And in fact, while somebody sometimes has a great deal of difficulty to understanding a point which you see as obvious, and vice versa it's maybe because it's a little hard to translate what you just said into his particular framework and so on Now I'm talking like a psychologist, and you know I know nothing about this!",
+      "textCn": "事实上，虽然有些人有时很难理解你认为显而易见的观点，反之亦然，但这可能是因为将你刚才所说的转化为他的特定框架有点困难等等。现在我像心理学家一样说话，你知道我对此一无所知！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3690,
+      "text": "Suppose that little things behaved very differently that anything that was big, anything that you're familiar with because you see as the animal evolves and so on, as brain evolves it gets used to handling the brain is designed for ordinary circumstances",
+      "textCn": "假设小东西的行为与任何大的东西，任何你熟悉的东西的行为非常不同，因为你看到随着动物的进化等等，随着大脑的进化，它习惯于处理大脑是为普通情况而设计的"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3709,
+      "text": "but if the gut particles in the deep inner workings where by some other rules and some other characters they behave differently they were very different than anything on a large scale then there would some kind of difficulty in understanding and imagining reality.",
+      "textCn": "但是，如果肠道粒子在深层内部运作中，根据其他一些规则和其他一些特征，它们的行为有所不同，它们与大范围内的任何事物都非常不同，那么在理解和想象现实时就会出现某种困难。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3726,
+      "text": "And that difficulty, we are in.",
+      "textCn": "而我们正面临着这样的困难。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3729,
+      "text": "The behavior of things on the small scale is so fantastic! It is so wonderfully different!",
+      "textCn": "小规模事物的行为是如此奇妙！真是太不同了！"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3737,
+      "text": "so marvelously different that ANYTHING that behaves on a large scale.",
+      "textCn": "任何大规模行为的事物都如此奇妙地不同。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3741,
+      "text": "You said \"electrons act like wave\", no they don't exactly, \"they act like particles\", no, they don't exactly, \"they act like a kind of a fog around the nucleus\", no they don't exactly.",
+      "textCn": "你说“电子的行为像波”，不，他们不完全是，“他们的行为像粒子”，不，他们不完全是，“他们的行为就像原子核周围的一种雾”，不，他们不完全是。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3752,
+      "text": "And if you want to get a clear, sharp picture of an atom, so that you can tell exactly how it's going to behave correctly and have a good image in other words, really good image of reality I don't know how to do it. Because that image has to be mathematic:",
+      "textCn": "如果你想获得一个清晰、锐利的原子图片，这样你就可以准确地知道它如何正确运行，并获得一个良好的图像，换句话说，一个非常好的现实图像，我不知道该怎么做。因为该图像必须是数学的："
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3770,
+      "text": "we have a mathematical expression, a strange mathematics, I don't understand how it is but we can write mathematical expressions and calculate what the thing is going to do without actually being able to picture it It would something like a computer in which you put certain numbers in",
+      "textCn": "我们有一个数学表达式，一个奇怪的数学，我不明白它是怎么回事，但我们可以编写数学表达式并计算出该事物将要做什么，而无需真正能够想象它它就像一台计算机，您将某些数字放入其中"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3785,
+      "text": "and you have a formula for what time the car will arrive at different destination and the thing does the arithmetic to figure out what time the car arrives at the different destinations but cannot picture the car. It is just doing the arithmetic So we know how to do the arithmetic, but we cannot picture the car",
+      "textCn": "你有一个关于汽车到达不同目的地的时间的公式，它会进行算术来计算出汽车到达不同目的地的时间，但无法想象汽车的样子。它只是在做算术所以我们知道如何做算术，但我们无法想象汽车"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3803,
+      "text": "It's not a 100% because for certain approximate situations, certain kind of approximate pictures work that it's simply a fog around the nucleus that when you squeeze it, it repels you it's very good for understanding the stiffness of certain material that it's a wave which does this and that is very good for some other phenomena alright",
+      "textCn": "这不是 100%，因为对于某些近似情况，某些近似图片会起作用，它只是原子核周围的一层雾，当你挤压它时，它会排斥你，这对于理解某些材料的刚度非常有帮助，它是一种波，可以做到这一点，这对于其他一些现象非常有好处。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3823,
+      "text": "So when you're working with certain particular aspects of the behavior of atoms for instance when I was talking about temperature and so forth, that it's just little balls it's good enough and it gives a very nice picture of temperature but if you ask more specific question and you get down to questions like",
+      "textCn": "因此，当你研究原子行为的某些特定方面时，例如当我谈论温度等时，它只是小球就足够了，它给出了非常好的温度图，但如果你问更具体的问题，你会遇到这样的问题"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3840,
+      "text": "\"how is that when you cool helium down, even to absolute zero where it's not supposed to be any motion it's a perfect fluid and it has no resistance and it flows perfectly, and it isn't freezing\" Well if you want to get a picture of atoms as all of that in it, I can't do it",
+      "textCn": "“当你将氦冷却到绝对零时，它不应该有任何运动，它是一种完美的流体，它没有阻力，它完美地流动，而且它不会冻结，这是怎么回事？”好吧，如果你想得到一张原子的图片，因为它包含所有这些，我做不到"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3858,
+      "text": "But I can explain why the helium behaves as it does, by taking my equations and seeing that the consequences of them is that the helium would behave as it is observed to behave So we know that we have the theory right, but we haven't got the pictures that would go with the theory",
+      "textCn": "但我可以解释为什么氦会有这样的行为，通过使用我的方程并看到它们的结果是氦会像观察到的那样表现所以我们知道我们的理论是正确的，但我们还没有得到与该理论相符的图片"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3875,
+      "text": "And it's that because we haven't caught on the right picture or it's because there aren't any right pictures for people who have to make pictures out of things that are familiar to them",
+      "textCn": "这是因为我们没有找到正确的图片，或者是因为对于那些必须用他们熟悉的东西来制作图片的人来说，没有合适的图片"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3891,
+      "text": "Well let's suppose it's the last one, that there's no right picture in terms of things that are familiar to them Is it possible then to develop a familiarity with those things that are not familiar on hand, by studying by learning the properties of atoms and quantum mechanics, by practicing with the equations",
+      "textCn": "好吧，让我们假设这是最后一个，对于他们熟悉的事物没有正确的描述，那么是否有可能通过学习原子和量子力学的性质，通过练习方程来熟悉那些不熟悉的事物？"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3910,
+      "text": "until it becomes a kind of second nature just like it's a second nature to know that two balls came towards each other, they smash into bits You don't say \"the two balls when they come toward each other turn blue\". You know what they do So the question is whether you can get to know what things do without... better that we do today",
+      "textCn": "直到它成为一种第二天性，就像知道两个球相互靠近，它们粉碎成碎片一样，你不会说“当两个球相互靠近时变成蓝色”。你知道它们做什么所以问题是你是否能比我们今天做的更好地了解事物的作用"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3932,
+      "text": "as the generations develop, will they invent ways of teaching so that the new people will learn tricky ways in looking at things and be so trained, so well trained, that they won't have our troubles, with the atom picturing.",
+      "textCn": "随着几代人的发展，他们会发明教学方法，以便新人们能够学习看待事物的巧妙方法，并受到如此训练，如此良好的训练，以至于他们不会遇到我们在原子图像方面的麻烦。"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3952,
+      "text": "There's still a school of thought that cannot believe that the atomic behaviors is so different than large scale behaviors I think that's a deep prejudice, it's a prejudice of being so used to large scale behaviors and they're always seeking to find to waiting for the day that we discover",
+      "textCn": "仍然有一个学派不能相信原子行为与大规模行为有如此大的不同，我认为这是一种深深的偏见，这是一种习惯于大规模行为的偏见，他们总是在寻找等待我们发现的那一天"
+    },
+    {
+      "who": "Richard Feynman",
+      "start": 3972,
+      "text": "underneath the quantum mechanics there's some mundane, ordinary balls hitting or particles moving and so on I think they're gonna be defeated I think Nature's imagination is so much greater than man's, she's never gonna let us relax!",
+      "textCn": "在量子力学下面有一些平凡的、普通的球撞击或粒子移动等等我认为它们会被击败我认为大自然的想象力比人类的想象力要强大得多，她永远不会让我们放松！"
+    }
+  ],
+  "t_segments": [
+    {
+      "id": "T1",
+      "start_sec": 11,
+      "end_sec": 889,
+      "topic": "通过原子运动和基本力理解世界",
+      "summary": "嘉宾解释了科学的挑战在于想象力，并通过原子抖动、弹性、表面张力、物质三态等概念，阐释了热、火灾、光合作用和橡胶弹性等日常现象的微观机制，强调用简单模型理解复杂现象的乐趣。"
+    },
+    {
+      "id": "T2",
+      "start_sec": 889,
+      "end_sec": 1352,
+      "topic": "理解基本物理现象与“为什么”的层次",
+      "summary": "嘉宾从磁铁相斥的现象出发，深入探讨了“为什么”问题的本质和科学解释的层次。他通过“米妮阿姨摔断腿”和“冰为什么滑”等日常例子阐明，某些基本力（如电磁力）是世界的基石，无法用更熟悉的事物解释，只能作为基本事实接受。"
+    },
+    {
+      "id": "T3",
+      "start_sec": 1352,
+      "end_sec": 1930,
+      "topic": "电磁力的基本原理、应用与历史意义",
+      "summary": "嘉宾以牙医电钻和梳头吸纸片为例，深入浅出地解释了电磁力的基本原理，包括正负电荷的相互作用、电荷抵消机制以及远距离作用的特性。他强调电磁力是世界的基石，并赞扬麦克斯韦方程组的发现是人类历史上最根本的变革。"
+    },
+    {
+      "id": "T4",
+      "start_sec": 1930,
+      "end_sec": 2274,
+      "topic": "通过物理谜题训练想象力：镜子与火车",
+      "summary": "嘉宾分享了在麻省理工学院通过解决物理谜题训练想象力的经历。他以“镜子为何左右颠倒”和“火车如何保持在轨道上”为例，揭示了日常现象背后的非直觉物理原理，强调了深入思考和重新审视事物的重要性。"
+    },
+    {
+      "id": "T5",
+      "start_sec": 2274,
+      "end_sec": 2601,
+      "topic": "光的本质：无处不在的电磁波与信息",
+      "summary": "嘉宾将光比作水波，解释了我们如何通过眼睛感知光波。他进一步阐述了不同波长（可见光、红外线、无线电波、X射线等）的电磁波同时存在于同一空间中，并以收听莫斯科广播为例，证明了这些无形波的存在和它们承载的巨大信息量。"
+    },
+    {
+      "id": "T6",
+      "start_sec": 2601,
+      "end_sec": 2866,
+      "topic": "宇宙的尺度：从原子到星系",
+      "summary": "嘉宾探讨了理解自然界巨大尺度差异的挑战，从原子与苹果、地球的相对大小，到宇宙中恒星和星系的浩瀚。他强调了望远镜在探索遥远星系中的作用，并鼓励人们在面对宇宙的宏大时，既能感受自身的渺小，也能体会相对于原子世界的巨大。"
+    },
+    {
+      "id": "T7",
+      "start_sec": 2866,
+      "end_sec": 3306,
+      "topic": "科学想象力：从恒星演化到黑洞与类星体",
+      "summary": "嘉宾强调了科学想象力在探索宇宙奥秘中的核心作用。他以恒星演化、中子星的理论预测及脉冲星的发现为例，展现了想象力如何推动科学进步。接着，他将想象力延伸至类星体和黑洞的概念，解释了黑洞如何通过吸积物质产生巨大能量，并指出许多宇宙现象（如射流）仍是想象力的挑战。"
+    },
+    {
+      "id": "T8",
+      "start_sec": 3306,
+      "end_sec": 3690,
+      "topic": "个体认知差异：科学家如何思考与理解",
+      "summary": "嘉宾首先强调科学理解的普适性，认为普通人通过努力学习也能掌握。随后，他通过分享自己对时间感知的实验，揭示了不同个体在思考和处理信息时（如内部计数、阅读、说话）可能存在根本性的认知差异，即使在理解数学和物理概念时，内部表征也可能截然不同。"
+    },
+    {
+      "id": "T9",
+      "start_sec": 3690,
+      "end_sec": 4009,
+      "topic": "量子世界的非直观性、数学描述与认知挑战",
+      "summary": "嘉宾深入探讨了微观量子世界的非直观性，指出原子行为无法用宏观世界的图像精确描述，必须依赖数学。他展望了未来世代通过学习和实践可能克服这一认知障碍，并批判了试图将量子行为简化为宏观模式的“偏见”，强调自然界想象力远超人类。"
+    }
+  ],
+  "p_segments": [
+    {
+      "id": "T1_P1",
+      "parent_t_id": "T1",
+      "start_sec": 45,
+      "end_sec": 210,
+      "duration_sec": 165,
+      "question": "热的本质是什么？能量是如何守恒和转化的？",
+      "insight": "热的本质是原子不规则的抖动。当物体'失去'宏观有序运动的能量时，这些能量并非消失，而是转化为微观原子的无序抖动（热能），总能量始终守恒。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "原子抖动",
+        "热的本质",
+        "能量守恒",
+        "弹性",
+        "微观机制"
+      ],
+      "transcript": "It's very hard to imagine all the crazy things that things really are like Nothing's really as it seems, we used to get you know hot and cold and all that hot and cold is the speeds that the atoms are jiggling if they jiggle more it corresponds to hotter and colder is jiggling less So if you have a bunch of atom, like a cup of coffee or something, sitting on a table and the atoms are jiggling a great deal and they bounce against the cup and the cup then gets shaking and the atoms in the cup shake and the bounce against each other and the heat heats the cup and heats everything else and then hot things spread that heat to other by mere contact because the atoms that are jiggling a lot in the hot thing shake the ones that are jiggling only a little bit in the cold thing so that the hot (heat we say) goes into the cold thing, it spreads but what is spreading is just jiggling, an irregular motion, but it is easy to kind of understand. It brings up another thing that's kind of curious: that I say that things jiggle and if you're used to balls bouncing you know they slow up and stop after a while but we have to imagine with the atoms a perfect elasticity they never lose any energy every time they bounce they keep on bouncing all the time they don't lose anything they're perpetually moving And that the things that happen when we say something loses energy if a ball comes down and bounces, it shakes irregularly some of the atoms in the floor and when it comes up again, it leaves some of the atoms moving, they jiggling So as it bounces, it is passing its extra energies, its extra motions to little patches on the floor each time it rebounces and it loses a little heat each time until it settles down, we say as the falling motion stops But what's left is the floor is shaking more than it was before and the atoms in the ball are shaking more than they were before that the organized motion of all these atoms moving the same way falling down and the quiet floor, is now transformed into a ball sitting on the ground But all the motion is still there in the form of energy of motion in the form of the jiggling of the floor which is a little bit warmer (unbelievable!). But anybody who's hammered a great deal on something knows that it's true that if you pound something and hit it a lot you can feel the temperature difference it heats up it heats up simply because you're jiggling it this picture of atoms is a beautiful one that you can keep looking at all kinds of things this way"
+    },
+    {
+      "id": "T1_P2",
+      "parent_t_id": "T1",
+      "start_sec": 210,
+      "end_sec": 261,
+      "duration_sec": 51,
+      "question": "为什么水滴是圆的？什么是表面张力？",
+      "insight": "水滴的表面张力源于水分子之间相互吸引，表面上的分子因缺少一侧的‘伙伴’而向内拉扯，试图进入内部，从而形成紧密的球状。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "表面张力",
+        "原子吸引",
+        "水滴形状",
+        "微观机制"
+      ],
+      "transcript": "you see a little drop of water a tiny drop and the atoms attract each other they like to be next to each other they want as many partners as they can get Now the guys at the surface have only partners on one side here in the air on the other side so they're trying to get in And you can imagine this team of people, this team in people, all moving very fast all try (to get) to have as many partners as possible and the guys on the edge are very unhappy and nervous and they keep pounding in trying to get in, and that makes a tight ball instead of a flat and that's what you know surface tension when you realize when you see how sometimes a water drop sits like this on a table then you start to imagine why it's like that because everybody is trying to get in to the water and at the same time while all this is happening, other atoms leaving the surface"
+    },
+    {
+      "id": "T1_P3",
+      "parent_t_id": "T1",
+      "start_sec": 276,
+      "end_sec": 357,
+      "duration_sec": 81,
+      "question": "物质的三态（固液气）是如何形成的？",
+      "insight": "物质的三态取决于原子抖动的程度和相互吸引力：抖动减弱时形成固定结构的固体，抖动增强时原子相互滚动形成液体，抖动剧烈到相互弹开则形成气体。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "物质三态",
+        "原子抖动",
+        "固态",
+        "液态",
+        "气态",
+        "微观机制"
+      ],
+      "transcript": "I can't stop I mean if you may I could talk forever If you could cool off the water so that the jiggling is less and less, it jiggles slower and slower then the atoms get stuck in a place, they like to be with their friend there's force of attraction and they get packed together, they're not rolling over each other, they're in a nice pattern like oranges in a crate in a nice organized pattern, all just jiggling in place but not having enough motion to get loose of their own place and to break the structure down And that what I'm describing is a solid, it's ice, it has a structure If you held the atom in one end in a certain position all the rest are lining up in a position sticking out and it’s solid at the end whereas if you heat that harder then they begin to get loose and roll all over each other and that's the liquid. And if you heat that still harder, then they bounce still harder and they simply bounce apart from each other and they're just individuals, I said atoms, these are really little groups of atoms: molecule which come flying and hit and although they have a tendency to stick, they're moving too fast their hands don't grab so to speak, as they pass and they fly apart again and this is the gas we call steam You can get all kinds of understanding When I was a kid with this \"air\", I was always interested in"
+    },
+    {
+      "id": "T1_P4",
+      "parent_t_id": "T1",
+      "start_sec": 357,
+      "end_sec": 426,
+      "duration_sec": 69,
+      "question": "为什么压缩气体时会发热，膨胀时会冷却？",
+      "insight": "压缩气体时，活塞运动加速原子碰撞，使其获得更多动能而升温；膨胀时，原子撞击后活塞后退，能量损失导致降温。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "气体压缩",
+        "气体膨胀",
+        "热力学",
+        "原子碰撞",
+        "微观机制"
+      ],
+      "transcript": "I've noticed that when I pumped up my tires on the bicycle you can learn a lot by having a bicycle I'd pump up the tires that the pump would get hot and that also understand we see as the pump handle comes down and the atoms are coming up against it and bouncing off and it's moving in the ones that are coming off have a bigger speed than the ones that are coming in so that as it comes down and each time they collide it speeds them up and so they're hotter when you compress the gas it heats and when you pull the piston back out then the atoms which are coming faster than the piston feel receiving or sort of a give it gives and it comes out with less energy it's like going up against something which is soft and yielding it go boom boom and it loses so as you pull the piston out and the atoms are hit they lose their speed and they cool off and gases are cool when they expand and the fun of it is that all these things which you see or you notice in the world about it the pump heats the gas and the gas cools when it expands or the steam evaporates until you cover the cover and all these things you can understand from these simple pictures and that's kind of a lot of fun to think about I don't want to take this stuff seriously"
+    },
+    {
+      "id": "T1_P5",
+      "parent_t_id": "T1",
+      "start_sec": 446,
+      "end_sec": 561,
+      "duration_sec": 115,
+      "question": "火灾是如何发生的？火的本质是什么？",
+      "insight": "火的本质是碳和氧原子结合的连锁反应：一旦有足够的初始热量克服排斥力，原子便会结合并释放大量抖动（热量），这些热量又促使更多原子结合，形成自我维持的燃烧过程。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "火灾",
+        "燃烧",
+        "连锁反应",
+        "原子结合",
+        "激活能",
+        "微观机制"
+      ],
+      "transcript": "oxygen for instance in the air would like to be next to carbon and if they're getting near each other they snap together if they're not too close though they repel and they go apart so they don't know that they could snap together it's just as if you had a ball that was trying to climb a hill and there was a hole it could go into like a volcano hole a deep one it's rolling along it doesn't go down in the deep hole because if it starts to climb the hill and then rolls away again but if you made it go fast enough it'll fall into the hole and so if it's have something like wood in oxygen there's carbon in the wood from a tree and the oxygen comes and hits it carbon but not hot enough it just goes away again the air is always coming nothing's happening if you can get it faster by heating it up somehow somewhere somehow get it started a few of them come fast they go over the top so to speak they come close enough to the carbon and snap in and that gives a lot of jiggly motion which might hit some other atoms making those go faster so they can climb up and bump against other carbon atoms and they jiggle and they make other jiggle, and you get an horrible catastrophe which is one after the other all these things are going faster and faster and snapping in and the whole thing is changing that catastrophe is a fire it's just a way of looking at it and these things are happening they perpetual once it gets started it keeps on going the heat makes the other atoms capable of reaching to make more heat to make other atoms and so on so this terrible snapping is producing a lot of jiggling and if I put with all lack activity of the atoms there and I put a cup of coffee over that mess of wood that's doing this it's going to get a lot of jiggling so that's what the heat of the fire is and then of course uh you see what's happening when you start thinking, just go on and on wonder how did it get started"
+    },
+    {
+      "id": "T1_P6",
+      "parent_t_id": "T1",
+      "start_sec": 579,
+      "end_sec": 712,
+      "duration_sec": 133,
+      "question": "树木的物质来源是什么？为什么烧木头会发光发热？",
+      "insight": "树木的绝大部分物质来自空气中的二氧化碳，而非土壤；植物通过光合作用，利用太阳能将二氧化碳分解，储存能量。因此，燃烧木头释放的光和热，实际上是太阳能的再释放。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "光合作用",
+        "二氧化碳",
+        "太阳能",
+        "生物质来源",
+        "能量储存",
+        "微观机制"
+      ],
+      "transcript": "that comes from the air it's carbon dioxide from the air people look at trees and they think it comes out of the ground the plants grow out of the ground but if you ask where the substance comes from you find out where do they come from the trees come out of the air? they surely come out of you know they come out of the air the carbon dioxide in the air goes into the tree and it changes it kicking out the oxygen and uh pushing the oxygen away from the carbon and leaving the carbon substance with water water comes out of the ground you see only it had to get in there it came out of the air didn't it it came down from the sky so in fact most of a tree almost all of the tree is out of the ground I'm sorry it's out of the air there's a little bit from the ground some minerals and so forth now of course I told you the oxygen and we… oxygen carbon stick together very tight how is that the tree is so smart to take the carbon dioxide which is carbon and oxygen nicely combined and undo that so easy? Ah! Life! Life has some mysterious force! No! The sun is shining, and this sunlight comes down and knocks this oxygen away from the carbon, so it takes sunlight to get the plant to work! and so the sun, all the time, is doing the work of separating the oxygen away from the carbon the oxygen is some kind of terrible by-product, which it spits back into the air and leaving the carbon and water and stuff to make the substance of the tree and then we take the substance of the tree to get the fireplace and there's all the oxygen made by these trees and all the carbons would much prefer to be close together again and once you let the heat to get it started it continues and make an awful lot of activity while it's going back together again and all those nice light and everything comes out and everything is being undone you're going from carbon and oxygen back to carbon dioxide and the light and heat that's coming out, that's the light and heat of the sun that went in so it's sort of stored sun that is coming out when you burned a log"
+    },
+    {
+      "id": "T1_P7",
+      "parent_t_id": "T1",
+      "start_sec": 738,
+      "end_sec": 872,
+      "duration_sec": 134,
+      "question": "为什么橡皮筋有弹性？加热橡皮筋会发生什么？",
+      "insight": "橡皮筋的弹性并非主要来自电磁力，而是由热量（原子抖动）驱动：长链分子不断受到其他原子的撞击，试图使其卷曲变短，这种热运动导致橡皮筋收缩；因此，加热橡皮筋会使其收缩力更强，拉伸时会变热，收缩时会变冷。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "橡皮筋弹性",
+        "热驱动",
+        "分子链",
+        "原子撞击",
+        "微观机制"
+      ],
+      "transcript": "you pull the atoms up a little bit apart when you bend something and then they try to come back together again but rubber bands work on a different principle there there's some long molecules like chains and other little ones that are shaking all the time that are bombarding them these chains and the chains are all kind of kinky and knockabout in shape when you pull open the rubber band the strings get straighter but these strings are being bombarded on the side by these other atoms trying to shorten them by kinking them so it pulls back it's trying to pull back and it's pulling back only because of the heat so if you heat a rubber band it'll pull strong more strongly for instance if you hang a weight with a rubber band put a little match to it it's kind of fun to watch it rise because heats want and there's another thing you can check that this idea is right that is heat that drives a rubber band if you pull the band out just like when we push the piston and the gas if you pull the band out this tightening string hitting those molecules makes them move faster so it's warmer and if you take the band and let it in then the molecules hitting the strings which sort of give as the thing hits it they give in to the soft like and they lose energy when they hit these retiring band, string so it cools and there is a little way you can do this you're not very sensitive it's a small effect and if you take a fairly wide rubber band and put it between your lips and pull it out you'll certainly notice it's hotter and if you then hold it out and let it in you'll notice it's cooler at least you'll notice a certain difference in whether what happens when you expand it and when you contract it and that's i've always found rubber bands fascinating to think that when they're sitting on an old package of papers for a long time holding those papers together it's done by a perpetual pounding pounding pounding and the atoms that get these chains to hold it, try to kink them and try kink them year after year well rubber bands don't last that long but anyhow for a long time trying to hold this whole thing together"
+    },
+    {
+      "id": "T2_P1",
+      "parent_t_id": "T2",
+      "start_sec": 949,
+      "end_sec": 1102,
+      "duration_sec": 153,
+      "question": "如何理解'为什么'的层次与解释的边界？",
+      "insight": "对'为什么'的解释必须在一个既定框架内，否则会陷入无限追问，直到触及无法用更熟悉事物解释的基本事实，这揭示了知识的层次和解释的边界。",
+      "domain": [
+        "学习与思维方法",
+        "决策与判断"
+      ],
+      "fine_tags": [
+        "为什么的层次",
+        "解释边界",
+        "基本事实",
+        "思维框架"
+      ],
+      "transcript": "But the problem that you are asking, you see, when you ask why something happens how does a person answers \"why something happens?\" for example Aunt Minnie is at the hospital. Why? Because she slip. she went out and she slipped on the ice and broke her hip that satisfies people. It satisfies but wouldn't satisfy someone who came from another planet knew nothing about things first you understand \"Why when you break your hip you go to the hospital? \"How do you get to the hospital when the hip is broken\" well because her husband seeing that she had her hip broken called the hospital up and send somebody to get her all that is understood by people now when you explain a \"Why\" you have to be in some framework that you allow something to be true Otherwise you are perpetually asking why Why did the husband call up the hospital? Because the husband is interested in his wife's welfare. Not always some husbands aren't interested in their wives' welfare when they are drunk and angry So you begin to get very interesting understanding of the world and all its complications in order to… if you try to follow anything up you go deeper and deeper in various directions. for example you could go “why did she slip upon the ice?\" Well ice is lippery everybody knows that no problem But you ask \"why is ice slippery?\" that's kind of curious, ice is extremely slippery it's very interesting You say \"How does it work?\" you could either say \"I'm satisfied that you have answered me ice is slippery, that explains it\" or you could go on and say \"Why is ice slippery?” and then you're involved with something because there are not many things as slippery as ice It's very hard to get greasy stuff, but that's a sort of wet slimy But a solid that is so slippery? Because it is in the case of ice when you stand on it (they say), momentarily the pressure melts the ice a little bit so you get a sort of instantaneous water surface on which you are slipping Why on ice and not on other things? Because ice expands… water expands when it freezes so the pressure tries to undo the expansion and melts it. It is capable about melting it But other substances contract when they're freezing and when you push them they're just satisfied to be solid why does water expand when it freezes and another substance don't expand when they freeze all right? I'm not answering the question but I am telling you how difficult a \"why\" question is."
+    },
+    {
+      "id": "T2_P2",
+      "parent_t_id": "T2",
+      "start_sec": 1132,
+      "end_sec": 1352,
+      "duration_sec": 220,
+      "question": "为什么有些基本物理现象无法被进一步解释？",
+      "insight": "磁力、电力等基本物理力是世界的构成元素，无法用更熟悉的事物解释，试图用类比解释只会陷入循环，最终必须将其作为基本事实接受。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "基本力",
+        "电磁力",
+        "解释的极限",
+        "不可还原",
+        "科学哲学"
+      ],
+      "transcript": "Now when you ask for example \"Why two magnets repel?\" there are many different levels it depends on whether you are a student of physics or an ordinary person who doesn’t know anything or not If you are somebody that doesn't know anything about all I can say is that it is the magnetic force that makes things repel And that you are feeling that force. You see, that is very strange because I don't feel kind of force like that in other circumstances. When you turn them in the other way they attract there's a very analogous force, electrical force which is the same kind of a question and you say that's also very weird but you're not at all disturbed by the fact that when you put your hand on the chair, it pushes you back. But we have find that looking at it that it is the same force as a matter of fact the electrical force (not magnetic exactly in that case) but it is the same electric repulsions that are involved in keeping you finger away from the chair because everything is made out... it is electrical force in minor, microscopic details there are other forces involved, but they are connected to electrical force It turns out that the magnetic and the electric forces with which I wish to explain these things this repulsion in the first place is what ultimately is the deeper thing that we have to start that we can start with to explain many other things that looks like they were... Everybody would just accept them. You know you cannot put your hand through the chair, that's taken for granted. But you can't put your hand through the chair when you look at it more closely: \"Why?\" it involves these same repulsive forces that appear in magnets The situation is then to have to explain is: \"why in the magnet it goes over a bigger distance than ordinarily?\" There it has to do with the fact that in iron, all the electrons are spinning in the same direction, they all get lined up and they magnify the effect of the force until it's large enough at a distance that you can feel it but it's a force which is present all the time and very common and is in a basic force or almost I mean I can go a a little further back if I went more technical but in the early level, I just have to tell you that is going to be one of the thing you will have to take as an element in the world the existence of magnetic repulsion or electrical or magnetic attraction I can't explain that attraction in terms of anything else that is familiar to you. For example, if we say that the magnets attracts like if they were connected by rubber bands I would be cheating you because they are not connected by rubber bands; I shouldn't be in trouble you'll soon ask me about the nature of the bands And secondly, if you are curious enough you will ask me \"why rubber bands tend to pull back together again?\" I would end up explaining that in terms of electrical forces which are the very things I try to use the rubber band to explain so I have cheated very badly you see So I'm not going to be able to give you an answer to \"why magnets attract each other\" except to tell you that they do and to tell you that's one of the elements in the world among different forces: there are electrical forces, magnetic forces, gravitational forces and others, and those are some of the parts If you are a student, I could go further and tell you that the magnetic forces are related to the electrical forces very intimately that the relationship between the gravity forces and the electrical forces remains unknown and so on. But I really can't do a good job, any job of explaining magnetic forces in terms of something else that you are more familiar with, because I don't understand it in terms of anything else that you are more familiar with."
+    },
+    {
+      "id": "T3_P1",
+      "parent_t_id": "T3",
+      "start_sec": 1725,
+      "end_sec": 1831,
+      "duration_sec": 106,
+      "question": "我们对力的直觉认知是错的吗？为什么感觉不到电磁力在远距离作用？",
+      "insight": "我们日常感受到的接触力，本质上也是电磁力在远距离作用，只是因为正负电荷高度抵消，才让我们误以为只有近距离接触才有力的作用。电磁力才是世界的基石，理解它需要超越直觉的想象力。",
+      "domain": [
+        "学习与思维方法",
+        "行业判断与未来"
+      ],
+      "fine_tags": [
+        "电磁力",
+        "远距离作用",
+        "正负电荷抵消",
+        "接触力本质",
+        "基础物理"
+      ],
+      "transcript": "because we're used to it that we don't get any push until we're touching but the fact is that the reason we don't get any push until we're touching is the same force as you see at a long distance only it's come down to short because the pluses and minuses have cancelled out so well that you don't feel anything until it gets very very close When it gets close enough of course it makes a difference which is plus and which is minus and where they are and they repel each other so it's kind of fun to imagine that this intimate mixture of highly attractive opposites which are so strong that they cancel out the effects and it's only sometimes, when you have an excess of one kind or another that you get this mysterious electrical force And how can I explain the mysterious electrical forces in any other way? Why should I try to explain it in terms of something like jelly or other things which are made? And I understand the other way around in terms of strong, long distance forces which are all canceled out So it's the electrical forces in fact, and the magnetic forces in fact that we have to accept as the base reality in which we are going to explain all the other things. So again it turns out it's hard to understand, you have to do a lot of imagining that the real world has as its base, a force that acts at long distance that we haven't got much experience with that force we have peculiar phenomena here and there, but ordinarily we don't have much experience with that force is simply because that's what requires explanation That's what requires imagination. The long distance force we haven't other picture for"
+    },
+    {
+      "id": "T3_P2",
+      "parent_t_id": "T3",
+      "start_sec": 1831,
+      "end_sec": 1889,
+      "duration_sec": 58,
+      "question": "电信号为什么能瞬间传遍城市？",
+      "insight": "电信号能瞬间传遍城市，是因为电子在铜线中被推动后，会通过远距离的斥力迅速推动其他电子，这种长程斥力使得信息传输速度远超我们日常对流体的理解。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "电信号传输",
+        "电子斥力",
+        "远距离快速互动",
+        "通信原理"
+      ],
+      "transcript": "And in the example of the generator for instance what happens is that the electrons which are part of an atom they're pushed by the motion of the copper wires wonderful to think that if you push a few here, and they get too close together so they push the others because they repel at a long distance so it's not just like water which repel at a short distance but it's a wonderful fluid which repel at a long distance and the effects therefore can go very quickly through the wire there is a little concentration you go ZINNNG through the wire all over the city at once. And you can use that stuff to make signals, you can push a few electrons here and there by talking in a telephone, at the other end of the line, a long line of copper across the city the electrons respond because of this very rapid interactions over these long distances to what you're saying in this room"
+    },
+    {
+      "id": "T4_P1",
+      "parent_t_id": "T4",
+      "start_sec": 2057,
+      "end_sec": 2126,
+      "duration_sec": 69,
+      "question": "镜子为什么左右颠倒，而不是上下颠倒？",
+      "insight": "镜子并非颠倒左右或上下，而是颠倒了前后；我们之所以觉得是左右颠倒，是因为我们心理上会想象另一个人转身面对我们，而不是被前后挤压。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "镜子原理",
+        "前后颠倒",
+        "心理错觉",
+        "挑战常识"
+      ],
+      "transcript": "but what's wrong is if this is north your nose is to the north of the back of your head, but in the image the nose is to the south of the back of the head so what happens really in the image is neither the left and the right mixed nor the top and the bottom, but the front and back had been reversed, you see that is just the nose of the thing is on the wrong side of the head if you want it, all alright? Now ordinarily when we think of the image we think at it as of another person and we think the normal way that another person would get on that condition over there It's a psychological thing We don't think of the idea that the person has been squashed and pushed backward with his nose and his head because that's not what ordinarily happens to people A person gets to look like you looks in the mirror by walking around and facing you and because people when they walk around don't turn their head for their feet we leave that part alone but they get their right and left hand swung about you see when they turn around so we say that it's left and right interchanged but really the symmetrical way is along the axis of the mirror that thing get interchangeable but that's kind of an easy one a harder one and very entertaining was \"what keeps a train on the track?\""
+    },
+    {
+      "id": "T4_P2",
+      "parent_t_id": "T4",
+      "start_sec": 2126,
+      "end_sec": 2274,
+      "duration_sec": 148,
+      "question": "火车为什么能保持在轨道上，还能过弯道？",
+      "insight": "火车能保持在轨道上并过弯，不是靠轮缘，而是靠锥形车轮；车轮外侧稍细、内侧稍粗的设计，使其在过弯时能自动调整有效直径，实现内外轮不同转速，同时也能在火车偏离轨道时自动将其导回正轨。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "火车原理",
+        "锥形车轮",
+        "自动转向",
+        "自我修正",
+        "挑战常识"
+      ],
+      "transcript": "And of course the answer is, as everyone thinks: the flanges on the wheels you know the wheels have some kind of flange on them but that's not the answer. Because flange is just safety devices if the flanges rub against the tracks you hear a terrible squealing they're just in case the real mechanism doesn't work there's another problem with trains that's connected to it now people all know this about their automobile that when you go around the corner the outside wheels have to go further than the inside wheels and if the wheels were connected on a solid shaft you couldn't do that you can't turn the outside wheels further than the inside wheels and so the shaft is broken in the middle with a gear system it's called a differential did you ever see the differential on a railroad train? no you look at those wheels under a freight car and there are the two wheels and there's a solid steel rod going from one wheel to the other there's nothing that one turns the same as the other so now how does it go around the corner, a curve? when the outside wheel has to go further than the inside wheel and the answer is that the wheels are flanged like this I mean not flange they're cones this way that is they're a little fatter closer to the train and a little thinner further out if you look closely you'll see they've got this beveled edge and it's all very simple when they go around the curve, they slide out on the track a bit So that this wheel travels on a fatter pond a bigger diameter and this on a smaller diameter so when they both turn one turn this swings further than the other and that's what keeps it on the track also the same way suppose the train's running along on this thing, on the track and the track's here and here the two wheels are exactly balanced and it's nice and even suppose accidentally it gets a bump or something and slides out this way then this wheel is on a bigger circumference than this one but they're on a solid shaft so when it turns once around it carries this wheel forward relative to the other and steers the train back on the track of course if it gets too far off on the other side it goes back and forth and it stays on the track because the wheels are tapered and the flange is safety well we had a lot of stuff like that that we had to learn you know that would get straightened out before we could become full-fledged members of the fraternity"
+    },
+    {
+      "id": "T5_P1",
+      "parent_t_id": "T5",
+      "start_sec": 2519,
+      "end_sec": 2601,
+      "duration_sec": 82,
+      "question": "我们如何证明那些看不见的电磁波和信息真实存在？",
+      "insight": "我们周围空间中充满了各种波长（可见光、无线电、X射线等）的电磁波，它们同时存在并承载着巨大信息量，虽然肉眼不可见，但通过特定工具（如收音机）即可证明其真实存在。",
+      "domain": [
+        "其他"
+      ],
+      "fine_tags": [
+        "电磁波",
+        "信息承载",
+        "同时存在",
+        "不可见现实",
+        "莫斯科广播实验"
+      ],
+      "transcript": "And then these waves get longer and longer, and all through the same space, all these things are going on at the same time, so that in this space, there's not only my vision of you, but information from Moscow Radio that's being broadcasted at present moment, and the seeing of somebody from Peru. All the radio waves are just the same kind of waves, only they are longer waves. And there's the radar, from the airplane which is looking at the ground to figure out where it is, which is coming to the room at the same time. Plus X-rays, cosmic rays and all of these other things that are the same kind of waves, EXACTLY the same kind of waves, but shorter, faster or longer, slower. It is exactly the same thing. So this big field, this - this area of irregular motions of this electric field, this vibration, contains this tremendous information, and it's ALL REALLY there, that's what gets you. If you don't believe it, then you pick a piece of wire and connect it to a box and in the wire the electrons would be pushed back and forth by this electric field, swashing just at the right speed for the certain kind of long waves, and you turn some knobs on the box to get the swashing just right, and you hear Radio Moscow! Then you know that it was there. How else did it get there? It was there all the time. It is only when you turn on the radio that you notice it."
+    },
+    {
+      "id": "T6_P1",
+      "parent_t_id": "T6",
+      "start_sec": 2601,
+      "end_sec": 2656,
+      "duration_sec": 55,
+      "question": "面对自然界中难以想象的巨大或微小尺度，我们应该如何思考和理解？",
+      "insight": "自然界的尺度差异巨大到难以想象，试图完全理解只会让人困惑。更好的方法是调整视角，用类比简化，而非执着于精确把握。",
+      "domain": [
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "尺度理解",
+        "类比思维",
+        "不可思议",
+        "认知局限"
+      ],
+      "transcript": "But that all these things are going through the room at the same time which everybody knows, but you gotta stop and think about it to really get the pleasure about the complexity - the INCONCEIVABLE nature of nature. When we were talking about the atoms, one of the trouble we have with the atoms is that they are so tiny and it is so hard to imagine the scale. The atoms are in size compared to an apple is the same scale as an apple is compared to the size of the earth. That's kind of a hard think to take, and you have to go through all these things all the time and people find these numbers inconceivable and I do too And the only thing you do is just change your scale you just think of small balls but you don't try to know exactly how small they are too often or you get kind of a bit nutty, alright?"
+    },
+    {
+      "id": "T6_P2",
+      "parent_t_id": "T6",
+      "start_sec": 2656,
+      "end_sec": 2723,
+      "duration_sec": 67,
+      "question": "如何理解宇宙中星系之间难以想象的距离，并建立直观感受？",
+      "insight": "理解宇宙的巨大尺度，不能执着于真实距离，而应采取比例思维，将星系视为小块，并按比例想象它们之间的距离，避免陷入数字的困境。",
+      "domain": [
+        "学习与思维方法",
+        "行业判断与未来"
+      ],
+      "fine_tags": [
+        "宇宙尺度",
+        "比例思维",
+        "星系距离",
+        "天文数字"
+      ],
+      "transcript": "but in astronomy you have the same thing in reverse because the distances to these stars are so enormous You know that light goes so fast, and it only takes few seconds to go to the moon and back or it goes around the earth in seven and a half times in a second and it goes for years... two years, three years before it gets to the nearest other star that there is to us! But all our stars are in nearby galaxies, a big mess of stars which is called a galaxy, a group but our galaxy is (what is it) some hundred thousand light years, like 100 000 years And then there's another patch of stars It takes a million years for the light to get here going at this enormous rate and you just go crazy trying to make too real that distance. You have to do everything in proportion. That's easy say that galaxies are little patches of stars and they're ten times as far apart as they are big So that's an easy picture. But you just go to a different scale, that's easier once in a while you try to come back to earth scale to discuss the galaxies, but it's kind of hard"
+    },
+    {
+      "id": "T6_P3",
+      "parent_t_id": "T6",
+      "start_sec": 2723,
+      "end_sec": 2829,
+      "duration_sec": 106,
+      "question": "如何理解宇宙中恒星数量的庞大，以及天文数字的相对性？",
+      "insight": "我们银河系中的恒星数量庞大到难以想象（数完需三千年），但即使如此巨大的数字，在某些宏观背景下（如弥补国家赤字）也显得微不足道，这揭示了数字的相对性。",
+      "domain": [
+        "学习与思维方法",
+        "行业判断与未来"
+      ],
+      "fine_tags": [
+        "恒星数量",
+        "银河系",
+        "数字相对性",
+        "天文数字"
+      ],
+      "transcript": "The number of stars we see at night is only about five thousand. but the number of stars in our galaxy, the telescope have shown when you improve the instruments Oh! We look at a galaxy, we look at the stars, all the light that we see, the little tiny influence, spread from the stars over this enormous distance of what three light-years for the nearest stars on! on! on! this light from the star is spreading, the wavefront's getting wider and wider weaker and weaker, weaker and weaker out into all of space and finally the tiny fraction that comes in one square eighth of an inch little black hole and does something to me so I know it's there! Well to know a little bit more about, I'd rather gather a little more of this tiny fraction of the front of light and so I make a big telescope which is a kind of funnel. The light that comes over this big area-200 inches in cross-is very carefully organized so it is all concentrated back so it can go through pupil. Actually it's better to photograph, and nowadays they use photocells which are better instruments but anyway the idea of a telescope is to focus the light from a bigger area into a smaller area so that we see things that are weaker, less light and in that way we find there's a very large number of stars in the galaxy. There's so many that if you try to name them, one in a second, all of the stars in our galaxy I don't mean all the stars in the universe just this galaxy here it takes three thousand years! And yet that's not a very big number Because if those stars were to drop one dollar bill on the earth during a year each star dropping one dollar bill they might take care of the deficit, which is suggested for the budget of the United States! So you see what kind of numbers we have to deal with!"
+    },
+    {
+      "id": "T7_P1",
+      "parent_t_id": "T7",
+      "start_sec": 3026,
+      "end_sec": 3138,
+      "duration_sec": 112,
+      "question": "科学想象力如何推动科学发现和理论验证？",
+      "insight": "科学想象力不仅能构想出符合已知规律的全新概念（如中子星），还能在数学分析的辅助下，提前预言其存在，最终通过观测得到验证，从而推动科学进步。",
+      "domain": [
+        "学习与思维方法",
+        "行业判断与未来"
+      ],
+      "fine_tags": [
+        "科学想象力",
+        "理论预测",
+        "中子星",
+        "脉冲星",
+        "科学验证"
+      ],
+      "transcript": "even though the pressure has got to be enormous, the gravity has to be even more enormous and the thing will stay steady at a different size and be nothing but a neutron, a nuclear matter, nothing solid, nuclear matter and this possibility was worked out by Oppenheimer and Volkov, it's called a neutron star And people waited to see if there were any such neutron stars for years until recently they found these strange pulsars which emit flashes of radio waves later they found light which can go 30 times a second for instance the fastest ones or maybe 10 times a second or one a second And at first, that's very mysterious; you are used to stars being big and slow how can anything in a star move in a thirtieth of a second? Well these things are very small neutron stars and they’re spinning very fast. For reason not yet understood, they are emitting a beam, a beam of radio waves like a search light in an airport or something those things that go around boop boop boop so we get the flashes tick tick tick, that fast to imagine a star the mass of the sun, doing something, turning so fast 30 times a second another one of these big numbers, hard to conceive imaginary things okay? and the whole idea that there could be a star of such enormous density that a teaspoon would weigh so much of the matter if you put it on the earth surface it is so heavy that that it will just plough right to the center of the earth! and things like that, it took a lot of imagination: it comes out the mathematics and the analysis of all this helps you to make sure you are not making a mistake and it turns out that such a star is possible, and it turned out a little bit later they do exist and that's a good example of how imagination is a useful thing"
+    },
+    {
+      "id": "T7_P2",
+      "parent_t_id": "T7",
+      "start_sec": 3226,
+      "end_sec": 3306,
+      "duration_sec": 80,
+      "question": "为什么黑洞能产生巨大能量？为什么有些宇宙现象（如射流）仍是科学想象力的挑战？",
+      "insight": "黑洞通过吸积周围物质，在物质高速旋入的过程中产生巨大的摩擦、磁电效应，从而解释了类星体的巨大能量；然而，像宇宙射流这样的复杂现象，其精确机制仍未被完全理解，是科学想象力面临的持续挑战。",
+      "domain": [
+        "行业判断与未来",
+        "学习与思维方法"
+      ],
+      "fine_tags": [
+        "黑洞吸积",
+        "类星体能量",
+        "宇宙射流",
+        "科学未解之谜",
+        "想象力挑战"
+      ],
+      "transcript": "and you say well how can a black hole which is absorbing everything make all this energy that we see Is that an explanation of a quasar? Actually, it may well be Because the things that are falling in don't go pluck in but go around, falling in by swirling then as they are falling irregularly and so forth, and in the fast motions that it produces they go down this whirlpool they generate a lot of energy and friction and so forth, and different kind of effects magnetic and electric effects that could make the jets of matter that come out of the quasar and the radio galaxies in ways that are not really understood. We don't have a real picture why there are jets of radio waves, matter emitting radio waves in galaxies there are galaxies which great jets coming out with big clouds of matter on each side which are emitting radio waves so there's some kind of a source in there it sort of gets wound up and shoots these jets of matter out with tremendous energy And it's guessed that maybe it's a black hole somehow or other and the somehow or other is the challenge of the imagination Which has not yet been answered. by anybody, with any great confidence."
+    },
+    {
+      "id": "T8_P1",
+      "parent_t_id": "T8",
+      "start_sec": 3405,
+      "end_sec": 3670,
+      "duration_sec": 265,
+      "question": "为什么我们觉得理所当然的知识，别人却难以理解？",
+      "insight": "即使是简单的认知操作（如计数），不同个体的大脑内部表征和处理方式也可能截然不同。这种根本性的认知差异导致了在学习复杂概念和沟通时，我们以为的“共同理解”可能只是基于不同的内部翻译机制，而非真正的相同理解。",
+      "domain": [
+        "学习与思维方法",
+        "团队与协作"
+      ],
+      "fine_tags": [
+        "认知差异",
+        "内部表征",
+        "时间感知实验",
+        "约翰·图基",
+        "沟通障碍",
+        "思维模型"
+      ],
+      "transcript": "I suspect that what goes on in every man's head might be very very different, the actual imagery or semi-imagery which comes and when we are talking to each other at these high and complicated levels and we think we are speaking very well, that we are communicating but what we are really doing is having a some kind of big translation scheme going on for translating what this fellow says into our images, which are very different. I found that out because in the very lowest level I wouldn't go into much details but I got interested in... Well I was doing some experiments and I was trying to figure out something about our time sense and so what I would do is trying to count to a minute actually say I'd count to 48 then it would be one minute so I calibrate myself and I would count a minute in 48 think I was counting seconds but it's close enough and then it turns out if you repeat that you can do very accurately when you get to 48 or 47 or 49, not far off, you're very close to a minute. And I was trying to find out what affected that time sense and whether I could do anything at the same time I was counting and I found that I could do many things I could, there were some things that not For example, I had great difficulty… I was in the university, I had to get my laundry ready, and I was putting the socks out and I had to make a list \"how many socks\", there were something like 6 or 8 socks and I couldn't count them because the counting machine was being used, and I couldn't count them until I found that I could put them in a pattern and recognize the number and so I learned a way after practicing by which I could count the line of type in a newspaper and see them in groups three, three, three, three, one that's a group of ten, three, three, three, one without saying the numbers just seeing the groupings I could therefore count the line of types I was practicing in the newspaper the same time I was counting internally the seconds so I could do this fantastic trick of saying \"forty-eight, that's one minute and there are sixty seven lines of type\" you see! It was quite wonderful and I discovered many things I could read while I was.. no, excuse me, yes, I could read perfectly alright while I was counting and get an idea of what it was about But I couldn't speak, I couldn’t say anything. Because of course I was sort of trying to speak to myself, inside, I would say \"one, two, three\" or sort of in the head. Then I went down to the breakfast, and there was John Tukey was a mathematician at Princeton in the same time and we had many discussions, and I was telling him about these experiments and what I could do and he says \"that's absurd!\" he says He said \"I don't see why you have any difficulty talking whatsoever, And I can't possibly believe that you could read\" so I couldn't believe all this but we calibrated him it was 52 for him to get to 60 seconds or whatever I don't remember the numbers now and then he said \"alright, what do you want me to say? Mary had a little lamb. I can speak about anything, blah blah blah, blah blah, 52! that's one minute\". He was right. And I couldn't possibly do that And he wanted me to read, because he couldn’t possibly believe it. and then we compared note, and it turned out that when he thought of counting what he did inside his head when he counted was he saw a tape with numbers it went \"clink, clink clink\" the tape would change with numbers printed on it, he could see well since it's sort of an optical system that he was using, and not voice. He could speak as much as he wanted but if he had to read, then he couldn't look at his clock! Whereas for me it was in the other way. And that's where I discovered, at least in this very simple operation of counting the great difference in what goes on in the head when people think they are doing the same thing And so it struck me therefore, if that is already true at the most elementary level That when we learn mathematics and Bessel functions, and the exponential and the electric field and all these things that the imageries and the method by which we are storing it all and the way we think about it could be really, if we get to each other's head, entirely different"
+    },
+    {
+      "id": "T9_P1",
+      "parent_t_id": "T9",
+      "start_sec": 3752,
+      "end_sec": 3875,
+      "duration_sec": 123,
+      "question": "为什么微观世界的真实面貌无法被想象或直观理解？",
+      "insight": "微观世界的真实行为无法被宏观世界的图像直观描绘，必须依赖数学公式来理解和预测，因为自然界的想象力远超人类的直觉。",
+      "domain": [
+        "学习与思维方法",
+        "行业判断与未来"
+      ],
+      "fine_tags": [
+        "量子世界",
+        "非直观性",
+        "数学描述",
+        "图像限制",
+        "自然界想象力"
+      ],
+      "transcript": "And if you want to get a clear, sharp picture of an atom, so that you can tell exactly how it's going to behave correctly and have a good image in other words, really good image of reality I don't know how to do it. Because that image has to be mathematic: we have a mathematical expression, a strange mathematics, I don't understand how it is but we can write mathematical expressions and calculate what the thing is going to do without actually being able to picture it It would something like a computer in which you put certain numbers in and you have a formula for what time the car will arrive at different destination and the thing does the arithmetic to figure out what time the car arrives at the different destinations but cannot picture the car. It is just doing the arithmetic So we know how to do the arithmetic, but we cannot picture the car It's not a 100% because for certain approximate situations, certain kind of approximate pictures work that it's simply a fog around the nucleus that when you squeeze it, it repels you it's very good for understanding the stiffness of certain material that it's a wave which does this and that is very good for some other phenomena alright So when you're working with certain particular aspects of the behavior of atoms for instance when I was talking about temperature and so forth, that it's just little balls it's good enough and it gives a very nice picture of temperature but if you ask more specific question and you get down to questions like \"how is that when you cool helium down, even to absolute zero where it's not supposed to be any motion it's a perfect fluid and it has no resistance and it flows perfectly, and it isn't freezing\" Well if you want to get a picture of atoms as all of that in it, I can't do it But I can explain why the helium behaves as it does, by taking my equations and seeing that the consequences of them is that the helium would behave as it is observed to behave So we know that we have the theory right, but we haven't got the pictures that would go with the theory"
+    },
+    {
+      "id": "T9_P2",
+      "parent_t_id": "T9",
+      "start_sec": 3891,
+      "end_sec": 3952,
+      "duration_sec": 61,
+      "question": "我们能否训练自己或后代，让量子世界的非直观性变得直观？",
+      "insight": "通过系统学习、实践量子力学方程，未来世代有望将量子世界的非直观行为内化为'第二天性'，从而克服当前人类的认知障碍，发展出新的理解方式。",
+      "domain": [
+        "学习与思维方法",
+        "个人成长与状态"
+      ],
+      "fine_tags": [
+        "认知障碍",
+        "第二天性",
+        "量子力学学习",
+        "世代演进",
+        "教学创新"
+      ],
+      "transcript": "Well let's suppose it's the last one, that there's no right picture in terms of things that are familiar to them Is it possible then to develop a familiarity with those things that are not familiar on hand, by studying by learning the properties of atoms and quantum mechanics, by practicing with the equations until it becomes a kind of second nature just like it's a second nature to know that two balls came towards each other, they smash into bits You don't say \"the two balls when they come toward each other turn blue\". You know what they do So the question is whether you can get to know what things do without... better that we do today as the generations develop, will they invent ways of teaching so that the new people will learn tricky ways in looking at things and be so trained, so well trained, that they won't have our troubles, with the atom picturing."
+    }
+  ]
+}
