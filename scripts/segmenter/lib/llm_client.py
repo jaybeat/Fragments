@@ -31,7 +31,6 @@ class GeminiSchemaError(GeminiError):
 class LLMClient:
     """Raw-HTTP Gemini client with retry and token tracking.
 
-    Mirrors the pattern in scripts/lib/gemini.ts:
       - POST to generativelanguage.googleapis.com/v1beta/models/{model}:generateContent
       - generationConfig forces JSON output
       - Parses candidates[0].content.parts[0].text as inner JSON
