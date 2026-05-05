@@ -9,13 +9,13 @@ export default function TopNav({ episode }: TopNavProps) {
   return (
     <nav className="topnav" aria-label="Top navigation">
       <a href="/" className="topnav-link">
-        HOME
+        书架
       </a>
       <a href="#episodes" className="topnav-link">
-        EPISODES
+        正在听
       </a>
       <a href={ytUrl} target="_blank" rel="noopener" className="topnav-link">
-        WATCH ON YT
+        关于
       </a>
     </nav>
   );

@@ -12,7 +12,7 @@ export default function Header() {
     <div
       className="header"
       style={{
-        background: `linear-gradient(180deg, ${state.tweaks.accentHeader} 0%, #16161a 100%)`,
+        background: `linear-gradient(180deg, ${state.tweaks.accentHeader} 0%, var(--bg-page) 100%)`,
       }}
     >
       <div className="header-top">
@@ -24,7 +24,6 @@ export default function Header() {
             {episode.speakerName}
           </div>
           <div className="header-status">
-            <span className="dot-live" style={{ display: state.isPlaying ? undefined : 'none' }} />
             <span>{state.isPlaying ? 'Speaking…' : 'Paused'}</span>
           </div>
         </div>

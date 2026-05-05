@@ -17,6 +17,7 @@ export const initialState: PlayerState = {
     waveSpeed: 1.0,
   },
   transcriptLang: 'cn',
+  theme: 'warm-light',
 };
 
 export function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
@@ -45,6 +46,8 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
       return { ...state, tweaks: { ...state.tweaks, ...action.payload } };
     case 'SET_TRANSCRIPT_LANG':
       return { ...state, transcriptLang: action.payload };
+    case 'SET_THEME':
+      return { ...state, theme: action.payload };
     default:
       return state;
   }

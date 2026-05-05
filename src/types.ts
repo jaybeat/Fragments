@@ -66,6 +66,7 @@ export interface PlayerState {
   isReady: boolean;
   tweaks: Tweaks;
   transcriptLang: 'en' | 'cn' | 'both';
+  theme: 'warm-light' | 'warm-dark';
 }
 
 export type PlayerAction =
@@ -76,4 +77,5 @@ export type PlayerAction =
   | { type: 'PAUSE' }
   | { type: 'SET_READY'; payload: boolean }
   | { type: 'UPDATE_TWEAKS'; payload: Partial<Tweaks> }
-  | { type: 'SET_TRANSCRIPT_LANG'; payload: 'en' | 'cn' | 'both' };
+  | { type: 'SET_TRANSCRIPT_LANG'; payload: 'en' | 'cn' | 'both' }
+  | { type: 'SET_THEME'; payload: 'warm-light' | 'warm-dark' };

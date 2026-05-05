@@ -30,6 +30,17 @@ export default function Tweaks() {
         <h3>Tweaks</h3>
 
         <div className="tweak-row">
+          <label>Theme</label>
+          <select
+            value={state.theme}
+            onChange={(e) => dispatch({ type: 'SET_THEME', payload: e.target.value as 'warm-light' | 'warm-dark' })}
+          >
+            <option value="warm-light">Warm Light</option>
+            <option value="warm-dark">Warm Dark</option>
+          </select>
+        </div>
+
+        <div className="tweak-row">
           <label>Episode</label>
           <select
             value={state.episodeId}

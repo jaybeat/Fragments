@@ -46,6 +46,10 @@ export default function Waveform() {
       const count = Math.floor(cw / step);
       phase += isPlaying ? 0.06 * tweaks.waveSpeed : 0.004;
 
+      // Read theme-aware color from computed style
+      const computed = getComputedStyle(document.documentElement);
+      const baseColor = computed.getPropertyValue('--header-text').trim() || '#2a2826';
+
       for (let i = 0; i < count; i++) {
         const x = i * step + (cw - count * step) / 2;
         const center = i / count;
@@ -62,7 +66,23 @@ export default function Waveform() {
         h = Math.max(4, Math.min(ch - 4, h));
         const y = ch - h;
         const alpha = 0.55 + 0.4 * (1 - (i / count - 0.5) ** 2 * 2);
-        cx.fillStyle = `rgba(255,255,255,${Math.min(0.9, alpha)})`;
+
+        // Parse hex color to rgba with alpha
+        let r = 255, g = 255, b = 255;
+        if (baseColor.startsWith('#')) {
+          const hex = baseColor.slice(1);
+          if (hex.length === 3) {
+            r = parseInt(hex[0] + hex[0], 16);
+            g = parseInt(hex[1] + hex[1], 16);
+            b = parseInt(hex[2] + hex[2], 16);
+          } else if (hex.length === 6) {
+            r = parseInt(hex.slice(0, 2), 16);
+            g = parseInt(hex.slice(2, 4), 16);
+            b = parseInt(hex.slice(4, 6), 16);
+          }
+        }
+
+        cx.fillStyle = `rgba(${r},${g},${b},${Math.min(0.9, alpha) * 0.2})`;
         cx.fillRect(x, y, barWidth, h);
       }
 

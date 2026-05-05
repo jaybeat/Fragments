@@ -57,6 +57,10 @@ export default function App() {
     return cleanup;
   }, [isReady, play]);
 
+  useEffect(() => {
+    document.documentElement.dataset.theme = state.theme;
+  }, [state.theme]);
+
   const controls = useMemo(() => ({ play, pause, seekTo }), [play, pause, seekTo]);
 
   return (
