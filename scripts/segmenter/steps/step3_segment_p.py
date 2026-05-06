@@ -21,6 +21,8 @@ STEP3_SCHEMA = {
                     "end_turn_index": {"type": "integer"},
                     "question": {"type": "string"},
                     "insight": {"type": "string"},
+                    "quote": {"type": "string"},
+                    "quoteCn": {"type": "string"},
                     "domain": {
                         "type": "array",
                         "items": {"type": "string"},
@@ -32,7 +34,7 @@ STEP3_SCHEMA = {
                     "domain_note": {"type": "string"},
                 },
                 "required": ["id", "start_turn_index", "end_turn_index", "question", "insight", "domain", "fine_tags"],
-                "propertyOrdering": ["id", "start_turn_index", "end_turn_index", "question", "insight", "domain", "fine_tags", "domain_note"],
+                "propertyOrdering": ["id", "start_turn_index", "end_turn_index", "question", "insight", "quote", "quoteCn", "domain", "fine_tags", "domain_note"],
             },
         },
     },
