@@ -12,7 +12,7 @@ export default function Header() {
     <div
       className="header"
       style={{
-        background: `linear-gradient(180deg, ${state.tweaks.accentHeader} 0%, var(--bg-page) 100%)`,
+        background: '#1C1A17',
       }}
     >
       <div className="header-top">

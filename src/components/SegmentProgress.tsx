@@ -1,7 +1,6 @@
 import { useRef, useCallback, useMemo } from 'react';
 import { usePlayer } from '../PlayerContext';
 import { useControls } from '../PlayerContext';
-import { mmss } from '../lib/time';
 import { getEpisodeById } from '../data/episodes';
 
 export default function SegmentProgress() {
@@ -43,10 +42,6 @@ export default function SegmentProgress() {
           <div className="sp-fill" style={{ width: `${progress * 100}%` }} />
         </div>
         <div className="sp-thumb" style={{ left: `${progress * 100}%` }} />
-      </div>
-      <div className="sp-time-row">
-        <span>{mmss(state.currentTime)}</span>
-        <span>{mmss(duration)}</span>
       </div>
     </div>
   );

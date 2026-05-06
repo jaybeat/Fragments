@@ -49,22 +49,12 @@ export interface Episode {
   p_segments?: PSegment[];
 }
 
-export interface Tweaks {
-  accentHeader: string;
-  blueHue: number;
-  violetHue: number;
-  blur: number;
-  waveIntensity: number;
-  waveSpeed: number;
-}
-
 export interface PlayerState {
   episodeId: string;
   currentTime: number;
   duration: number;
   isPlaying: boolean;
   isReady: boolean;
-  tweaks: Tweaks;
   transcriptLang: 'en' | 'cn' | 'both';
   theme: 'warm-light' | 'warm-dark';
 }
@@ -76,6 +66,5 @@ export type PlayerAction =
   | { type: 'PLAY' }
   | { type: 'PAUSE' }
   | { type: 'SET_READY'; payload: boolean }
-  | { type: 'UPDATE_TWEAKS'; payload: Partial<Tweaks> }
   | { type: 'SET_TRANSCRIPT_LANG'; payload: 'en' | 'cn' | 'both' }
   | { type: 'SET_THEME'; payload: 'warm-light' | 'warm-dark' };

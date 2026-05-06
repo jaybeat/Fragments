@@ -1,30 +1,28 @@
 import type { ReactNode } from 'react';
-import type { Tweaks } from '../types';
 
 interface StageProps {
-  tweaks: Tweaks;
   children?: ReactNode;
 }
 
-export default function Stage({ tweaks, children }: StageProps) {
+export default function Stage({ children }: StageProps) {
   return (
     <div className="stage">
       <div
         className="fluid blue"
         style={{
-          filter: `blur(${tweaks.blur * 2}px) saturate(1.1)`,
+          filter: `blur(180px) saturate(1.1)`,
         }}
       />
       <div
         className="fluid violet"
         style={{
-          filter: `blur(${tweaks.blur * 2}px) saturate(1.1)`,
+          filter: `blur(180px) saturate(1.1)`,
         }}
       />
       <div
         className="fluid accent"
         style={{
-          filter: `blur(${tweaks.blur * 1.6}px) saturate(1.1)`,
+          filter: `blur(144px) saturate(1.1)`,
         }}
       />
       <div className="bg-grain" />

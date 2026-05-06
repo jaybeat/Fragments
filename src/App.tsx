@@ -67,7 +67,7 @@ export default function App() {
     <PlayerContext.Provider value={{ state, dispatch }}>
       <ControlsContext.Provider value={controls}>
         <TopNav episode={episode} />
-        <Stage tweaks={state.tweaks}>
+        <Stage>
           <Card />
         </Stage>
         <div className="yt-hidden" ref={containerRef} />

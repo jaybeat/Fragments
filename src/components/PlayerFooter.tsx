@@ -3,6 +3,7 @@ import { usePlayer } from '../PlayerContext';
 import { useControls } from '../PlayerContext';
 import { mmss } from '../lib/time';
 import { getEpisodeById } from '../data/episodes';
+import SegmentProgress from './SegmentProgress';
 
 export default function PlayerFooter() {
   const { state } = usePlayer();
@@ -17,25 +18,28 @@ export default function PlayerFooter() {
 
   return (
     <div className="player-footer">
-      <div className="pf-time">
-        {mmss(state.currentTime)} / {mmss(duration)}
+      <SegmentProgress />
+      <div className="pf-row">
+        <div className="pf-time">
+          {mmss(state.currentTime)} / {mmss(duration)}
+        </div>
+        <button
+          className="pf-play-btn"
+          aria-label={state.isPlaying ? 'Pause' : 'Play'}
+          onClick={togglePlay}
+        >
+          {state.isPlaying ? (
+            <svg width="18" height="18" viewBox="0 0 14 14" fill="none">
+              <rect x="3" y="2" width="2.5" height="10" rx="0.8" fill="currentColor" />
+              <rect x="8.5" y="2" width="2.5" height="10" rx="0.8" fill="currentColor" />
+            </svg>
+          ) : (
+            <svg width="18" height="18" viewBox="0 0 14 14" fill="none">
+              <path d="M3.5 2.2 L11.5 7 L3.5 11.8 Z" fill="currentColor" />
+            </svg>
+          )}
+        </button>
       </div>
-      <button
-        className="pf-play-btn"
-        aria-label={state.isPlaying ? 'Pause' : 'Play'}
-        onClick={togglePlay}
-      >
-        {state.isPlaying ? (
-          <svg width="18" height="18" viewBox="0 0 14 14" fill="none">
-            <rect x="3" y="2" width="2.5" height="10" rx="0.8" fill="currentColor" />
-            <rect x="8.5" y="2" width="2.5" height="10" rx="0.8" fill="currentColor" />
-          </svg>
-        ) : (
-          <svg width="18" height="18" viewBox="0 0 14 14" fill="none">
-            <path d="M3.5 2.2 L11.5 7 L3.5 11.8 Z" fill="currentColor" />
-          </svg>
-        )}
-      </button>
     </div>
   );
 }

@@ -8,14 +8,6 @@ export const initialState: PlayerState = {
   duration: getEpisodeById(DEFAULT_EPISODE_ID)?.duration ?? 0,
   isPlaying: false,
   isReady: false,
-  tweaks: {
-    accentHeader: '#0c0c0e',
-    blueHue: 256,
-    violetHue: 330,
-    blur: 90,
-    waveIntensity: 1.0,
-    waveSpeed: 1.0,
-  },
   transcriptLang: 'cn',
   theme: 'warm-light',
 };
@@ -42,8 +34,6 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
       return { ...state, isPlaying: false };
     case 'SET_READY':
       return { ...state, isReady: action.payload };
-    case 'UPDATE_TWEAKS':
-      return { ...state, tweaks: { ...state.tweaks, ...action.payload } };
     case 'SET_TRANSCRIPT_LANG':
       return { ...state, transcriptLang: action.payload };
     case 'SET_THEME':

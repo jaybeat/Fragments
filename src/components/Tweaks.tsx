@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import { usePlayer } from '../PlayerContext';
-import { EPISODES } from '../data/episodes';
 
 export default function Tweaks() {
   const { state, dispatch } = usePlayer();
   const [visible, setVisible] = useState(false);
-  const { tweaks } = state;
 
   return (
     <>
@@ -38,83 +36,6 @@ export default function Tweaks() {
             <option value="warm-light">Warm Light</option>
             <option value="warm-dark">Warm Dark</option>
           </select>
-        </div>
-
-        <div className="tweak-row">
-          <label>Episode</label>
-          <select
-            value={state.episodeId}
-            onChange={(e) => dispatch({ type: 'SET_EPISODE', payload: e.target.value })}
-          >
-            {EPISODES.map((ep) => (
-              <option key={ep.id} value={ep.id}>
-                {ep.speakerName} — {ep.subtitle}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="tweak-row">
-          <label>Header tone</label>
-          <div className="swatches">
-            {[
-              { key: 'black', v: '#0c0c0e' },
-              { key: 'navy', v: '#0b1220' },
-              { key: 'plum', v: '#1a0f1e' },
-            ].map((h) => (
-              <div
-                key={h.key}
-                className={`swatch ${tweaks.accentHeader === h.v ? 'active' : ''}`}
-                style={{ background: h.v }}
-                onClick={() => dispatch({ type: 'UPDATE_TWEAKS', payload: { accentHeader: h.v } })}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="tweak-row">
-          <label>
-            Blue hue <span>{tweaks.blueHue}°</span>
-          </label>
-          <input
-            type="range"
-            min={180}
-            max={320}
-            value={tweaks.blueHue}
-            onChange={(e) =>
-              dispatch({ type: 'UPDATE_TWEAKS', payload: { blueHue: Number(e.target.value) } })
-            }
-          />
-        </div>
-
-        <div className="tweak-row">
-          <label>
-            Violet hue <span>{tweaks.violetHue}°</span>
-          </label>
-          <input
-            type="range"
-            min={240}
-            max={360}
-            value={tweaks.violetHue}
-            onChange={(e) =>
-              dispatch({ type: 'UPDATE_TWEAKS', payload: { violetHue: Number(e.target.value) } })
-            }
-          />
-        </div>
-
-        <div className="tweak-row">
-          <label>
-            Blur <span>{tweaks.blur}px</span>
-          </label>
-          <input
-            type="range"
-            min={10}
-            max={140}
-            value={tweaks.blur}
-            onChange={(e) =>
-              dispatch({ type: 'UPDATE_TWEAKS', payload: { blur: Number(e.target.value) } })
-            }
-          />
         </div>
       </div>
     </>

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Header from './Header';
 import EpisodeMeta from './EpisodeMeta';
-import SegmentProgress from './SegmentProgress';
 import ChapterCard from './ChapterCard';
 import Transcript from './Transcript';
 import PlayerFooter from './PlayerFooter';
@@ -15,7 +14,6 @@ export default function Card() {
       <Header />
       <div className="body">
         <EpisodeMeta />
-        <SegmentProgress />
         <ChapterCard onOpenDrawer={() => setDrawerOpen(true)} />
         <Transcript />
         <PlayerFooter />
