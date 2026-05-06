@@ -77,8 +77,8 @@ export default function MentorDetail({ mentorId }: MentorDetailProps) {
                   className="segment-item"
                   onClick={() => goToPlayer(episode.id, p.start_sec)}
                 >
-                  <div className="segment-question">{p.question}</div>
-                  <div className="segment-insight">{p.insight}</div>
+                  <div className="segment-quote-cn">{p.quoteCn || p.question}</div>
+                  {p.quoteCn && <div className="segment-question">{p.question}</div>}
                 </button>
               ))}
             </div>

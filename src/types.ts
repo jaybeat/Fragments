@@ -31,6 +31,8 @@ export interface PSegment {
   domain: string[];
   fine_tags: string[];
   transcript: string;
+  quote?: string;
+  quoteCn?: string;
 }
 
 export interface Mentor {

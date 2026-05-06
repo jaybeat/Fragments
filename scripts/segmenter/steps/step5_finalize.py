@@ -91,6 +91,8 @@ def run(
             "domain": p["domain"],
             "fine_tags": p["fine_tags"],
             "transcript": transcript,
+            **({"quote": p["quote"]} if "quote" in p else {}),
+            **({"quoteCn": p["quoteCn"]} if "quoteCn" in p else {}),
         })
 
     analyzed["t_segments"] = final_t_segments
