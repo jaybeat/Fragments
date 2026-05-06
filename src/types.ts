@@ -33,6 +33,15 @@ export interface PSegment {
   transcript: string;
 }
 
+export interface Mentor {
+  id: string;
+  name: string;
+  nameCn: string;
+  avatar: string;
+  bio: string;
+  episodeIds: string[];
+}
+
 export interface Episode {
   id: string;
   videoId: string;
@@ -58,10 +67,15 @@ export interface PlayerState {
   transcriptLang: 'en' | 'cn' | 'both';
   theme: 'warm-light' | 'warm-dark';
   view: 'chapters' | 'transcript';
+  screen: 'bookshelf' | 'mentor' | 'player';
+  mentorId?: string;
+  pendingSeek?: number;
+  prevScreen?: 'bookshelf' | 'mentor' | 'player';
+  prevMentorId?: string;
 }
 
 export type PlayerAction =
-  | { type: 'SET_EPISODE'; payload: string }
+  | { type: 'SET_EPISODE'; payload: string | { episodeId: string; startTime?: number } }
   | { type: 'TICK'; payload: number }
   | { type: 'SET_DURATION'; payload: number }
   | { type: 'PLAY' }
@@ -69,4 +83,8 @@ export type PlayerAction =
   | { type: 'SET_READY'; payload: boolean }
   | { type: 'SET_TRANSCRIPT_LANG'; payload: 'en' | 'cn' | 'both' }
   | { type: 'SET_THEME'; payload: 'warm-light' | 'warm-dark' }
-  | { type: 'SET_VIEW'; payload: 'chapters' | 'transcript' };
+  | { type: 'SET_VIEW'; payload: 'chapters' | 'transcript' }
+  | { type: 'SET_SCREEN'; payload: 'bookshelf' | 'mentor' | 'player' }
+  | { type: 'SET_MENTOR'; payload: string }
+  | { type: 'CLEAR_PENDING_SEEK' }
+  | { type: 'GO_BACK' };

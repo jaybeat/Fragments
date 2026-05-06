@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import { usePlayer, useControls } from '../PlayerContext';
 import { getEpisodeById } from '../data/episodes';
 import { useActiveSegments } from '../hooks/useActiveSegments';
@@ -17,6 +17,14 @@ export default function ChapterList({ onSeek, showHeader = true }: ChapterListPr
 
   const tCount = tSegments.length;
   const pCount = episode.p_segments?.length ?? 0;
+
+  const activePRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (activeP && activePRef.current && state.currentTime > 1) {
+      activePRef.current.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }, [activeP?.id]);
 
   const handleSeek = useCallback(
     (seconds: number) => {
@@ -60,6 +68,7 @@ export default function ChapterList({ onSeek, showHeader = true }: ChapterListPr
                       return (
                         <button
                           key={p.id}
+                          ref={isActiveP ? activePRef : undefined}
                           className={`sd-p-item ${isActiveP ? 'active' : ''}`}
                           onClick={() => handleSeek(p.start_sec)}
                         >

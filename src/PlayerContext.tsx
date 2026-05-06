@@ -11,18 +11,22 @@ export const initialState: PlayerState = {
   transcriptLang: 'cn',
   theme: 'warm-light',
   view: 'chapters',
+  screen: 'bookshelf',
 };
 
 export function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
   switch (action.type) {
     case 'SET_EPISODE': {
-      const ep = getEpisodeById(action.payload);
+      const epId = typeof action.payload === 'string' ? action.payload : action.payload.episodeId;
+      const startTime = typeof action.payload === 'string' ? undefined : action.payload.startTime;
+      const ep = getEpisodeById(epId);
       return {
         ...state,
-        episodeId: action.payload,
+        episodeId: epId,
         currentTime: 0,
         duration: ep?.duration ?? state.duration,
         isPlaying: false,
+        pendingSeek: startTime,
       };
     }
     case 'TICK':
@@ -41,6 +45,27 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
       return { ...state, theme: action.payload };
     case 'SET_VIEW':
       return { ...state, view: action.payload };
+    case 'SET_SCREEN':
+      return {
+        ...state,
+        prevScreen: state.screen,
+        prevMentorId: state.mentorId,
+        screen: action.payload,
+      };
+    case 'SET_MENTOR':
+      return { ...state, mentorId: action.payload };
+    case 'CLEAR_PENDING_SEEK':
+      return { ...state, pendingSeek: undefined };
+    case 'GO_BACK': {
+      const backScreen = state.prevScreen ?? 'bookshelf';
+      return {
+        ...state,
+        screen: backScreen,
+        mentorId: backScreen === 'mentor' ? state.prevMentorId : state.mentorId,
+        prevScreen: undefined,
+        prevMentorId: undefined,
+      };
+    }
     default:
       return state;
   }
@@ -65,4 +90,26 @@ export function usePlayer() {
 
 export function useControls() {
   return useContext(ControlsContext);
+}
+
+export function useNavigation() {
+  const { state, dispatch } = usePlayer();
+  return {
+    goToBookshelf: () => dispatch({ type: 'SET_SCREEN', payload: 'bookshelf' }),
+    goToMentor: (mentorId: string) => {
+      dispatch({ type: 'SET_MENTOR', payload: mentorId });
+      dispatch({ type: 'SET_SCREEN', payload: 'mentor' });
+    },
+    goToPlayer: (episodeId?: string, startTime?: number) => {
+      if (episodeId) {
+        dispatch({
+          type: 'SET_EPISODE',
+          payload: startTime !== undefined ? { episodeId, startTime } : episodeId,
+        });
+      }
+      dispatch({ type: 'SET_SCREEN', payload: 'player' });
+    },
+    goBack: () => dispatch({ type: 'GO_BACK' }),
+    canGoBack: state.prevScreen !== undefined,
+  };
 }

@@ -1,22 +1,36 @@
-import type { Episode } from '../types';
+import { useNavigation, usePlayer } from '../PlayerContext';
+import { getEpisodeById } from '../data/episodes';
 
-interface TopNavProps {
-  episode: Episode;
-}
+export default function TopNav() {
+  const { state } = usePlayer();
+  const { goToBookshelf, goToPlayer, goBack, canGoBack } = useNavigation();
 
-export default function TopNav({ episode }: TopNavProps) {
-  const ytUrl = `https://www.youtube.com/watch?v=${episode.videoId}`;
+  const episode = state.screen === 'player' ? getEpisodeById(state.episodeId) : undefined;
+  const ytUrl = episode ? `https://www.youtube.com/watch?v=${episode.videoId}` : undefined;
+
   return (
     <nav className="topnav" aria-label="Top navigation">
-      <a href="/" className="topnav-link">
-        书架
-      </a>
-      <a href="#episodes" className="topnav-link">
+      {canGoBack && state.screen === 'player' ? (
+        <button className="topnav-link" onClick={goBack}>
+          ← 返回
+        </button>
+      ) : (
+        <button className="topnav-link" onClick={goToBookshelf}>
+          书架
+        </button>
+      )}
+      <button className="topnav-link" onClick={() => goToPlayer()}>
         正在听
-      </a>
-      <a href={ytUrl} target="_blank" rel="noopener" className="topnav-link">
-        关于
-      </a>
+      </button>
+      {ytUrl ? (
+        <a href={ytUrl} target="_blank" rel="noopener" className="topnav-link">
+          关于
+        </a>
+      ) : (
+        <span className="topnav-link" style={{ opacity: 0.35, pointerEvents: 'none' }}>
+          关于
+        </span>
+      )}
     </nav>
   );
 }
