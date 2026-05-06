@@ -57,6 +57,7 @@ export interface PlayerState {
   isReady: boolean;
   transcriptLang: 'en' | 'cn' | 'both';
   theme: 'warm-light' | 'warm-dark';
+  view: 'chapters' | 'transcript';
 }
 
 export type PlayerAction =
@@ -67,4 +68,5 @@ export type PlayerAction =
   | { type: 'PAUSE' }
   | { type: 'SET_READY'; payload: boolean }
   | { type: 'SET_TRANSCRIPT_LANG'; payload: 'en' | 'cn' | 'both' }
-  | { type: 'SET_THEME'; payload: 'warm-light' | 'warm-dark' };
+  | { type: 'SET_THEME'; payload: 'warm-light' | 'warm-dark' }
+  | { type: 'SET_VIEW'; payload: 'chapters' | 'transcript' };

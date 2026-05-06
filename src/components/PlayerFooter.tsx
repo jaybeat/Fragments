@@ -6,7 +6,7 @@ import { getEpisodeById } from '../data/episodes';
 import SegmentProgress from './SegmentProgress';
 
 export default function PlayerFooter() {
-  const { state } = usePlayer();
+  const { state, dispatch } = usePlayer();
   const { play, pause, seekTo } = useControls();
   const episode = getEpisodeById(state.episodeId)!;
   const duration = state.duration || episode.duration;
@@ -24,6 +24,13 @@ export default function PlayerFooter() {
     seekTo(Math.min(duration, state.currentTime + 15));
   }, [state.currentTime, duration, seekTo]);
 
+  const toggleView = useCallback(() => {
+    dispatch({
+      type: 'SET_VIEW',
+      payload: state.view === 'chapters' ? 'transcript' : 'chapters',
+    });
+  }, [dispatch, state.view]);
+
   return (
     <div className="player-footer">
       <SegmentProgress />
@@ -32,6 +39,9 @@ export default function PlayerFooter() {
         <span className="pf-time-small">{mmss(duration)}</span>
       </div>
       <div className="pf-controls">
+        <button className="pf-view-toggle" onClick={toggleView}>
+          {state.view === 'chapters' ? '字幕' : '片段索引'}
+        </button>
         <button className="pf-skip-btn" onClick={skipBack15}>
           <svg width="16" height="16" viewBox="0 0 14 14" fill="none">
             <path d="M7 3.5 L2.5 7 L7 10.5 V3.5Z" fill="currentColor" />

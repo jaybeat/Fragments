@@ -59,7 +59,7 @@ Mentors **不和播客平台竞争消费时长**(它们是连续陪伴消费,Men
 
 ## Known Tech Debt
 
-- **subtitle 字段当前是手填**,segmenter 不生成 subtitle,lost-interview 还是 `"TBD"`。计划在做导师页时一并处理——届时 subtitle 是导师页/片段卡片的展示元素,需要解决方案。
+- **subtitle 字段当前是手填**,segmenter 不生成 subtitle。所有剧集的 subtitle 都是人工维护的;添加新导师时记得手填。
 - **chapters 和 t_segments 双轨并存**:Player 优先用 t_segments,chapters 只作 fallback。后续新内容统一走 segmenter pipeline 后,chapters 字段可以从 Episode 接口移除。
 - **Waveform 是噪声生成**:YouTube iframe 跨域,Web Audio AnalyserNode 读不到音频流。短期不解决——做 v1 路由功能更优先;长期如果自托管音频或换成 SoundCloud 这类支持 CORS 的源,可以做真实波形。
 - **Tokenize 用线性插值分配 word 时间**:没有 word-level Whisper 数据。当前在演讲 / 访谈这种节奏稳定的内容上够用,但快语速或停顿不规律的导师(可能未来加入)会暴露问题。
@@ -98,10 +98,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A single-page audio player (Vite + React + TypeScript) inspired by [Claudio FM](https://mmguo.dev/claudio-fm/). Audio streams from YouTube via the IFrame Player API; a word-level synced transcript highlights the spoken text in real time, and a procedural canvas waveform reacts to playback.
 
-Currently ships three curated episodes:
+Currently ships five curated episodes across three mentors:
 - `jobs-stanford` — Steve Jobs Stanford Commencement 2005
 - `jobs-lost-interview` — Steve Jobs The Lost Interview
 - `jobs-interview-1990` — Steve Jobs 1990 Interview (WGBH)
+- `buffett-florida-1998` — Warren Buffett 1998 Florida Speech
+- `feynman-fun-to-imagine` — Richard Feynman "Fun to Imagine"
 
 ## Common Commands
 
@@ -131,8 +133,12 @@ npm run segmenter -- --episode-id <id> [--from-step N] [--force]
 `src/App.tsx` orchestrates: holds a `useReducer` (`PlayerState`) and mounts a hidden YouTube iframe via `useYouTubePlayer`. A `useRAF` loop polls `getCurrentTime()` and dispatches `TICK` actions.
 
 State splits across two contexts in `src/PlayerContext.tsx`:
-- **`PlayerContext`** — read-only state (`currentTime`, `duration`, `isPlaying`, `episodeId`, `tweaks`) + `dispatch`
+- **`PlayerContext`** — read-only state (`currentTime`, `duration`, `isPlaying`, `episodeId`, `transcriptLang`, `theme`, `view`) + `dispatch`
 - **`ControlsContext`** — imperative controls (`play`, `pause`, `seekTo`) backed by the YouTube player
+
+`view: 'chapters' | 'transcript'` controls the primary content area in `Card.tsx`:
+- `'chapters'` (default) — shows the full chapter/segment index (`ChapterList`)
+- `'transcript'` — shows the current chapter card (`ChapterCard`) + full transcript (`Transcript`)
 
 Components consume via `usePlayer()` / `useControls()`.
 
@@ -148,9 +154,20 @@ Episode data lives in `src/data/episodes/<id>.analyzed.json` — these are the *
 - `src/lib/tokenize.ts` linearly distributes words across the interval between consecutive turn `start` times. This produces per-word `start`/`end` without word-level Whisper data.
 - `src/components/Transcript.tsx` renders tokenized turns and applies `.said` / `.current` / `.future` classes from `state.currentTime`. It also supports bilingual display: when `turn.textCn` is present, a language toggle bar appears (英文原文 / 中文 / 双语对照). English mode keeps word-level highlighting; Chinese mode highlights the entire turn; both mode shows English on top and Chinese below. The active language is tracked in `PlayerState.transcriptLang` (default `'cn'`).
 
-### Chapter markers in the player
+### Player layout & view switching
 
-`src/components/Player.tsx` renders chapter labels on the progress bar. **It prefers `t_segments` over `chapters`**: T-segments (from the segmenter) are mapped to `Chapter`-shaped objects (`topic → title`, `summary → description`); the legacy `chapters[]` array is only used as a fallback when no T-segments exist. P-segments are persisted in the episode JSON but are not currently rendered (reserved for a future "search by question" feature).
+`src/components/Card.tsx` is the main card container. It conditionally renders the body based on `state.view`:
+
+- **`'chapters'` (default)** — `EpisodeMeta` + `ChapterList` + `PlayerFooter`
+- **`'transcript'`** — `EpisodeMeta` + `ChapterCard` + `Transcript` + `PlayerFooter`
+
+`ChapterList` (new, extracted from `SegmentDrawer`) renders the full T-segment / P-segment index as a scrollable list with a timeline, active-highlighting, and click-to-seek. It is reused both as the default resident view and inside the full-screen `SegmentDrawer`.
+
+`ChapterCard` shows the *currently active* T-segment (topic + P-segment list) and has an "全部 X 章 →" button that opens the `SegmentDrawer` overlay.
+
+`PlayerFooter` contains `SegmentProgress` (progress bar with T-segment tick marks), playback controls (skip 15s / play-pause), and a `pf-view-toggle` button that switches between `'chapters'` and `'transcript'`.
+
+`src/components/Player.tsx` exists but is **not currently mounted** — it was an earlier standalone player component.
 
 ### Waveform
 
@@ -221,4 +238,4 @@ This fetches English captions, fetches/translates Chinese captions, writes the J
 - `tsconfig.json` has `noUnusedLocals` and `noUnusedParameters` enabled — unused imports/vars fail the build.
 - `tsconfig.scripts.json` is a separate config so `tsc -b` in the frontend build does not compile the Node CLI scripts under `scripts/`.
 - All times in episode JSON are stored relative to `startTime`; `normalizeEpisode` in `src/data/episodes.ts` is the single place that converts them to absolute YouTube timestamps. Don't double-add the offset.
-- `subtitle` in episode JSON is required (`Episode` interface), used by `EpisodeMeta.tsx` and `Tweaks.tsx`. Currently lost-interview shows `"TBD"` because the segmenter doesn't generate subtitles — edit the JSON manually if you need a real one.
+- `subtitle` in episode JSON is required (`Episode` interface), used by `EpisodeMeta.tsx` and `Tweaks.tsx`. The segmenter does not generate subtitles — they must be hand-written when adding a new episode.

@@ -833,25 +833,46 @@ body {
 .player-footer .segment-progress {
   padding: 0 14px 6px;
 }
-.pf-time-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 14px;
-  width: 100%;
-}
 .pf-time-small {
   font-size: 10px;
   font-weight: 500;
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
 }
+.pf-time-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 14px;
+  width: 100%;
+}
+.pf-view-toggle {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-transcript);
+  border: none;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 8px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+.pf-view-toggle:hover {
+  color: var(--text-primary);
+  background: var(--border-light);
+}
 .pf-controls {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 12px;
   padding: 2px 14px 0;
   width: 100%;
+}
+.pf-view-toggle {
+  position: absolute;
+  left: 14px;
 }
 .pf-skip-btn {
   display: flex;
@@ -1112,6 +1133,14 @@ body {
 }
 
 /* Segment Drawer */
+.chapter-list {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg-body);
+}
+
 .segment-drawer {
   position: absolute;
   inset: 0;

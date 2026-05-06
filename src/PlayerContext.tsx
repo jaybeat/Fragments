@@ -10,6 +10,7 @@ export const initialState: PlayerState = {
   isReady: false,
   transcriptLang: 'cn',
   theme: 'warm-light',
+  view: 'chapters',
 };
 
 export function playerReducer(state: PlayerState, action: PlayerAction): PlayerState {
@@ -38,6 +39,8 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
       return { ...state, transcriptLang: action.payload };
     case 'SET_THEME':
       return { ...state, theme: action.payload };
+    case 'SET_VIEW':
+      return { ...state, view: action.payload };
     default:
       return state;
   }
