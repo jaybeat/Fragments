@@ -60,6 +60,7 @@ Mentors **不和播客平台竞争消费时长**(它们是连续陪伴消费,Men
 ## Known Tech Debt
 
 - **subtitle 字段当前是手填**,segmenter 不生成 subtitle。所有剧集的 subtitle 都是人工维护的;添加新导师时记得手填。
+- **`quote`/`quoteCn` 字段当前也是手填**,segmenter Step 3 不自动生成 quote。在列表页（MentorDetail）中,`quoteCn` 已取代 `question` 作为 P-segment 的卡片主标题展示,因此添加新剧集后需要手填每个 P-segment 的 `quote`（英文钩子句）和 `quoteCn`（中文翻译）到 `.analyzed.json` 中,否则列表页会 fallback 到 `question`。`step5_finalize.py` 会透传已有字段,重新跑 segmenter 不会丢失已填的 quote。
 - **chapters 和 t_segments 双轨并存**:Player 优先用 t_segments,chapters 只作 fallback。后续新内容统一走 segmenter pipeline 后,chapters 字段可以从 Episode 接口移除。
 - **Waveform 是噪声生成**:YouTube iframe 跨域,Web Audio AnalyserNode 读不到音频流。短期不解决——做 v1 路由功能更优先;长期如果自托管音频或换成 SoundCloud 这类支持 CORS 的源,可以做真实波形。
 - **Tokenize 用线性插值分配 word 时间**:没有 word-level Whisper 数据。当前在演讲 / 访谈这种节奏稳定的内容上够用,但快语速或停顿不规律的导师(可能未来加入)会暴露问题。
@@ -201,11 +202,11 @@ Python pipeline at `scripts/segmenter/`. Orchestrated by `run.py`; intermediate 
 | 2. Segment T (topic groups, 7-13 per 60-90 min interview, ≥3 min each) | `steps/step2_segment_t.py` + `prompts/02_t_segmentation.txt` | yes | `02_t_segments.json` |
 | 3. Segment P (insight units inside each T, ≥40 s, 0-3 per T) | `steps/step3_segment_p.py` + `prompts/03_p_segmentation.txt` | yes, **called once per T** | `03_p_segments.json` |
 | 4. Quality check (P coverage, duration thresholds, "其他" domain ratio, optional question-similarity via sentence-transformers) | `steps/step4_quality_check.py` | no | `04_quality_report.json` |
-| 5. Finalize (deep-copy episode + fill `who` from speaker map + strip turn-index fields + concat Guest-only `transcript` per P) | `steps/step5_finalize.py` | no | `<id>.analyzed.json` |
+| 5. Finalize (deep-copy episode + fill `who` from speaker map + strip turn-index fields + concat Guest-only `transcript` per P + pass through `quote`/`quoteCn` if present) | `steps/step5_finalize.py` | no | `<id>.analyzed.json` |
 
 `run.py` skips a step if its output file exists; `--force` overrides; `--from-step N` jumps in mid-pipeline. The shared LLM client is `lib/llm_client.py` (raw `urllib.request` + 3-attempt exponential backoff + token tracking + `responseSchema` JSON mode at temperature 0.4). Fixed taxonomy + speaker name map + thresholds live in `config.yaml`.
 
-P-segments carry `question` (search-style user phrasing) + `insight` + `domain` (12-class closed taxonomy + "其他") + `fine_tags` + a Guest-only `transcript` string. The pipeline's stated purpose is "为一个'按问题搜索人物访谈片段'的音频App做内容预处理" — the search UI itself is not yet built.
+P-segments carry `question` (search-style user phrasing) + `insight` + `domain` (12-class closed taxonomy + "其他") + `fine_tags` + a Guest-only `transcript` string, plus optional `quote`/`quoteCn` (hook sentence from the speaker's original words, used as the primary title in MentorDetail's domain-browse cards). The pipeline's stated purpose is "为一个'按问题搜索人物访谈片段'的音频App做内容预处理" — the search UI itself is not yet built.
 
 ## Adding episodes
 
@@ -232,6 +233,7 @@ This fetches English captions, fetches/translates Chinese captions, writes the J
    npm run segmenter -- --episode-id <id>
    ```
 5. Register in `src/data/episodes.ts`: import `<id>.analyzed.json` and add to the `EPISODES` array.
+6. If you want the new episode to display well in MentorDetail's domain-browse list, hand-fill `quote` and `quoteCn` for each P-segment in the `.analyzed.json` (see Known Tech Debt above).
 
 ## Key constraints
 
