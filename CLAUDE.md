@@ -60,7 +60,7 @@ Mentors **不和播客平台竞争消费时长**(它们是连续陪伴消费,Men
 ## Known Tech Debt
 
 - **subtitle 字段当前是手填**,segmenter 不生成 subtitle。所有剧集的 subtitle 都是人工维护的;添加新导师时记得手填。
-- **`quote`/`quoteCn` 字段当前也是手填**,segmenter Step 3 不自动生成 quote。在列表页（MentorDetail）中,`quoteCn` 已取代 `question` 作为 P-segment 的卡片主标题展示,因此添加新剧集后需要手填每个 P-segment 的 `quote`（英文钩子句）和 `quoteCn`（中文翻译）到 `.analyzed.json` 中,否则列表页会 fallback 到 `question`。`step5_finalize.py` 会透传已有字段,重新跑 segmenter 不会丢失已填的 quote。
+- **segmenter Step 3 现在自动生成 `quote`/`quoteCn`**（prompt 已包含详细的提取和翻译要求）。添加新剧集后建议人工抽查 quote 质量，必要时修正。`step5_finalize.py` 会透传已有字段，重新跑 segmenter 不会丢失已手填的 quote。
 - **chapters 和 t_segments 双轨并存**:Player 优先用 t_segments,chapters 只作 fallback。后续新内容统一走 segmenter pipeline 后,chapters 字段可以从 Episode 接口移除。
 - **Waveform 是噪声生成**:YouTube iframe 跨域,Web Audio AnalyserNode 读不到音频流。短期不解决——做 v1 路由功能更优先;长期如果自托管音频或换成 SoundCloud 这类支持 CORS 的源,可以做真实波形。
 - **Tokenize 用线性插值分配 word 时间**:没有 word-level Whisper 数据。当前在演讲 / 访谈这种节奏稳定的内容上够用,但快语速或停顿不规律的导师(可能未来加入)会暴露问题。
@@ -233,7 +233,7 @@ This fetches English captions, fetches/translates Chinese captions, writes the J
    npm run segmenter -- --episode-id <id>
    ```
 5. Register in `src/data/episodes.ts`: import `<id>.analyzed.json` and add to the `EPISODES` array.
-6. If you want the new episode to display well in MentorDetail's domain-browse list, hand-fill `quote` and `quoteCn` for each P-segment in the `.analyzed.json` (see Known Tech Debt above).
+6. Segmenter 会自动生成 `quote` 和 `quoteCn`，建议人工抽查后修正不准确的条目。
 
 ## Key constraints
 
