@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigation } from '../PlayerContext';
 import { MENTORS, groupPSegmentsByDomain } from '../data/mentors';
 
-const INITIAL_QUOTE_COUNT = 3;
+const INITIAL_QUOTE_COUNT = 2;
 
 export default function MentorBookshelf() {
   const [activeMentorId, setActiveMentorId] = useState('jobs');
