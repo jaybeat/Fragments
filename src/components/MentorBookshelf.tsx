@@ -50,7 +50,10 @@ export default function MentorBookshelf() {
           <button
             key={mentor.id}
             className={`mentor-tab ${mentor.id === activeMentorId ? 'active' : ''}`}
-            onClick={() => setActiveMentorId(mentor.id)}
+            onClick={() => {
+              setActiveMentorId(mentor.id);
+              setExpandedDomains(new Set());
+            }}
           >
             <img src={mentor.avatar} alt={mentor.name} className="mentor-tab-avatar" />
             <span>{mentor.nameCn}</span>
@@ -89,9 +92,11 @@ export default function MentorBookshelf() {
                     {p.quoteCn && <div className="segment-question">{p.question}</div>}
                   </button>
                 ))}
-                {hasMore && !isExpanded && (
+                {hasMore && (
                   <button className="show-more" onClick={() => toggleDomain(domain)}>
-                    ━━ 还有 {items.length - INITIAL_QUOTE_COUNT} 个 ━━
+                    {isExpanded
+                      ? '━━ 收起 ━━'
+                      : `━━ 还有 ${items.length - INITIAL_QUOTE_COUNT} 个 ━━`}
                   </button>
                 )}
               </div>

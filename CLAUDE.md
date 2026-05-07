@@ -1,43 +1,45 @@
-# Mentors — Project Context for Claude Code
+# Fragments — Project Context for Claude Code
 
 ## What This Project Is
 
-**Mentors** 是一个**按问题搜索导师智慧片段**的音频产品。
+**Fragments** 是一个从名人演讲与访谈视频中，切分出关于产品、商业、组织、个人成长等领域**接近本质的思考片段**的音频产品。
 
-很多人(包括项目作者本人)在刷短视频时被乔布斯、芒格、马斯克、巴菲特这类"看清问题本质的人"的某段话点醒,想保存下来,以后遇到类似困境时再听一次。但现实是收藏夹越攒越乱,真正需要时找不到。
+ slogan：**Great minds, their sharpest moments.** / 片段 · 大师们最锋利的时刻。
 
-Mentors 解决的是这个——**把精选导师的真实演讲/访谈片段,按问题(question)、洞见(insight)、领域(domain)结构化地组织起来,用户带着具体困境来,听导师用他们自己的原话回应你。**
+很多人在刷短视频时被乔布斯、芒格、马斯克、巴菲特这类"看清问题本质的人"的某段话点醒，想保存下来，以后反复听。但现实是收藏夹越攒越乱，真正需要时找不到。
+
+Fragments 解决的是这个——**把名人长视频里接近本质的思考与智慧切分出来，按领域结构化地组织成 Quote 卡片，让用户打开就能受益。**
 
 关键约束:**永远是某个真人在某个真实场合说过的原话,绝不让 AI 拼凑/模仿/总结成"导师风格的回答"。**
 
 ## Core Value Proposition
 
-> **当你卡在一个问题上时,听你信任的智者本人,用他自己的原话,谈过这件事。**
+> **看清本质的人，亲口对你说过。**
 
 任何不服务于这一句的功能都该被砍。
 
-## Mental Model: Where Mentors Sits in the Ecosystem
+## Mental Model: Where Fragments Sits in the Ecosystem
 
-Mentors **不和短视频平台竞争注意力**(它们是发现入口,负责"点燃")。
-Mentors **不和播客平台竞争消费时长**(它们是连续陪伴消费,Mentors 是目的性精准消费)。
+Fragments **不和短视频平台竞争注意力**(它们是发现入口,负责"点燃")。
+Fragments **不和播客平台竞争消费时长**(它们是连续陪伴消费,Fragments 是目的性精准消费)。
 
-**Mentors 的位置是"用户在别处被点燃后,来这里结构化地找到、保存、再次取用"的中间层。**
+**Fragments 的位置是"用户在别处被点燃后,来这里结构化地找到、保存、再次取用"的中间层。**
 
-任何想把 Mentors 推向"刷"或"陪伴"形态的功能,大概率走错了方向。
+任何想把 Fragments 推向"刷"或"陪伴"形态的功能,大概率走错了方向。
 
 ## Core User Scenarios
 
 按优先级:
 
-1. **A — 对话式入口(主):** 用户带着具体困境来,用对话/搜索的方式说出状态(比如"创业初期不知道先打磨产品还是先发布"),系统路由到合适的导师 + 片段,用一两句话说"为什么推荐这个",**让用户选听谁**。听到的是真人原话。
-2. **D — 导师入口(次主):** 用户崇拜某位导师,点进他的页面,看到简介 + 代表演讲 + 所有切好的片段(按 domain 分组),可以从片段进入,也可以听完整演讲。
-3. **B — 主题入口(次):** 用户没有具体困境,想浏览"这些人怎么聊'产品打磨'这个主题",像逛书架一样探索。
+1. **D — 领域浏览入口(主):** 用户打开首页,看到品牌 + 导师 tabs + 按领域分组的 Quote 卡片墙。卡片上是大师关于本质的原话,用户随手浏览、点开收听。这是当前首页 `MentorBookshelf` 的形态。
+2. **导师入口(次):** 用户崇拜某位导师,通过导师 tab 切换到他,浏览他的全部 Quote 卡片(按 domain 分组),可以从片段进入,也可以听完整演讲。
+3. **A — 对话式入口(未来):** 用户带着具体困境来,用对话/搜索的方式说出状态,系统路由到合适的片段。此功能暂不做,内容池到 ~80-150 个 P-segment 之前体验不好。
 
 ## Product Tone
 
 - **客厅里的智者朋友**,不是搜索引擎,不是 AI 助手,不是社区
 - **精选感**——每位导师都是作者亲自挑选、亲自把关的,这本身就是品牌的一部分
-- **克制**——LLM 只做"路由"和"轻引导"(为什么推荐这个片段),**绝不当主持人,不评论导师的话,不帮用户综合**
+- **克制**——LLM 只做内容预处理(切分、标注、quote 提取),**绝不当主持人,不评论导师的话,不帮用户综合**
 - **真实**——所有片段必须可溯源到具体视频和时间戳,不允许 AI 生成或合成的内容混入
 
 ## Where This Project Is Going
@@ -51,15 +53,15 @@ Mentors **不和播客平台竞争消费时长**(它们是连续陪伴消费,Men
 这些是**看起来合理但明确不做**的功能,做了会让产品偏离核心:
 
 - ❌ **AI 模仿导师回答** —— "如果乔布斯在,他会怎么回答你"。**这是绝对红线**,违反"永远真人原话"的核心原则。
-- ❌ **UGC 导师** —— 用户提交导师 / 社区扩充导师库。会稀释精选感和品味,Mentors 的价值有一部分来自"作者亲自挑"。
+- ❌ **UGC 导师** —— 用户提交导师 / 社区扩充导师库。会稀释精选感和品味,Fragments 的价值有一部分来自"作者亲自挑"。
 - ❌ **AI 总结片段** —— "乔布斯主要说了……"。处于"真人原话"原则的边缘地带,先不碰。如果未来做,只做客观摘要不做观点提炼。
 - ❌ **社交 / 分享 / 评论** —— 把产品从"客厅里的智者"推向"社区",改变调性。
-- ❌ **每日推送 / 金句通知** —— Mentors 是"用户需要时来找它",不是"它来找用户"。不做主动打扰。
+- ❌ **每日推送 / 金句通知** —— Fragments 是"用户需要时来找它",不是"它来找用户"。不做主动打扰。
 - ❌ **多模态生成**(卡片图、短视频、引用图) —— 营销侧可能有用,但不是产品核心。
 
 ## Known Tech Debt
 
-- **`MentorDetail` 组件仍保留但不再被直接路由到**。新的 `MentorBookshelf` 已经内置了 domain 浏览和 quote 卡片展示，用户从首页无法点击进入 `MentorDetail`。如果未来需要恢复导师详情页（含 bio、演讲列表、对话搜索），需要重新在 `MentorBookshelf` 中添加入口。
+- **`MentorDetail` 组件仍保留但不再被直接路由到**。新的 `MentorBookshelf` 已经内置了导师 tabs、domain 浏览和 quote 卡片展示，用户从首页通过顶部导航进入。如果未来需要恢复导师详情页（含 bio、演讲列表），需要重新在 `MentorBookshelf` 中添加入口。
 - **subtitle 字段当前是手填**,segmenter 不生成 subtitle。所有剧集的 subtitle 都是人工维护的;添加新导师时记得手填。
 - **segmenter Step 3 现在自动生成 `quote`/`quoteCn`**（prompt 已包含详细的提取和翻译要求）。添加新剧集后建议人工抽查 quote 质量，必要时修正。`step5_finalize.py` 会透传已有字段，重新跑 segmenter 不会丢失已手填的 quote。
 - **chapters 和 t_segments 双轨并存**:Player 优先用 t_segments,chapters 只作 fallback。后续新内容统一走 segmenter pipeline 后,chapters 字段可以从 Episode 接口移除。
@@ -100,7 +102,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A single-page audio player (Vite + React + TypeScript) inspired by [Claudio FM](https://mmguo.dev/claudio-fm/). Audio streams from YouTube via the IFrame Player API; a word-level synced transcript highlights the spoken text in real time, and a procedural canvas waveform reacts to playback.
 
-**Homepage (`MentorBookshelf`) is the primary entry**: it shows mentor tabs (Jobs / Buffett / Feynman) + a vertical stream of domains + quote cards in a 2-column grid. Clicking a quote card jumps into the player at the segment's timestamp. The old "bookshelf card grid" and `MentorDetail` page are no longer the main flow.
+**Homepage (`MentorBookshelf`) is the primary entry**: it shows a brand header (Fragments + slogan + "新增收藏" button) + mentor tabs (Jobs / Buffett / Feynman) + a vertical stream of domains + quote cards in a 2-column grid. Clicking a quote card jumps into the player at the segment's timestamp. The old `MentorDetail` page is no longer the main flow.
+
+The outer shell is unified to **474 px × min(844 px, 100vh − 24 px)** across all views (homepage, player, mentor detail), giving a ~9:16 mobile aspect ratio. Default theme is `warm-dark`.
 
 Currently ships five curated episodes across three mentors:
 - `jobs-stanford` — Steve Jobs Stanford Commencement 2005
@@ -161,9 +165,11 @@ Episode data lives in `src/data/episodes/<id>.analyzed.json` — these are the *
 ### Homepage
 
 `src/components/MentorBookshelf.tsx` is the primary entry point. It renders:
+- **Brand header** — shows "Fragments", slogan, and an "+ 新增收藏" button (placeholder modal for future pipeline integration).
 - **Mentor tabs** — pill buttons switch between Jobs / Buffett / Feynman; default is Jobs.
+- **Mentor info** — shows the active mentor's Chinese name + P-segment count and domain count.
 - **Domain stream** — domains are listed vertically, sorted by P-segment count descending. Each domain shows a section title with a count badge.
-- **Quote cards** — 2-column grid of cards per domain. Each card shows `quoteCn` (primary) + `question` (secondary). Default 3 cards per domain with a "━━ 还有 N 个 ━━" button to expand the rest.
+- **Quote cards** — 2-column grid of cards per domain. Each card shows `quoteCn` (primary) + `question` (secondary). Default 2 cards per domain with a "━━ 还有 N 个 ━━" button to expand the rest.
 - **Clicking a card** calls `goToPlayer(episodeId, start_sec)` to jump into the player.
 
 The old `MentorDetail` component (with bio + episode list + `ConversationalInput`) is still in the repo but no longer directly reachable from the homepage.
@@ -219,7 +225,7 @@ Python pipeline at `scripts/segmenter/`. Orchestrated by `run.py`; intermediate 
 
 `run.py` skips a step if its output file exists; `--force` overrides; `--from-step N` jumps in mid-pipeline. The shared LLM client is `lib/llm_client.py` (raw `urllib.request` + 3-attempt exponential backoff + token tracking + `responseSchema` JSON mode at temperature 0.4). Fixed taxonomy + speaker name map + thresholds live in `config.yaml`.
 
-P-segments carry `question` (search-style user phrasing) + `insight` + `domain` (12-class closed taxonomy + "其他") + `fine_tags` + a Guest-only `transcript` string, plus optional `quote`/`quoteCn` (hook sentence from the speaker's original words, used as the primary title in MentorDetail's domain-browse cards). The pipeline's stated purpose is "为一个'按问题搜索人物访谈片段'的音频App做内容预处理" — the search UI itself is not yet built.
+P-segments carry `question` (search-style user phrasing) + `insight` + `domain` (12-class closed taxonomy + "其他") + `fine_tags` + a Guest-only `transcript` string, plus optional `quote`/`quoteCn` (hook sentence from the speaker's original words, used as the primary title in Quote cards). The pipeline's stated purpose is "为 Fragments 做内容预处理：从名人长视频中切分本质洞见片段" — the conversational search UI itself is not yet built.
 
 ## Adding episodes
 
