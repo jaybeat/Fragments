@@ -62,6 +62,17 @@ export function useYouTubePlayer(videoId: string, startSeconds?: number) {
     });
     return () => {
       cancelled = true;
+      // 先清空容器，避免浏览器扩展劫持 iframe 后 React removeChild 爆炸
+      try {
+        const container = containerRef.current;
+        if (container) {
+          while (container.firstChild) {
+            container.removeChild(container.firstChild);
+          }
+        }
+      } catch {
+        // ignore
+      }
       try {
         playerRef.current?.destroy?.();
       } catch {

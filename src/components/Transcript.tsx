@@ -31,7 +31,9 @@ export default function Transcript() {
     const elRect = scrollRef.current.getBoundingClientRect();
     const aRect = activeTurnEl.getBoundingClientRect();
     const desired = aRect.top - elRect.top + scrollRef.current.scrollTop - 24;
-    scrollRef.current.scrollTo({ top: desired, behavior: 'smooth' });
+    const distance = Math.abs(desired - scrollRef.current.scrollTop);
+    const behavior = distance > scrollRef.current.clientHeight * 0.8 ? 'auto' : 'smooth';
+    scrollRef.current.scrollTo({ top: desired, behavior });
   }, [displayTime, turns]);
 
   return (

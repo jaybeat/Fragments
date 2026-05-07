@@ -9,7 +9,7 @@ export const initialState: PlayerState = {
   isPlaying: false,
   isReady: false,
   transcriptLang: 'cn',
-  theme: 'warm-light',
+  theme: 'warm-dark',
   view: 'chapters',
   screen: 'bookshelf',
 };

@@ -43,7 +43,7 @@ export default function ChapterCard({ onOpenDrawer }: ChapterCardProps) {
             const isActiveP = activeP?.id === p.id;
             return (
               <button
-                key={p.id}
+                key={`${currentT.id}-${p.id}`}
                 className={`cc-p-item ${isActiveP ? 'active' : ''}`}
                 onClick={() => handleSeek(p.start_sec)}
               >

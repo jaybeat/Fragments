@@ -10,13 +10,16 @@ export default function TopNav() {
 
   return (
     <nav className="topnav" aria-label="Top navigation">
+      <button className="topnav-brand" onClick={goToBookshelf}>
+        Fragments
+      </button>
       {canGoBack && state.screen === 'player' ? (
         <button className="topnav-link" onClick={goBack}>
           ← 返回
         </button>
       ) : (
         <button className="topnav-link" onClick={goToBookshelf}>
-          书架
+          收藏
         </button>
       )}
       <button className="topnav-link" onClick={() => goToPlayer()}>

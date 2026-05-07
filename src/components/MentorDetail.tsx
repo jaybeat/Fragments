@@ -19,7 +19,7 @@ export default function MentorDetail({ mentorId }: MentorDetailProps) {
   if (!mentor) {
     return (
       <div className="mentor-detail">
-        <button className="mentor-back" onClick={goToBookshelf}>← 返回书架</button>
+        <button className="mentor-back" onClick={goToBookshelf}>← 返回收藏</button>
         <p style={{ color: 'var(--text-secondary)', textAlign: 'center', marginTop: 40 }}>
           未找到该导师信息
         </p>
@@ -32,7 +32,7 @@ export default function MentorDetail({ mentorId }: MentorDetailProps) {
   return (
     <div className="mentor-detail">
       <button className="mentor-back" onClick={goToBookshelf}>
-        ← 返回书架
+        ← 返回收藏
       </button>
 
       <div className="mentor-bio">
@@ -70,10 +70,10 @@ export default function MentorDetail({ mentorId }: MentorDetailProps) {
             <div className="domain-title">
               {domain} · {items.length}
             </div>
-            <div className="domain-segments">
+            <div className="domain-segments domain-segments-grid">
               {items.map(({ episode, p }) => (
                 <button
-                  key={p.id}
+                  key={`${episode.id}-${p.id}`}
                   className="segment-item"
                   onClick={() => goToPlayer(episode.id, p.start_sec)}
                 >

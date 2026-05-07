@@ -67,7 +67,7 @@ export default function ChapterList({ onSeek, showHeader = true }: ChapterListPr
                       const isActiveP = activeP?.id === p.id;
                       return (
                         <button
-                          key={p.id}
+                          key={`${t.id}-${p.id}`}
                           ref={isActiveP ? activePRef : undefined}
                           className={`sd-p-item ${isActiveP ? 'active' : ''}`}
                           onClick={() => handleSeek(p.start_sec)}

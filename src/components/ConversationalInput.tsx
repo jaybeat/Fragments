@@ -49,7 +49,7 @@ export default function ConversationalInput({ mentorId }: ConversationalInputPro
         <div className="ci-results">
           {results.map(({ episode, p }) => (
             <button
-              key={p.id}
+              key={`${episode.id}-${p.id}`}
               className="ci-result-item"
               onClick={() => goToPlayer(episode.id, p.start_sec)}
             >
