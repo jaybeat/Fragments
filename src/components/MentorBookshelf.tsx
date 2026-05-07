@@ -1,41 +1,83 @@
+import { useState } from 'react';
 import { useNavigation } from '../PlayerContext';
-import { MENTORS, getEpisodesByMentor } from '../data/mentors';
+import { MENTORS, groupPSegmentsByDomain } from '../data/mentors';
 
-function formatCount(n: number, unit: string) {
-  return `${n} ${unit}`;
-}
+const INITIAL_QUOTE_COUNT = 3;
 
 export default function MentorBookshelf() {
-  const { goToMentor } = useNavigation();
+  const [activeMentorId, setActiveMentorId] = useState('jobs');
+  const [expandedDomains, setExpandedDomains] = useState<Set<string>>(new Set());
+  const { goToPlayer } = useNavigation();
+
+  const activeMentor = MENTORS.find((m) => m.id === activeMentorId)!;
+  const domainGroups = groupPSegmentsByDomain(activeMentorId);
+  const domainEntries = [...domainGroups.entries()];
+
+  const toggleDomain = (domain: string) => {
+    setExpandedDomains((prev) => {
+      const next = new Set(prev);
+      if (next.has(domain)) {
+        next.delete(domain);
+      } else {
+        next.add(domain);
+      }
+      return next;
+    });
+  };
 
   return (
     <div className="mentor-bookshelf">
-      <div className="bookshelf-header">
-        <h1>导师书架</h1>
-        <p>当你卡在一个问题上时，听你信任的智者本人，用他自己的原话，谈过这件事。</p>
+      <div className="mentor-tabs">
+        {MENTORS.map((mentor) => (
+          <button
+            key={mentor.id}
+            className={`mentor-tab ${mentor.id === activeMentorId ? 'active' : ''}`}
+            onClick={() => setActiveMentorId(mentor.id)}
+          >
+            <img src={mentor.avatar} alt={mentor.name} className="mentor-tab-avatar" />
+            <span>{mentor.nameCn}</span>
+          </button>
+        ))}
       </div>
-      <div className="mentor-grid">
-        {MENTORS.map((mentor) => {
-          const episodes = getEpisodesByMentor(mentor.id);
-          const pCount = episodes.reduce(
-            (sum, ep) => sum + (ep.p_segments?.length ?? 0),
-            0
-          );
+
+      <div className="mentor-info">
+        <div className="mentor-info-name">{activeMentor.nameCn}</div>
+        <div className="mentor-info-meta">
+          {domainEntries.reduce((sum, [, items]) => sum + items.length, 0)} 个观点 ·{' '}
+          {domainEntries.length} 个领域
+        </div>
+      </div>
+
+      <div className="domain-stream">
+        {domainEntries.map(([domain, items]) => {
+          const isExpanded = expandedDomains.has(domain);
+          const displayedItems = isExpanded ? items : items.slice(0, INITIAL_QUOTE_COUNT);
+          const hasMore = items.length > INITIAL_QUOTE_COUNT;
+
           return (
-            <button
-              key={mentor.id}
-              className="mentor-card"
-              onClick={() => goToMentor(mentor.id)}
-            >
-              <div className="mentor-card-avatar">
-                <img src={mentor.avatar} alt={mentor.name} />
+            <div key={domain} className="domain-group">
+              <div className="domain-section-title">
+                {domain}
+                <span className="domain-count">{items.length}</span>
               </div>
-              <div className="mentor-card-name">{mentor.nameCn}</div>
-              <div className="mentor-card-name-en">{mentor.name}</div>
-              <div className="mentor-card-meta">
-                {formatCount(episodes.length, '场演讲')} · {formatCount(pCount, '个片段')}
+              <div className="domain-segments domain-segments-grid">
+                {displayedItems.map(({ episode, p }) => (
+                  <button
+                    key={p.id}
+                    className="segment-item"
+                    onClick={() => goToPlayer(episode.id, p.start_sec)}
+                  >
+                    <div className="segment-quote-cn">{p.quoteCn || p.question}</div>
+                    {p.quoteCn && <div className="segment-question">{p.question}</div>}
+                  </button>
+                ))}
+                {hasMore && !isExpanded && (
+                  <button className="show-more" onClick={() => toggleDomain(domain)}>
+                    ━━ 还有 {items.length - INITIAL_QUOTE_COUNT} 个 ━━
+                  </button>
+                )}
               </div>
-            </button>
+            </div>
           );
         })}
       </div>

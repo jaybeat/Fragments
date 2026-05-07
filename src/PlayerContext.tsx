@@ -54,6 +54,14 @@ export function playerReducer(state: PlayerState, action: PlayerAction): PlayerS
       };
     case 'SET_MENTOR':
       return { ...state, mentorId: action.payload };
+    case 'GO_TO_MENTOR':
+      return {
+        ...state,
+        prevScreen: state.screen,
+        prevMentorId: state.mentorId,
+        screen: 'mentor',
+        mentorId: action.payload,
+      };
     case 'CLEAR_PENDING_SEEK':
       return { ...state, pendingSeek: undefined };
     case 'GO_BACK': {
@@ -97,8 +105,7 @@ export function useNavigation() {
   return {
     goToBookshelf: () => dispatch({ type: 'SET_SCREEN', payload: 'bookshelf' }),
     goToMentor: (mentorId: string) => {
-      dispatch({ type: 'SET_MENTOR', payload: mentorId });
-      dispatch({ type: 'SET_SCREEN', payload: 'mentor' });
+      dispatch({ type: 'GO_TO_MENTOR', payload: mentorId });
     },
     goToPlayer: (episodeId?: string, startTime?: number) => {
       if (episodeId) {
@@ -107,7 +114,9 @@ export function useNavigation() {
           payload: startTime !== undefined ? { episodeId, startTime } : episodeId,
         });
       }
-      dispatch({ type: 'SET_SCREEN', payload: 'player' });
+      if (state.screen !== 'player') {
+        dispatch({ type: 'SET_SCREEN', payload: 'player' });
+      }
     },
     goBack: () => dispatch({ type: 'GO_BACK' }),
     canGoBack: state.prevScreen !== undefined,

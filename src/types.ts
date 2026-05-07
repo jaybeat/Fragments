@@ -88,5 +88,6 @@ export type PlayerAction =
   | { type: 'SET_VIEW'; payload: 'chapters' | 'transcript' }
   | { type: 'SET_SCREEN'; payload: 'bookshelf' | 'mentor' | 'player' }
   | { type: 'SET_MENTOR'; payload: string }
+  | { type: 'GO_TO_MENTOR'; payload: string }
   | { type: 'CLEAR_PENDING_SEEK' }
   | { type: 'GO_BACK' };

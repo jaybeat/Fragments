@@ -59,6 +59,7 @@ Mentors **不和播客平台竞争消费时长**(它们是连续陪伴消费,Men
 
 ## Known Tech Debt
 
+- **`MentorDetail` 组件仍保留但不再被直接路由到**。新的 `MentorBookshelf` 已经内置了 domain 浏览和 quote 卡片展示，用户从首页无法点击进入 `MentorDetail`。如果未来需要恢复导师详情页（含 bio、演讲列表、对话搜索），需要重新在 `MentorBookshelf` 中添加入口。
 - **subtitle 字段当前是手填**,segmenter 不生成 subtitle。所有剧集的 subtitle 都是人工维护的;添加新导师时记得手填。
 - **segmenter Step 3 现在自动生成 `quote`/`quoteCn`**（prompt 已包含详细的提取和翻译要求）。添加新剧集后建议人工抽查 quote 质量，必要时修正。`step5_finalize.py` 会透传已有字段，重新跑 segmenter 不会丢失已手填的 quote。
 - **chapters 和 t_segments 双轨并存**:Player 优先用 t_segments,chapters 只作 fallback。后续新内容统一走 segmenter pipeline 后,chapters 字段可以从 Episode 接口移除。
@@ -98,6 +99,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 A single-page audio player (Vite + React + TypeScript) inspired by [Claudio FM](https://mmguo.dev/claudio-fm/). Audio streams from YouTube via the IFrame Player API; a word-level synced transcript highlights the spoken text in real time, and a procedural canvas waveform reacts to playback.
+
+**Homepage (`MentorBookshelf`) is the primary entry**: it shows mentor tabs (Jobs / Buffett / Feynman) + a vertical stream of domains + quote cards in a 2-column grid. Clicking a quote card jumps into the player at the segment's timestamp. The old "bookshelf card grid" and `MentorDetail` page are no longer the main flow.
 
 Currently ships five curated episodes across three mentors:
 - `jobs-stanford` — Steve Jobs Stanford Commencement 2005
@@ -154,6 +157,16 @@ Episode data lives in `src/data/episodes/<id>.analyzed.json` — these are the *
 - `src/data/episodes.ts` imports the `*.analyzed.json` files and runs `normalizeEpisode`, which adds `episode.startTime` to every turn / chapter / t_segment / p_segment time so all downstream code can compare against absolute YouTube `getCurrentTime()`.
 - `src/lib/tokenize.ts` linearly distributes words across the interval between consecutive turn `start` times. This produces per-word `start`/`end` without word-level Whisper data.
 - `src/components/Transcript.tsx` renders tokenized turns and applies `.said` / `.current` / `.future` classes from `state.currentTime`. It also supports bilingual display: when `turn.textCn` is present, a language toggle bar appears (英文原文 / 中文 / 双语对照). English mode keeps word-level highlighting; Chinese mode highlights the entire turn; both mode shows English on top and Chinese below. The active language is tracked in `PlayerState.transcriptLang` (default `'cn'`).
+
+### Homepage
+
+`src/components/MentorBookshelf.tsx` is the primary entry point. It renders:
+- **Mentor tabs** — pill buttons switch between Jobs / Buffett / Feynman; default is Jobs.
+- **Domain stream** — domains are listed vertically, sorted by P-segment count descending. Each domain shows a section title with a count badge.
+- **Quote cards** — 2-column grid of cards per domain. Each card shows `quoteCn` (primary) + `question` (secondary). Default 3 cards per domain with a "━━ 还有 N 个 ━━" button to expand the rest.
+- **Clicking a card** calls `goToPlayer(episodeId, start_sec)` to jump into the player.
+
+The old `MentorDetail` component (with bio + episode list + `ConversationalInput`) is still in the repo but no longer directly reachable from the homepage.
 
 ### Player layout & view switching
 
