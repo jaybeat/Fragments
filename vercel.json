@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/fragments/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/fragments/avatars/:path*", "destination": "/avatars/:path*" },
     { "source": "/fragments", "destination": "/index.html" },
     { "source": "/fragments/:path*", "destination": "/index.html" }
   ]
