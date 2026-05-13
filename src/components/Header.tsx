@@ -1,5 +1,6 @@
 import { usePlayer, useNavigation } from '../PlayerContext';
 import { useClock } from '../hooks/useClock';
+import { assetPath } from '../lib/assetPath';
 import { getEpisodeById } from '../data/episodes';
 import { getMentorForEpisode } from '../data/mentors';
 import Waveform from './Waveform';
@@ -26,7 +27,7 @@ export default function Header() {
           aria-label={mentor ? `查看 ${mentor.nameCn}` : undefined}
         >
           <div className="header-avatar">
-            <img src={episode.speakerAvatar} alt={episode.speakerName} />
+            <img src={assetPath(episode.speakerAvatar)} alt={episode.speakerName} />
           </div>
           {episode.speakerName}
         </button>

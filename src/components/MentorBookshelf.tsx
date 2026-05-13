@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigation } from '../PlayerContext';
+import { assetPath } from '../lib/assetPath';
 import { MENTORS, groupPSegmentsByDomain } from '../data/mentors';
 
 const INITIAL_QUOTE_COUNT = 2;
@@ -55,7 +56,7 @@ export default function MentorBookshelf() {
               setExpandedDomains(new Set());
             }}
           >
-            <img src={mentor.avatar} alt={mentor.name} className="mentor-tab-avatar" />
+            <img src={assetPath(mentor.avatar)} alt={mentor.name} className="mentor-tab-avatar" />
             <span>{mentor.nameCn}</span>
           </button>
         ))}

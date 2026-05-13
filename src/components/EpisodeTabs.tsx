@@ -1,4 +1,5 @@
 import { usePlayer } from '../PlayerContext';
+import { assetPath } from '../lib/assetPath';
 import { EPISODES } from '../data/episodes';
 
 export default function EpisodeTabs() {
@@ -16,7 +17,7 @@ export default function EpisodeTabs() {
             }
           }}
         >
-          <img src={ep.speakerAvatar} alt={ep.speakerName} className="tab-avatar" />
+          <img src={assetPath(ep.speakerAvatar)} alt={ep.speakerName} className="tab-avatar" />
           <span className="tab-name">{ep.speakerName}</span>
         </button>
       ))}

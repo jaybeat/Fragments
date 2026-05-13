@@ -1,4 +1,5 @@
 import { useNavigation } from '../PlayerContext';
+import { assetPath } from '../lib/assetPath';
 import { getMentorById, getEpisodesByMentor, groupPSegmentsByDomain } from '../data/mentors';
 import ConversationalInput from './ConversationalInput';
 
@@ -37,7 +38,7 @@ export default function MentorDetail({ mentorId }: MentorDetailProps) {
 
       <div className="mentor-bio">
         <div className="mentor-bio-avatar">
-          <img src={mentor.avatar} alt={mentor.name} />
+          <img src={assetPath(mentor.avatar)} alt={mentor.name} />
         </div>
         <div className="mentor-bio-name">{mentor.nameCn}</div>
         <div className="mentor-bio-name-en">{mentor.name}</div>
