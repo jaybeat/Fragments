@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/fragments", "destination": "/index.html" },
+    { "source": "/fragments/:path*", "destination": "/index.html" }
+  ]
+}
