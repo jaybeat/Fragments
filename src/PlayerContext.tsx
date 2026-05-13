@@ -116,6 +116,8 @@ export function useNavigation() {
       }
       if (state.screen !== 'player') {
         dispatch({ type: 'SET_SCREEN', payload: 'player' });
+        dispatch({ type: 'SET_VIEW', payload: 'transcript' });
+        dispatch({ type: 'SET_TRANSCRIPT_LANG', payload: 'both' });
       }
     },
     goBack: () => dispatch({ type: 'GO_BACK' }),
